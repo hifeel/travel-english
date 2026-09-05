@@ -15,8 +15,14 @@ fi
 if [ -d "$ROOT/data/lessons" ]; then
   docker cp "$ROOT/data/lessons/." "towns-web:$DEST/data/lessons/"
 fi
-if [ -f "$ROOT/data/lessons.json" ]; then
-  docker cp "$ROOT/data/lessons.json" "towns-web:$DEST/data/lessons.json"
+# data/lessons.json is derived, not committed: index.html's loadLessons() reads
+# it before falling back to the split files, so build it here from data/lessons
+# rather than shipping a copy that can drift out of sync.
+if [ -f "$ROOT/data/index.json" ] && [ -d "$ROOT/data/lessons" ]; then
+  BUNDLE="$(mktemp -t lessons.json.XXXXXX)"
+  trap 'rm -f "$BUNDLE"' EXIT
+  python3 "$ROOT/scripts/build-lessons-json.py" "$ROOT" "$BUNDLE"
+  docker cp "$BUNDLE" "towns-web:$DEST/data/lessons.json"
 fi
 
 if [ -d "$ROOT/icons" ]; then
