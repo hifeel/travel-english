@@ -241,19 +241,35 @@
   global.TEDone = { isDone: isDone, setDone: setDone, toggle: toggle, load: load };
 })(window);
 (function (global) {
+  var V = '9';
+  function fetchJson(url) {
+    return fetch(url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + V).then(function (r) {
+      if (!r.ok) throw new Error(url);
+      return r.json();
+    });
+  }
   function loadLessons() {
-    return fetch('data/lessons.json').then(function (r) {
-      if (r.ok) return r.json();
-      throw new Error('no combined');
-    }).catch(function () {
-      return fetch('data/index.json').then(function (r) { return r.json(); }).then(function (idx) {
+    return fetchJson('data/lessons.json').catch(function () {
+      return fetchJson('data/index.json').then(function (idx) {
         return Promise.all((idx.ids || []).map(function (id) {
-          return fetch('data/lessons/' + id + '.json').then(function (r) { return r.json(); });
+          return fetchJson('data/lessons/' + id + '.json');
         }));
       }).then(function (lessons) {
         return { lessons: lessons };
       });
     });
   }
-  global.TEData = { loadLessons: loadLessons };
+  function loadLesson(id) {
+    id = String(id || '');
+    return fetchJson('data/lessons/' + id + '.json').catch(function () {
+      return loadLessons().then(function (data) {
+        var lesson = (data.lessons || []).find(function (l) {
+          return String(l.id) === id || l.slug === id;
+        });
+        if (!lesson) throw new Error('not found');
+        return lesson;
+      });
+    });
+  }
+  global.TEData = { loadLessons: loadLessons, loadLesson: loadLesson };
 })(window);
