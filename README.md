@@ -15,48 +15,49 @@
 | `app.js` | 공통 재생/완료/데이터 로더 |
 | `data/index.json` | 대화 ID 목록 |
 | `data/lessons/*.json` | 대화 데이터 (문장·번역) |
-| `audio/` | MP3. **Git에 넣지 않음** — 라이브에서 받음 |
-| `icons/` | PWA 아이콘. 동일히 라이브에서 받음 |
+| `audio/` | MP3. 평소에는 gitignore. 배포 때만 GitHub에 올렸다가 서버가 받아감 |
+| `icons/` | PWA 아이콘 |
 
-음성 파일은 저장소에 없습니다. 필요하면 `./scripts/fetch-media.sh` 로 라이브 사이트에서 다운로드합니다.
+## 음성 배포 흐름 (GitHub → Towns)
+
+1. 새 MP3를 `audio/` 에 쿠밋하고 GitHub `main` 에 푸시한다.
+2. Towns 호스트에서 서버가 GitHub API로 받아 nginx 경로에 넣는다.
+3. 필요하면 푸시 후 `audio/*.mp3` 은 저장소에서 지운다. 라이브 사이트 파일은 그대로 남는다.
+
+```bash
+# Towns 호스트
+export GITHUB_TOKEN=...   # private repo 읽기
+./scripts/pull-audio-from-github.sh audio/b01.mp3 audio/b10.mp3
+# 또는 없는 MP3만 자동
+./scripts/pull-audio-from-github.sh
+```
+
+private repo라 `raw.githubusercontent.com` 혼자 접속은 안 되고, API + 토큰이 필요합니다.
+
+로컬에서 라이브 사이트 음성을 받으려면:
+
+```bash
+./scripts/fetch-media.sh
+```
 
 ## 로컬에서 보기
 
 ```bash
 git clone git@github.com:hifeel/travel-english.git
 cd travel-english
-./scripts/fetch-media.sh    # 음성·아이콘 (~7MB), 선택
+./scripts/fetch-media.sh
 python3 -m http.server 8080
 ```
 
-http://localhost:8080 을 엽니다.
-
-음성을 받지 않아도 대화 텍스트는 보이고, 없는 MP3는 브라우저 TTS로 대체됩니다.
+http://localhost:8080
 
 ## 데이터만 고치기
 
-새 대화는 `data/lessons/18.json` 처럼 파일을 만들고 `data/index.json` 에 ID를 추가합니다.
+새 대화는 `data/lessons/18.json` 처럼 만들고 `data/index.json` 에 ID를 추가합니다.
 
-```json
-{
-  "id": "18",
-  "slug": "at-the-hotel-gym",
-  "title_en": "...",
-  "title_ko": "...",
-  "subtitle": "...",
-  "desc": "...",
-  "turns": [
-    { "role": "you", "speaker": "You (Traveler)", "en": "...", "ko": "...", "audio": "audio/xx01.mp3" }
-  ],
-  "tips": [{ "en": "...", "ko": "..." }]
-}
-```
-
-- `role`: `you` (여성) / 그 외 스태프 (남성)
+- `role`: `you` (여성 ara) / 그 외 스태프 (남성 orion)
 
 ## Towns 서버 배포
-
-Towns 호스트에서:
 
 ```bash
 ./scripts/deploy.sh
