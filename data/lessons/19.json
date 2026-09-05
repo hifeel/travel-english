@@ -1,0 +1,116 @@
+{
+  "id": "19",
+  "slug": "early-checkin",
+  "title_en": "Early Check-in",
+  "title_ko": "조기 체크인",
+  "subtitle": "호텔 로비에서 조기 체크인 요청하기",
+  "desc": "비행기가 일찍 도착해 호텔에 조기 체크인을 요청하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good morning. I have a reservation under the name Park for tonight.",
+      "ko": "안녕하세요. 오늘 밤 Park 이름으로 예약되어 있습니다.",
+      "audio": "audio/ec01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Good morning. Your check-in time is from three o'clock. How can I help you?",
+      "ko": "안녕하세요. 체크인 시간은 오후 3시부터입니다. 어떻게 도와드릴까요?",
+      "audio": "audio/ec02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "My flight arrived early. Would it be possible to check in now?",
+      "ko": "비행기가 일찍 도착했어요. 지금 체크인할 수 있을까요?",
+      "audio": "audio/ec03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Let me check the room status. One moment, please.",
+      "ko": "객실 상태를 확인해 볼게요. 잠시만요.",
+      "audio": "audio/ec04.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Good news. Your room is ready. We can check you in right away.",
+      "ko": "좋은 소식이 있습니다. 방이 준비되어 있어요. 바로 체크인 가능합니다.",
+      "audio": "audio/ec05.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That's wonderful. Is there an extra charge for early check-in?",
+      "ko": "정말 좋네요. 조기 체크인 추가 요금이 있나요?",
+      "audio": "audio/ec06.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "No, there is no extra charge this morning. May I see your passport, please?",
+      "ko": "아니요, 오늘 아침에는 추가 요금이 없습니다. 여권 보여 주시겠어요?",
+      "audio": "audio/ec07.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Here you are. And here is my confirmation number.",
+      "ko": "여기 있습니다. 그리고 예약 확인 번호도 여기 있어요.",
+      "audio": "audio/ec08.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Thank you. You're in room 708 on the seventh floor. Breakfast starts at seven.",
+      "ko": "감사합니다. 7층 708호입니다. 조식은 오전 7시부터입니다.",
+      "audio": "audio/ec09.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. Could I also leave my suitcase here while I grab a coffee?",
+      "ko": "완벽합니다. 커피 한 잔 사는 동안 캐리어를 여기에 맡겨도 될까요?",
+      "audio": "audio/ec10.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Of course. We'll keep it at the front desk. Enjoy your stay!",
+      "ko": "물론이죠. 프런트 데스크에서 보관해 드리겠습니다. 좋은 시간 보내세요!",
+      "audio": "audio/ec11.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you so much. I really appreciate it.",
+      "ko": "정말 감사합니다. 감사해요.",
+      "audio": "audio/ec12.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Would it be possible to check in now?",
+      "ko": "지금 체크인할 수 있을까요?"
+    },
+    {
+      "en": "Is there an extra charge for early check-in?",
+      "ko": "조기 체크인 추가 요금이 있나요?"
+    },
+    {
+      "en": "My flight arrived early.",
+      "ko": "비행기가 일찍 도착했어요."
+    },
+    {
+      "en": "Could I also leave my suitcase here?",
+      "ko": "캐리어를 여기에 맡겨도 될까요?"
+    },
+    {
+      "en": "Your room is ready.",
+      "ko": "방이 준비되어 있어요."
+    }
+  ]
+}
