@@ -10,16 +10,28 @@ for f in icon-192.png icon-512.png icon-maskable-512.png; do
   echo "  icons/$f"
 done
 
-echo "Downloading audio listed in data/lessons.json..."
+echo "Downloading audio listed in lesson JSON..."
 python3 - <<'PY'
 import json, os, sys, urllib.request
 
 base = "https://towns.co.kr/travel-english/"
-with open("data/lessons.json", encoding="utf-8") as f:
-    data = json.load(f)
 
+def load_lessons():
+    folder = "data/lessons"
+    if os.path.isdir(folder):
+        lessons = []
+        for name in sorted(os.listdir(folder)):
+            if name.endswith(".json"):
+                with open(os.path.join(folder, name), encoding="utf-8") as f:
+                    lessons.append(json.load(f))
+        if lessons:
+            return lessons
+    with open("data/lessons.json", encoding="utf-8") as f:
+        return json.load(f).get("lessons", [])
+
+lessons = load_lessons()
 paths = []
-for lesson in data.get("lessons", []):
+for lesson in lessons:
     for t in lesson.get("turns", []):
         a = t.get("audio")
         if a:

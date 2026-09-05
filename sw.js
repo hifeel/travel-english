@@ -1,10 +1,9 @@
-const CACHE = 'travel-english-v9';
+const CACHE = 'travel-english-v10';
 const PRECACHE = [
   '/travel-english/',
   '/travel-english/index.html',
-  '/travel-english/01-hotel-checkin.html',
-  '/travel-english/02-airport-checkin.html',
-  '/travel-english/03-cafe-order.html',
+  '/travel-english/lesson.html',
+  '/travel-english/app.js',
   '/travel-english/manifest.webmanifest',
   '/travel-english/icons/icon-192.png',
   '/travel-english/icons/icon-512.png'

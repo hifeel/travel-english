@@ -4,8 +4,7 @@
 
 라이브: https://towns.co.kr/travel-english/
 
-저장소: https://github.com/hifeel/travel-english (
-private)
+저장소: https://github.com/hifeel/travel-english (private)
 
 ## 구성
 
@@ -13,7 +12,7 @@ private)
 |---|---|
 | `index.html` | 대화 목록 |
 | `lesson.html` | 대화 화면 |
-| `app.js` | 공통 재생/완료 로직 |
+| `app.js` | 공통 재생/완료/데이터 로더 |
 | `data/index.json` | 대화 ID 목록 |
 | `data/lessons/*.json` | 대화 데이터 (문장·번역) |
 | `audio/` | MP3. **Git에 넣지 않음** — 라이브에서 받음 |

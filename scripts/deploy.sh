@@ -4,11 +4,20 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST=/usr/share/nginx/html/travel-english
 
-docker exec towns-web mkdir -p "$DEST/data" "$DEST/audio" "$DEST/icons"
+docker exec towns-web mkdir -p "$DEST/data/lessons" "$DEST/audio" "$DEST/icons"
 for f in index.html lesson.html app.js sw.js manifest.webmanifest; do
   docker cp "$ROOT/$f" "towns-web:$DEST/$f"
 done
-docker cp "$ROOT/data/lessons.json" "towns-web:$DEST/data/lessons.json"
+
+if [ -f "$ROOT/data/index.json" ]; then
+  docker cp "$ROOT/data/index.json" "towns-web:$DEST/data/index.json"
+fi
+if [ -d "$ROOT/data/lessons" ]; then
+  docker cp "$ROOT/data/lessons/." "towns-web:$DEST/data/lessons/"
+fi
+if [ -f "$ROOT/data/lessons.json" ]; then
+  docker cp "$ROOT/data/lessons.json" "towns-web:$DEST/data/lessons.json"
+fi
 
 if [ -d "$ROOT/icons" ]; then
   docker cp "$ROOT/icons/." "towns-web:$DEST/icons/"

@@ -2,3 +2,6 @@
 *.zip
 .idea/
 .vscode/
+audio/*.mp3
+icons/*.png
+data/lessons.json
