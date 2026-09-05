@@ -1,0 +1,22 @@
+{
+  "id": "11", "slug": "lost-luggage", "title_en": "Lost Luggage", "title_ko": "짐 분실",
+  "subtitle": "짐 분실 · 문장별 음성 재생", "desc": "수하물이 안 나왔을 때 신고할 때",
+  "tips": [
+    {"en": "My suitcase didn't come out.", "ko": "캐리어이 안 나왔어요."},
+    {"en": "baggage claim tag", "ko": "수하물 태그"},
+    {"en": "When can I get it back?", "ko": "언제 다시 받을 수 있나요?"},
+    {"en": "tracking number", "ko": "추적 번호"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Agent", "en": "How can I help you?", "ko": "무슨 일 도와드릴까요?", "audio": "audio/l01.mp3"},
+    {"role": "you", "speaker": "You", "en": "My suitcase didn't come out. I think it's missing.", "ko": "캐리어이 안 나왔어요. 분실된 것 같아요.", "audio": "audio/l02.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "May I see your baggage claim tag?", "ko": "수하물 태그 봐도 될까요?", "audio": "audio/l03.mp3"},
+    {"role": "you", "speaker": "You", "en": "Yes. Here it is. It was a black suitcase.", "ko": "네. 여기 있습니다. 검정 캐리어이었어요.", "audio": "audio/l04.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Let me check. I'm sorry. It may be on the next flight.", "ko": "확인해 볼게요. 죄송합니다. 다음 편에 있을 수 있습니다.", "audio": "audio/l05.mp3"},
+    {"role": "you", "speaker": "You", "en": "When can I get it back?", "ko": "언제 다시 받을 수 있나요?", "audio": "audio/l06.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "We'll deliver it to your hotel as soon as it arrives.", "ko": "도착하는 대로 호텔로 배달해 드리겠습니다.", "audio": "audio/l07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Could you write down the tracking number, please?", "ko": "추적 번호 적어 주시겠어요?", "audio": "audio/l08.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Of course. Please fill out this form.", "ko": "당연히요. 이 양식을 작성해 주세요.", "audio": "audio/l09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you for your help.", "ko": "도와주셔서 감사합니다.", "audio": "audio/l10.mp3"}
+  ]
+}

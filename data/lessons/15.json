@@ -1,0 +1,21 @@
+{
+  "id": "15", "slug": "attraction-tickets", "title_en": "Buying Tickets", "title_ko": "입장권",
+  "subtitle": "입장권 · 문장별 음성 재생", "desc": "박물관이나 관광지 입장권을 살 때",
+  "tips": [
+    {"en": "Two adult tickets, please.", "ko": "성인 표 두 장 주세요."},
+    {"en": "student discount", "ko": "학생 할인"},
+    {"en": "Is photography allowed inside?", "ko": "안에서 사진 찍어도 되나요?"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Clerk", "en": "Next, please. How many tickets?", "ko": "다음 분. 표 몇 장이세요?", "audio": "audio/q01.mp3"},
+    {"role": "you", "speaker": "You", "en": "Two adult tickets, please. Do you have a student discount?", "ko": "성인 표 두 장 주세요. 학생 할인 되나요?", "audio": "audio/q02.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Yes. May I see your student ID?", "ko": "네. 학생증 보여 주시겠어요?", "audio": "audio/q03.mp3"},
+    {"role": "you", "speaker": "You", "en": "I don't have one. Just two regular tickets, then.", "ko": "없어요. 그럼 일반 표 두 장으로 주세요.", "audio": "audio/q04.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "That's forty dollars in total. How would you like to pay?", "ko": "총 40달러입니다. 어떻게 결제하시겠어요?", "audio": "audio/q05.mp3"},
+    {"role": "you", "speaker": "You", "en": "Credit card, please. What time does it close?", "ko": "신용카드로 주세요. 몇 시에 닫나요?", "audio": "audio/q06.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "We close at six. The last entry is at five.", "ko": "6시에 닫습니다. 마지막 입장은 5시입니다.", "audio": "audio/q07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Is photography allowed inside?", "ko": "안에서 사진 찍어도 되나요?", "audio": "audio/q08.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Yes, but no flash, please.", "ko": "네. 다만 플래시는 안 됩니다.", "audio": "audio/q09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Got it. Thank you.", "ko": "알겠습니다. 감사합니다.", "audio": "audio/q10.mp3"}
+  ]
+}

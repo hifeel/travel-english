@@ -1,0 +1,21 @@
+{
+  "id": "13", "slug": "buying-sim", "title_en": "Buying a SIM Card", "title_ko": "유심 구매",
+  "subtitle": "유심 구매 · 문장별 음성 재생", "desc": "여행지 유심을 살 때",
+  "tips": [
+    {"en": "a SIM card for tourists", "ko": "여행자용 유심"},
+    {"en": "Does it work with my phone?", "ko": "제 폰에도 되나요?"},
+    {"en": "as long as your phone is unlocked", "ko": "폰이 잠금 해제된 경우"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Clerk", "en": "Hi. How can I help you?", "ko": "안녕하세요. 무슨 일 도와드릴까요?", "audio": "audio/n01.mp3"},
+    {"role": "you", "speaker": "You", "en": "I'd like to buy a SIM card for tourists, please.", "ko": "여행자용 유심 사고 싶어요.", "audio": "audio/n02.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Sure. This one has ten gigabytes for fourteen days.", "ko": "네. 이건 14일 동안 10GB입니다.", "audio": "audio/n03.mp3"},
+    {"role": "you", "speaker": "You", "en": "How much is it?", "ko": "얼마예요?", "audio": "audio/n04.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "It's twenty-five dollars, including tax.", "ko": "세금 포함 이십오 달러입니다.", "audio": "audio/n05.mp3"},
+    {"role": "you", "speaker": "You", "en": "Does it work with my phone?", "ko": "제 폰에도 되나요?", "audio": "audio/n06.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Yes, as long as your phone is unlocked.", "ko": "네. 폰 잠금이 풀려 있으면 됩니다.", "audio": "audio/n07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Perfect. I'll take it. Can you help me put it in?", "ko": "완벽해요. 이거로 할게요. 끼워 넣는 거 도와주시겠어요?", "audio": "audio/n08.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Of course. Just restart your phone after this.", "ko": "당연히요. 이거 하고 폰만 다시 켜 주세요.", "audio": "audio/n09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you so much.", "ko": "정말 감사합니다.", "audio": "audio/n10.mp3"}
+  ]
+}

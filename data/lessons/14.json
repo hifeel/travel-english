@@ -1,0 +1,22 @@
+{
+  "id": "14", "slug": "currency-exchange", "title_en": "Currency Exchange", "title_ko": "환전",
+  "subtitle": "환전 · 문장별 음성 재생", "desc": "환전소에서 돈 바꿀 때",
+  "tips": [
+    {"en": "I'd like to exchange some money.", "ko": "환전하고 싶어요."},
+    {"en": "What's the rate today?", "ko": "오늘 환율이 어떤가요?"},
+    {"en": "Are there any fees?", "ko": "수수료 있나요?"},
+    {"en": "small bills", "ko": "잔돈"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Clerk", "en": "Next, please. How can I help you?", "ko": "다음 분. 도와드릴까요?", "audio": "audio/x01.mp3"},
+    {"role": "you", "speaker": "You", "en": "I'd like to exchange some money into US dollars.", "ko": "달러로 환전하고 싶어요.", "audio": "audio/x02.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Sure. How much would you like to change?", "ko": "네. 얼마를 바꾸시겠어요?", "audio": "audio/x03.mp3"},
+    {"role": "you", "speaker": "You", "en": "Two hundred dollars, please. What's the rate today?", "ko": "이백 달러로 주세요. 오늘 환율이 어떤가요?", "audio": "audio/x04.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "It's one thousand three hundred fifty won to the dollar.", "ko": "달러당 천삼백오십 원입니다.", "audio": "audio/x05.mp3"},
+    {"role": "you", "speaker": "You", "en": "Are there any fees?", "ko": "수수료 있나요?", "audio": "audio/x06.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "No extra fees. May I see your passport?", "ko": "추가 수수료는 없습니다. 여권 보여 주시겠어요?", "audio": "audio/x07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Here you are. Could I have some small bills, too?", "ko": "여기 있습니다. 작은 지폐도 좀 주시겠어요?", "audio": "audio/x08.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Sure. Please count it. Here's your receipt.", "ko": "네. 잘 세어 보세요. 영수증 드립니다.", "audio": "audio/x09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you. Have a good day.", "ko": "감사합니다. 좋은 하루 되세요.", "audio": "audio/x10.mp3"}
+  ]
+}

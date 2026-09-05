@@ -1,0 +1,22 @@
+{
+  "id": "17", "slug": "train-tickets", "title_en": "Train Tickets", "title_ko": "기차표",
+  "subtitle": "기차표 · 문장별 음성 재생", "desc": "기차역에서 표 사고 승강장 물을 때",
+  "tips": [
+    {"en": "What's the next train?", "ko": "다음 기차는 몇 시예요?"},
+    {"en": "Is that a direct train?", "ko": "직행인가요?"},
+    {"en": "Which platform is it?", "ko": "몇 번 승강장이에요?"},
+    {"en": "window seats", "ko": "창가 좌석"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Clerk", "en": "Where would you like to go?", "ko": "어디로 가시겠어요?", "audio": "audio/w01.mp3"},
+    {"role": "you", "speaker": "You", "en": "Two tickets to Boston, please. What's the next train?", "ko": "보스턴 표 두 장 주세요. 다음 기차는 몇 시예요?", "audio": "audio/w02.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "The next one leaves at three fifteen.", "ko": "다음 차는 3시 15분에 출발합니다.", "audio": "audio/w03.mp3"},
+    {"role": "you", "speaker": "You", "en": "Is that a direct train?", "ko": "직행인가요?", "audio": "audio/w04.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Yes. It takes about two hours.", "ko": "네. 약 2시간 걸립니다.", "audio": "audio/w05.mp3"},
+    {"role": "you", "speaker": "You", "en": "Which platform is it?", "ko": "몇 번 승강장이에요?", "audio": "audio/w06.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Platform four. Would you like window seats?", "ko": "4번 승강장입니다. 창가 좌석으로 할까요?", "audio": "audio/w07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Yes, please. How much is it?", "ko": "네, 부탁합니다. 얼마예요?", "audio": "audio/w08.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Forty-eight dollars for both. Here are your tickets.", "ko": "두 장 48달러입니다. 표 드립니다.", "audio": "audio/w09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you so much.", "ko": "정말 감사합니다.", "audio": "audio/w10.mp3"}
+  ]
+}
