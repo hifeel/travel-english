@@ -1,0 +1,27 @@
+{
+  "id": "18",
+  "slug": "hotel-breakfast",
+  "title_en": "Hotel Breakfast",
+  "title_ko": "호텔 조식",
+  "subtitle": "호텔 조식 시간·메뉴 묻기",
+  "desc": "호텔 조식실에서 시간, 포함 여부, 식단 옵션을 묻는 회화",
+  "turns": [
+    {"role": "you", "speaker": "You (Traveler)", "en": "Good morning. What time is breakfast served?", "ko": "안녕하세요. 조식은 몇 시부터인가요?", "audio": "audio/b01.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "Good morning. Breakfast is served from seven to ten in the dining room on the second floor.", "ko": "안녕하세요. 조식은 오전 7시부터 10시까지 2층 닝닝룸에서 나옵니다.", "audio": "audio/b02.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Is it included in my stay?", "ko": "숙박비에 포함되어 있나요?", "audio": "audio/b03.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "Yes, breakfast is included with your room. Just show your key card at the entrance.", "ko": "네, 조식은 객실 요금에 포함되어 있습니다. 입구에서 키카드만 보여 주세요.", "audio": "audio/b04.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Great. Do you have vegetarian options?", "ko": "좋습니다. 채식 메뉴도 있나요?", "audio": "audio/b05.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "We do. There is an omelet station, fresh fruit, yogurt, and a vegetarian hot dish.", "ko": "있습니다. 오몰렛 스테이션, 생과일, 요거트, 채식 뜨뜨한 요리가 있어요.", "audio": "audio/b06.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Could I also get a coffee to go after I eat?", "ko": "식사 후에 커피도 포장할 수 있을까요?", "audio": "audio/b07.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "Of course. There is a coffee machine near the exit. Cups are next to it.", "ko": "물론이죠. 출구 근처에 커피 머신이 있고, 컵은 오른쪽에 있습니다.", "audio": "audio/b08.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Perfect. Where are the elevators?", "ko": "완벽합니다. 엘리베이터는 어디엔가요?", "audio": "audio/b09.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "Right behind you, on the left. Enjoy your breakfast.", "ko": "바로 뒤, 왼쪽에 있습니다. 조식 좋게 드세요.", "audio": "audio/b10.mp3"}
+  ],
+  "tips": [
+    {"en": "What time is breakfast served?", "ko": "조식은 몇 시부터인가요?"},
+    {"en": "Is it included in my stay?", "ko": "숙박비에 포함되어 있나요?"},
+    {"en": "Do you have vegetarian options?", "ko": "채식 메뉴도 있나요?"},
+    {"en": "coffee to go", "ko": "포장 커피"},
+    {"en": "Enjoy your breakfast.", "ko": "조식 좋게 드세요."}
+  ]
+}
