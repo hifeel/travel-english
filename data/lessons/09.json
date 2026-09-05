@@ -18,7 +18,7 @@
     {"role": "them", "speaker": "Pharmacist", "en": "It's eight dollars. Would you like a bottle of water as well?", "ko": "팔 달러입니다. 물도 같이 드릴까요?", "audio": "audio/m04.mp3"},
     {"role": "you", "speaker": "You", "en": "No, thank you. Can I take this with food?", "ko": "아니요, 괜찮습니다. 음식이랑 함께 먹어도 되나요?", "audio": "audio/m05.mp3"},
     {"role": "them", "speaker": "Pharmacist", "en": "Yes. It's better to take it after a meal.", "ko": "네. 식사 후에 드시는 게 좋습니다.", "audio": "audio/m06.mp3"},
-    {"role": "you", "speaker": "You", "en": "I also have a runny nose. Do you have cold medicine?", "ko": "콩물도 나요. 감기약 있나요?", "audio": "audio/m07.mp3"},
+    {"role": "you", "speaker": "You", "en": "I also have a runny nose. Do you have cold medicine?", "ko": "콧물도 나요. 감기약 있나요?", "audio": "audio/m07.mp3"},
     {"role": "them", "speaker": "Pharmacist", "en": "This one is for colds. It might make you sleepy.", "ko": "이게 감기약입니다. 졸릴 수 있어요.", "audio": "audio/m08.mp3"},
     {"role": "you", "speaker": "You", "en": "That's fine. I'll take both, please.", "ko": "괜찮아요. 둘 다 주세요.", "audio": "audio/m09.mp3"},
     {"role": "them", "speaker": "Pharmacist", "en": "Sure. Here's your change. Feel better soon.", "ko": "네. 거스름돈 드립니다. 얼른 나세요.", "audio": "audio/m10.mp3"}

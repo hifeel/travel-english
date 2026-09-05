@@ -10,8 +10,8 @@
     {"role": "them", "speaker": "Staff", "en": "What time were you thinking?", "ko": "몇 시까지 생각하세요?", "audio": "audio/r03.mp3"},
     {"role": "you", "speaker": "You", "en": "Would it be possible to stay until two o'clock?", "ko": "2시까지 묵을 수 있을까요?", "audio": "audio/r04.mp3"},
     {"role": "them", "speaker": "Staff", "en": "Let me check. Yes, we can do two o'clock for you.", "ko": "확인해 보겠습니다. 네, 2시까지 가능합니다.", "audio": "audio/r05.mp3"},
-    {"role": "you", "speaker": "You", "en": "Thank you. And would it be possible to leave my luggage here until then?", "ko": "감사합니다. 그때까지 짐을 여기에 말겨도 될까요?", "audio": "audio/r06.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "Of course. You can leave it at the front desk.", "ko": "물론이죠. 프런트 데스크에 말기실 수 있습니다.", "audio": "audio/r07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you. And would it be possible to leave my luggage here until then?", "ko": "감사합니다. 그때까지 짐을 여기에 맡겨도 될까요?", "audio": "audio/r06.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "Of course. You can leave it at the front desk.", "ko": "물론이죠. 프런트 데스크에 맡기실 수 있습니다.", "audio": "audio/r07.mp3"},
     {"role": "you", "speaker": "You", "en": "Perfect. Would it be possible to get two extra bottles of water as well?", "ko": "완벽합니다. 물 두 병 더 부탁해도 될까요?", "audio": "audio/r08.mp3"},
     {"role": "them", "speaker": "Staff", "en": "Sure. I'll send them up to your room.", "ko": "다 왔습니다. 네. 방으로 올려 드리겠습니다.", "audio": "audio/r09.mp3"},
     {"role": "you", "speaker": "You", "en": "That's very kind of you. Thank you so much.", "ko": "정말 친절하시네요. 정말 감사합니다.", "audio": "audio/r10.mp3"}
@@ -20,7 +20,7 @@
     {"en": "Would it be possible to ~?", "ko": "~해도 될까요? (공손한 부탁)"},
     {"en": "late check-out", "ko": "레이트 체크아웃"},
     {"en": "What time were you thinking?", "ko": "몇 시까지 생각하세요?"},
-    {"en": "leave my luggage", "ko": "짐 말기기"},
+    {"en": "leave my luggage", "ko": "짐 맡기기"},
     {"en": "That's very kind of you.", "ko": "정말 친절하시네요"}
   ],
   "desc": "Would it be possible로 레이트 체크아웃·짐 보관 요청할 때"

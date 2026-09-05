@@ -8,7 +8,7 @@
   ],
   "turns": [
     {"role": "you", "speaker": "You", "en": "Excuse me. The air conditioning in my room isn't working.", "ko": "죄송합니다. 방 에어컨이 안 돼요.", "audio": "audio/h01.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "I'm sorry about that. Let me send someone up right away.", "ko": "죄송합니다. 굳바로 직원을 올리겠습니다.", "audio": "audio/h02.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "I'm sorry about that. Let me send someone up right away.", "ko": "죄송합니다. 곧바로 직원을 올리겠습니다.", "audio": "audio/h02.mp3"},
     {"role": "you", "speaker": "You", "en": "Could I also have two extra towels, please?", "ko": "수건도 두 장 더 주시겠어요?", "audio": "audio/h03.mp3"},
     {"role": "them", "speaker": "Staff", "en": "Of course. What is your room number?", "ko": "당연히요. 방 번호가 어떻게 되시죠?", "audio": "audio/h04.mp3"},
     {"role": "you", "speaker": "You", "en": "I'm in room four twelve.", "ko": "412호입니다.", "audio": "audio/h05.mp3"},
