@@ -1,0 +1,26 @@
+{
+  "id": "10",
+  "slug": "passport-control",
+  "title_en": "Passport Control",
+  "title_ko": "출입국 심사",
+  "subtitle": "출입국 심사 · 문장별 음성 재생",
+  "desc": "공항에서 여권 보여 주고 방문 목적을 말할 때",
+  "tips": [
+    {"en": "Passport, please.", "ko": "여권 주세요."},
+    {"en": "What's the purpose of your visit?", "ko": "방문 목적이 무엇인가요?"},
+    {"en": "I'm here on vacation for one week.", "ko": "일주일 관광으로 왔습니다."},
+    {"en": "Do you have a return ticket?", "ko": "돌아가는 표 있으신가요?"}
+  ],
+  "turns": [
+    {"role": "them", "speaker": "Officer", "en": "Next, please. Passport, please.", "ko": "다음 분. 여권 주세요.", "audio": "audio/i01.mp3"},
+    {"role": "you", "speaker": "You", "en": "Here you are.", "ko": "여기 있습니다.", "audio": "audio/i02.mp3"},
+    {"role": "them", "speaker": "Officer", "en": "What's the purpose of your visit?", "ko": "방문 목적이 무엇인가요?", "audio": "audio/i03.mp3"},
+    {"role": "you", "speaker": "You", "en": "I'm here on vacation for one week.", "ko": "일주일 관광으로 왔습니다.", "audio": "audio/i04.mp3"},
+    {"role": "them", "speaker": "Officer", "en": "Where will you be staying?", "ko": "어디에 머무실 건가요?", "audio": "audio/i05.mp3"},
+    {"role": "you", "speaker": "You", "en": "At the Hilton Hotel downtown.", "ko": "시내 힐튼 호텔에 머묵니다.", "audio": "audio/i06.mp3"},
+    {"role": "them", "speaker": "Officer", "en": "Do you have a return ticket?", "ko": "돌아가는 표 있으신가요?", "audio": "audio/i07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Yes, I do. Here it is.", "ko": "네, 있습니다. 여기 있습니다.", "audio": "audio/i08.mp3"},
+    {"role": "them", "speaker": "Officer", "en": "All right. Enjoy your stay.", "ko": "좋습니다. 좋은 시간 되세요.", "audio": "audio/i09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you.", "ko": "감사합니다.", "audio": "audio/i10.mp3"}
+  ]
+}

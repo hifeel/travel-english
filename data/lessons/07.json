@@ -1,0 +1,27 @@
+{
+  "id": "07",
+  "slug": "restaurant-order",
+  "title_en": "Ordering at a Restaurant",
+  "title_ko": "식당 주문",
+  "subtitle": "식당 주문 · 문장별 음성 재생",
+  "desc": "식당에서 자리 잡고 음식 주문할 때",
+  "tips": [
+    {"en": "A table for two, please.", "ko": "두 명 자리 주세요."},
+    {"en": "Could I have a few more minutes?", "ko": "좀 더 시간 주시겠어요?"},
+    {"en": "How would you like that cooked?", "ko": "얼마나 익혀 드릴까요?"},
+    {"en": "dressing on the side", "ko": "드레싱은 별도로"},
+    {"en": "Could we have the check later?", "ko": "계산서는 나중에 주세요?"}
+  ],
+  "turns": [
+    {"role": "you", "speaker": "You", "en": "Hi. A table for two, please.", "ko": "안녕하세요. 두 명 자리 주세요.", "audio": "audio/e01.mp3"},
+    {"role": "them", "speaker": "Server", "en": "Of course. Right this way. Here are your menus.", "ko": "당연히요. 이쪽으로 오세요. 메뉴 드립니다.", "audio": "audio/e02.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you. Could I have a few more minutes?", "ko": "감사합니다. 좀 더 시간 주시겠어요?", "audio": "audio/e03.mp3"},
+    {"role": "them", "speaker": "Server", "en": "Sure. Just let me know when you're ready.", "ko": "네. 준비되시면 말씀해 주세요.", "audio": "audio/e04.mp3"},
+    {"role": "you", "speaker": "You", "en": "We're ready. I'd like the grilled salmon, please.", "ko": "준비됐어요. 그릴 연어로 주세요.", "audio": "audio/e05.mp3"},
+    {"role": "them", "speaker": "Server", "en": "Great choice. How would you like that cooked?", "ko": "좋은 선택이에요. 얼마나 익혀 드릴까요?", "audio": "audio/e06.mp3"},
+    {"role": "you", "speaker": "You", "en": "Medium, please. And could I get the dressing on the side?", "ko": "미디엄으로 주세요. 그리고 드레싱은 별도로 주세요.", "audio": "audio/e07.mp3"},
+    {"role": "them", "speaker": "Server", "en": "No problem. Anything to drink?", "ko": "문제없습니다. 음료는 무엇으로 하실까요?", "audio": "audio/e08.mp3"},
+    {"role": "you", "speaker": "You", "en": "Just water for now. Could we have the check later?", "ko": "지금은 물로 해 주세요. 계산서는 나중에 주시겠어요?", "audio": "audio/e09.mp3"},
+    {"role": "them", "speaker": "Server", "en": "Of course. I'll bring it whenever you're ready.", "ko": "당연히요. 준비되시면 가져다 드리겠습니다.", "audio": "audio/e10.mp3"}
+  ]
+}

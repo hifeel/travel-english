@@ -1,0 +1,27 @@
+{
+  "id": "08",
+  "slug": "shopping",
+  "title_en": "Shopping",
+  "title_ko": "쇼핑",
+  "subtitle": "쇼핑 · 문장별 음성 재생",
+  "desc": "사이즈 물어보고 시착한 뒤 결제할 때",
+  "tips": [
+    {"en": "Do you have this in a smaller size?", "ko": "이거 더 작은 사이즈 있나요?"},
+    {"en": "Can I try it on?", "ko": "시착해 봐도 될까요?"},
+    {"en": "How much is this?", "ko": "이거 얼마예요?"},
+    {"en": "Do you accept credit cards?", "ko": "신용카드 됩니다?"},
+    {"en": "Could I have a receipt?", "ko": "영수증 주시겠어요?"}
+  ],
+  "turns": [
+    {"role": "you", "speaker": "You", "en": "Excuse me. Do you have this in a smaller size?", "ko": "죄송합니다. 이거 더 작은 사이즈 있나요?", "audio": "audio/p01.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Let me check. Yes, we have a small in the back.", "ko": "확인해 볼게요. 네, 뒤에 스몰 있습니다.", "audio": "audio/p02.mp3"},
+    {"role": "you", "speaker": "You", "en": "Great. Can I try it on?", "ko": "좋네요. 시착해 봐도 될까요?", "audio": "audio/p03.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Of course. The fitting room is over there.", "ko": "당연히요. 피팅룸은 저쪽입니다.", "audio": "audio/p04.mp3"},
+    {"role": "you", "speaker": "You", "en": "It fits well. How much is this?", "ko": "잘 맞아요. 이거 얼마예요?", "audio": "audio/p05.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "It's forty-five dollars. It's on sale today.", "ko": "사십오 달러입니다. 오늘 세일이에요.", "audio": "audio/p06.mp3"},
+    {"role": "you", "speaker": "You", "en": "I'll take it. Do you accept credit cards?", "ko": "이거로 할게요. 신용카드 됩니다?", "audio": "audio/p07.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Yes, we do. Would you like a bag?", "ko": "네, 가능합니다. 봉지 드릴까요?", "audio": "audio/p08.mp3"},
+    {"role": "you", "speaker": "You", "en": "Yes, please. And could I have a receipt?", "ko": "네, 부탁합니다. 그리고 영수증 주시겠어요?", "audio": "audio/p09.mp3"},
+    {"role": "them", "speaker": "Clerk", "en": "Here you go. Have a nice day!", "ko": "여기 있습니다. 좋은 하루 되세요!", "audio": "audio/p10.mp3"}
+  ]
+}
