@@ -22,6 +22,7 @@ if [ -f "$ROOT/data/index.json" ] && [ -d "$ROOT/data/lessons" ]; then
   BUNDLE="$(mktemp -t lessons.json.XXXXXX)"
   trap 'rm -f "$BUNDLE"' EXIT
   python3 "$ROOT/scripts/build-lessons-json.py" "$ROOT" "$BUNDLE"
+  chmod 644 "$BUNDLE"  # mktemp makes it 0600 and docker cp keeps the mode
   docker cp "$BUNDLE" "towns-web:$DEST/data/lessons.json"
 fi
 
