@@ -48,25 +48,28 @@
     <button class="install" id="installBtn">홈 화면에 앱 추가</button>
     <p class="hint">안드로이드: 크롬 메뉴 → 홈 화면에 추가 / 앱 설치</p>
 
-    <script src="app.js?v=7"></script>
+    <script src="app.js?v=9"></script>
     <div id="list"></div>
     <footer>Powered by Grok + MCP Towns</footer>
   </div>
 
   <script>
-    fetch('data/lessons.json?v=8').then(r=>r.json()).then(data=>{
+    function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
+    TEData.loadLessons().then(function(data){
       const box=document.getElementById('list');
       const done=(window.TEDone&&TEDone.load())||[];
-      (data.lessons||[]).slice().reverse().forEach(l=>{
+      (data.lessons||[]).slice().reverse().forEach(function(l){
         const a=document.createElement('a');
         a.href='lesson.html?id='+encodeURIComponent(l.id);
         const isDone=done.indexOf(String(l.id))>=0;
-        a.innerHTML='<div class="title-row"><span class="badge">#'+l.id+'</span><h2>'+l.title_en+'</h2>'+(isDone?'<span class="done-mark">완료</span>':'')+'</div><p>'+(l.desc||l.title_ko||'')+'</p>';
+        a.innerHTML='<div class="title-row"><span class="badge">#'+esc(l.id)+'</span><h2>'+esc(l.title_en)+'</h2>'+(isDone?'<span class="done-mark">완료</span>':'')+'</div><p>'+esc(l.desc||l.title_ko||'')+'</p>';
         const card=document.createElement('div');
         card.className='card'+(isDone?' done':'');
         card.appendChild(a);
         box.appendChild(card);
       });
+    }).catch(function(){
+      document.getElementById('list').textContent='목록을 불러오지 못했습니다';
     });
     let deferredPrompt;
     const btn = document.getElementById('installBtn');
