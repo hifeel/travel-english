@@ -240,3 +240,20 @@
   }
   global.TEDone = { isDone: isDone, setDone: setDone, toggle: toggle, load: load };
 })(window);
+(function (global) {
+  function loadLessons() {
+    return fetch('data/lessons.json').then(function (r) {
+      if (r.ok) return r.json();
+      throw new Error('no combined');
+    }).catch(function () {
+      return fetch('data/index.json').then(function (r) { return r.json(); }).then(function (idx) {
+        return Promise.all((idx.ids || []).map(function (id) {
+          return fetch('data/lessons/' + id + '.json').then(function (r) { return r.json(); });
+        }));
+      }).then(function (lessons) {
+        return { lessons: lessons };
+      });
+    });
+  }
+  global.TEData = { loadLessons: loadLessons };
+})(window);
