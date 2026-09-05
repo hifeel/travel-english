@@ -1,0 +1,27 @@
+{
+  "id": "02",
+  "slug": "airport-checkin",
+  "title_en": "Airport Check-in",
+  "title_ko": "공항 탐승 수속",
+  "subtitle": "공항 탐승 수속 · 문장별 음성 재생",
+  "turns": [
+    {"role": "you", "speaker": "You", "en": "Hello. I'd like to check in for my flight to New York.", "ko": "안녕하세요. 뉴욕 항공기 탐승 수속하고 싶습니다.", "audio": "audio/a01.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Good morning. May I see your passport and ticket, please?", "ko": "안녕하세요. 여권과 티켓 보여주시겠어요?", "audio": "audio/a02.mp3"},
+    {"role": "you", "speaker": "You", "en": "Sure. Here they are.", "ko": "네. 여기 있습니다.", "audio": "audio/a03.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Thank you. Would you like a window seat or an aisle seat?", "ko": "감사합니다. 창가쪽 자리를 원하시나요, 통로쪽 자리를 원하시나요?", "audio": "audio/a04.mp3"},
+    {"role": "you", "speaker": "You", "en": "A window seat, please.", "ko": "창가쪽 자리로 부탁드립니다.", "audio": "audio/a05.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Okay. Do you have any bags to check?", "ko": "알겠습니다. 부치시킬 짐이 있으신가요?", "audio": "audio/a06.mp3"},
+    {"role": "you", "speaker": "You", "en": "Just this one suitcase.", "ko": "이 캐리어 하나만 있습니다.", "audio": "audio/a07.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Please place it on the scale. You're all set. Here's your boarding pass. Gate twenty-four.", "ko": "체중계 위에 올려 주세요. 모두 끝났습니다. 탐승권 여기 있습니다. 게이트는 24번입니다.", "audio": "audio/a08.mp3"},
+    {"role": "you", "speaker": "You", "en": "What time does boarding start?", "ko": "탐승은 몇 시에 시작하나요?", "audio": "audio/a09.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Boarding starts at ten fifteen. Have a nice flight!", "ko": "탐승은 10시 15분에 시작합니다. 좋은 비행 되세요!", "audio": "audio/a10.mp3"}
+  ],
+  "tips": [
+    {"en": "I'd like to check in for my flight to ~", "ko": "~ 항공기 탐승 수속하고 싶어요"},
+    {"en": "window seat / aisle seat", "ko": "창가쪽 / 통로쪽 자리"},
+    {"en": "bags to check", "ko": "부치시킬 짐"},
+    {"en": "boarding pass", "ko": "탐승권"},
+    {"en": "What time does boarding start?", "ko": "탐승은 몇 시에 시작하나요?"}
+  ],
+  "desc": "공항에서 항공기 탐승 수속할 때"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "03",
+  "slug": "cafe-order",
+  "title_en": "Ordering at a Cafe",
+  "title_ko": "카페 주문",
+  "subtitle": "카페 주문 · 문장별 음성 재생",
+  "turns": [
+    {"role": "them", "speaker": "Barista", "en": "Hi! What can I get for you today?", "ko": "안녕하세요! 오늘 무엇 드릴까요?", "audio": "audio/c01.mp3"},
+    {"role": "you", "speaker": "You", "en": "Hi. Can I have a large iced latte, please?", "ko": "안녕하세요. 라지 아이스 라떼 한 잔 주세요.", "audio": "audio/c02.mp3"},
+    {"role": "them", "speaker": "Barista", "en": "Sure. Would you like any flavor in that?", "ko": "네. 플레이버 넣으시겠어요?", "audio": "audio/c03.mp3"},
+    {"role": "you", "speaker": "You", "en": "Vanilla, please. And can I also get a blueberry muffin?", "ko": "바닐라 주세요. 그리고 블루베리 머핀도 하나 주세요.", "audio": "audio/c04.mp3"},
+    {"role": "them", "speaker": "Barista", "en": "Of course. For here or to go?", "ko": "물론이죠. 매장에서 드실건가요, 포장할까요?", "audio": "audio/c05.mp3"},
+    {"role": "you", "speaker": "You", "en": "To go, please.", "ko": "포장해 주세요.", "audio": "audio/c06.mp3"},
+    {"role": "them", "speaker": "Barista", "en": "That'll be eight dollars and fifty cents.", "ko": "8달러 50센트입니다.", "audio": "audio/c07.mp3"},
+    {"role": "you", "speaker": "You", "en": "Here you go. Can I pay by card?", "ko": "여기 있습니다. 카드로 결제해도 될까요?", "audio": "audio/c08.mp3"},
+    {"role": "them", "speaker": "Barista", "en": "Yes. Please tap your card here. Your order number is thirty-two.", "ko": "네. 이곳에 카드 대주세요. 주문 번호는 32번입니다.", "audio": "audio/c09.mp3"},
+    {"role": "you", "speaker": "You", "en": "Thank you!", "ko": "감사합니다!", "audio": "audio/c10.mp3"}
+  ],
+  "tips": [
+    {"en": "Can I have a ~, please?", "ko": "~ 주세요"},
+    {"en": "For here or to go?", "ko": "매장 / 포장"},
+    {"en": "Can I pay by card?", "ko": "카드로 결제해도 될까요?"},
+    {"en": "Please tap your card here.", "ko": "이곳에 카드 대주세요"},
+    {"en": "order number", "ko": "주문 번호"}
+  ],
+  "desc": "카페에서 음료와 디저트 주문할 때"
+}
