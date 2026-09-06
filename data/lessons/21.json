@@ -1,0 +1,102 @@
+{
+  "id": "21",
+  "slug": "dinner-reservation",
+  "title_en": "Dinner Reservation",
+  "title_ko": "저녁 예약",
+  "subtitle": "호텔 식당에 저녁 자리 예약하기",
+  "desc": "저녁에 호텔 레스토랑에 2인 예약을 잡고 조용한 자리와 채식 메뉴를 확인하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good evening. I'd like to make a dinner reservation for tonight.",
+      "ko": "안녕하세요. 오늘 저녁 식사 예약하고 싶어요.",
+      "audio": "audio/az01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Good evening. Of course. What time would you like, and for how many people?",
+      "ko": "안녕하세요. 물론이죠. 몇 시로, 몇 명이요?",
+      "audio": "audio/az02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Seven thirty, for two people, please.",
+      "ko": "7시 30분, 두 명이요.",
+      "audio": "audio/az03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Let me check. Yes, we have a table at seven thirty. Indoor or outdoor seating?",
+      "ko": "확인해 볼게요. 네, 7시 30분에 자리가 있습니다. 실내와 야외 중 어디가 좋으세요?",
+      "audio": "audio/az04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Indoor, please. It's a bit chilly tonight.",
+      "ko": "실내로 부탁해요. 오늘 밤이 좀 쌔쌔하네요.",
+      "audio": "audio/az05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "No problem. May I have your name and a contact number?",
+      "ko": "알겠습니다. 성함과 연락처를 알려 주시겠어요?",
+      "audio": "audio/az06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "The name is Park. I'm staying in room 412. Could we also get a quiet table?",
+      "ko": "이름은 Park이고, 412호에 묵고 있어요. 조용한 자리로 가능할까요?",
+      "audio": "audio/az07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "I'll note that. We can seat you by the window, away from the bar.",
+      "ko": "메모해 두겠습니다. 바에서 떨어진 창가 자리로 안내해 드릴게요.",
+      "audio": "audio/az08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. Do you have any vegetarian options on the menu?",
+      "ko": "좋아요. 메뉴에 채식 옵션도 있나요?",
+      "audio": "audio/az09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Yes. We have a mushroom risotto and a roasted vegetable plate. I'll hold the table for fifteen minutes.",
+      "ko": "네. 버섯 리조또와 구운 야채 플레이트가 있습니다. 자리는 15분 동안 잡아 둘게요.",
+      "audio": "audio/az10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "I'd like to make a dinner reservation for tonight.",
+      "ko": "오늘 저녁 식사 예약하고 싶어요."
+    },
+    {
+      "en": "What time would you like, and for how many people?",
+      "ko": "몇 시로, 몇 명이요?"
+    },
+    {
+      "en": "Indoor or outdoor seating?",
+      "ko": "실내와 야외 중 어디가 좋으세요?"
+    },
+    {
+      "en": "Could we also get a quiet table?",
+      "ko": "조용한 자리로 가능할까요?"
+    },
+    {
+      "en": "Do you have any vegetarian options on the menu?",
+      "ko": "메뉴에 채식 옵션도 있나요?"
+    }
+  ]
+}
