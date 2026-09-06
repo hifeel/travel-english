@@ -1,0 +1,98 @@
+{
+  "id": "29",
+  "slug": "wake-up-call",
+  "title_en": "Wake-up Call",
+  "title_ko": "모닝콜 요청",
+  "subtitle": "호텔 프런트에 모닝콜 부탁하기",
+  "desc": "호텔 프런트 데스크에 아침 모닝콜 시간을 요청하고 확인하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good evening. Could I arrange a wake-up call for tomorrow morning, please?",
+      "ko": "안녕하세요. 내일 아침 모닝콜 부탁드려도 될까요?",
+      "audio": "audio/wk01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Of course. What time would you like the call?",
+      "ko": "물론이죠. 몇 시에 전화 드릴까요?",
+      "audio": "audio/wk02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Six thirty, please. I have an early flight.",
+      "ko": "6시 30분 부탁드려요. 이른 비행기가 있어서요.",
+      "audio": "audio/wk03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Six thirty. And which room is that?",
+      "ko": "6시 30분이요. 객실 번호가 어떻게 되세요?",
+      "audio": "audio/wk04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Room 1205. Under the name Kim.",
+      "ko": "1205호입니다. 이름은 김입니다.",
+      "audio": "audio/wk05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Thank you, Mr. Kim. Would you like one call or a second reminder ten minutes later?",
+      "ko": "감사합니다, 김 씨. 한 번만 할까요, 아니면 10분 뒤에 한 번 더 할까요?",
+      "audio": "audio/wk06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Just one call is fine. Can you also tell me the breakfast hours again?",
+      "ko": "한 번이면 충분합니다. 조식 시간도 다시 알려 주시겠어요?",
+      "audio": "audio/wk07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Breakfast is from six thirty to ten. The restaurant is on the second floor.",
+      "ko": "조식은 6시 30분부터 10시까지입니다. 레스토랑은 2층에 있어요.",
+      "audio": "audio/wk08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. If I do not answer, will you call again?",
+      "ko": "완벽합니다. 제가 안 받으면 다시 전화해 주시나요?",
+      "audio": "audio/wk09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Yes. We will try twice. Have a good night.",
+      "ko": "네. 두 번 시도하겠습니다. 좋은 밤 되세요.",
+      "audio": "audio/wk10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Could I arrange a wake-up call for tomorrow morning?",
+      "ko": "내일 아침 모닝콜 부탁드려도 될까요?"
+    },
+    {
+      "en": "What time would you like the call?",
+      "ko": "몇 시에 전화 드릴까요?"
+    },
+    {
+      "en": "Would you like one call or a second reminder?",
+      "ko": "한 번만 할까요, 아니면 한 번 더 할까요?"
+    },
+    {
+      "en": "If I do not answer, will you call again?",
+      "ko": "제가 안 받으면 다시 전화해 주시나요?"
+    }
+  ]
+}
