@@ -1,39 +1,14 @@
 #!/usr/bin/env bash
-# Run on the Towns host where the towns-web docker container is running.
+# GitHub Pages 배포. Towns/MCP/docker 사용 안 함.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-DEST=/usr/share/nginx/html/travel-english
+cd "$ROOT"
 
-docker exec towns-web mkdir -p "$DEST/data/lessons" "$DEST/audio" "$DEST/icons"
-for f in index.html lesson.html app.js sw.js manifest.webmanifest manifest.json \
-         favicon.png apple-touch-icon.png \
-         01-hotel-checkin.html 02-airport-checkin.html 03-cafe-order.html \
-         04-taking-a-taxi.html 05-late-checkout.html; do
-  docker cp "$ROOT/$f" "towns-web:$DEST/$f"
-done
-
-if [ -f "$ROOT/data/index.json" ]; then
-  docker cp "$ROOT/data/index.json" "towns-web:$DEST/data/index.json"
-fi
-if [ -d "$ROOT/data/lessons" ]; then
-  docker cp "$ROOT/data/lessons/." "towns-web:$DEST/data/lessons/"
-fi
-# data/lessons.json is derived, not committed: index.html's loadLessons() reads
-# it before falling back to the split files, so build it here from data/lessons
-# rather than shipping a copy that can drift out of sync.
-if [ -f "$ROOT/data/index.json" ] && [ -d "$ROOT/data/lessons" ]; then
-  BUNDLE="$(mktemp -t lessons.json.XXXXXX)"
-  trap 'rm -f "$BUNDLE"' EXIT
-  python3 "$ROOT/scripts/build-lessons-json.py" "$ROOT" "$BUNDLE"
-  chmod 644 "$BUNDLE"  # mktemp makes it 0600 and docker cp keeps the mode
-  docker cp "$BUNDLE" "towns-web:$DEST/data/lessons.json"
+if [ -f data/index.json ] && [ -d data/lessons ]; then
+  python3 scripts/build-lessons-json.py "$ROOT" /tmp/travel-english-lessons.json
+  echo "Checked lessons bundle ($(python3 -c 'import json;print(len(json.load(open("/tmp/travel-english-lessons.json"))["lessons"]))') lessons)."
 fi
 
-if [ -d "$ROOT/icons" ]; then
-  docker cp "$ROOT/icons/." "towns-web:$DEST/icons/"
-fi
-if ls "$ROOT/audio"/*.mp3 >/dev/null 2>&1; then
-  docker cp "$ROOT/audio/." "towns-web:$DEST/audio/"
-fi
-
-echo "Deployed to towns-web:$DEST"
+echo "Deploy = git push origin main"
+echo "Live: https://hifeel.github.io/travel-english/"
+echo "MCP Towns / docker cp / towns.co.kr 경로는 써지 마십니다."
