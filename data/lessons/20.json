@@ -1,0 +1,116 @@
+{
+  "id": "20",
+  "slug": "late-checkout",
+  "title_en": "Late Check-out",
+  "title_ko": "레이트 체크아웃",
+  "subtitle": "호텔에서 늦은 체크아웃 요청하기",
+  "desc": "오후 비행기 때문에 호텔에 레이트 체크아웃을 요청하는 실전 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good afternoon. I need to check out tomorrow, but my flight is in the evening. Is a late check-out possible?",
+      "ko": "안녕하세요. 내일 체크아웃인데 비행기가 저녁이에요. 레이트 체크아웃이 가능할까요?",
+      "audio": "audio/lc01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Good afternoon. Let me check availability for you. What time would you like to check out?",
+      "ko": "안녕하세요. 가능 여부를 확인해 볼게요. 몇 시쯤 체크아웃하고 싶으세요?",
+      "audio": "audio/lc02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Around four or five o'clock would be perfect.",
+      "ko": "네 시나 다섯 시 정도가 좋겠어요.",
+      "audio": "audio/lc03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "We can offer a late check-out until four p.m. There is a small fee of twenty dollars.",
+      "ko": "오후 4시까지 레이트 체크아웃이 가능합니다. 추가 요금은 20달러입니다.",
+      "audio": "audio/lc04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That works for me. Can I pay the fee now?",
+      "ko": "그걸로 괜찮아요. 요금을 지금 낼 수 있을까요?",
+      "audio": "audio/lc05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Of course. I can add it to your room bill, or you can pay by card at the desk.",
+      "ko": "물론이죠. 객실 요금에 합산하거나 데스크에서 카드로 결제하실 수 있습니다.",
+      "audio": "audio/lc06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Please add it to my room bill. Will I still get a full breakfast tomorrow?",
+      "ko": "객실 요금에 합산해 주세요. 내일 조식도 그대로 이용할 수 있나요?",
+      "audio": "audio/lc07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Yes, breakfast is included until ten. After check-out, you can leave your luggage at the front desk.",
+      "ko": "네, 조식은 오전 10시까지 포함입니다. 체크아웃 후에는 짐을 프런트에 맡기실 수 있어요.",
+      "audio": "audio/lc08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That's very helpful. Is there a place nearby to store bags for a few hours?",
+      "ko": "정말 도움이 되네요. 근처에 몇 시간 짐을 보관할 곳이 있나요?",
+      "audio": "audio/lc09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "We can keep your bags here free of charge until six o'clock. Just pick them up before you leave for the airport.",
+      "ko": "여기 프런트에서 오후 6시까지 무료로 보관해 드립니다. 공항 가시기 전에 찾아가시면 됩니다.",
+      "audio": "audio/lc10.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. Thank you so much for arranging this.",
+      "ko": "완벽해요. 이렇게 해주셔서 정말 감사합니다.",
+      "audio": "audio/lc11.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "You're welcome. Enjoy the rest of your stay, and have a safe flight tomorrow.",
+      "ko": "천만에요. 남은 숙박 즐겁게 보내시고, 내일 안전한 여행 되세요.",
+      "audio": "audio/lc12.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Is a late check-out possible?",
+      "ko": "레이트 체크아웃이 가능할까요?"
+    },
+    {
+      "en": "There is a small fee of twenty dollars.",
+      "ko": "추가 요금은 20달러입니다."
+    },
+    {
+      "en": "Please add it to my room bill.",
+      "ko": "객실 요금에 합산해 주세요."
+    },
+    {
+      "en": "You can leave your luggage at the front desk.",
+      "ko": "짐을 프런트에 맡기실 수 있어요."
+    },
+    {
+      "en": "Have a safe flight.",
+      "ko": "안전한 여행 되세요."
+    }
+  ]
+}
