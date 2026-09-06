@@ -2,9 +2,18 @@
 
 여행에서 바로 쓰는 영어 회화 PWA.
 
-라이브: https://towns.co.kr/travel-english/
+라이브: https://hifeel.github.io/travel-english/
 
-저장소: https://github.com/hifeel/travel-english (private)
+저장소: https://github.com/hifeel/travel-english
+
+## GitHub Pages
+
+1. 저장소를 **Public** 로 바꿉니다. (Pages는 public 저장소에서 무료입니다.)
+2. GitHub 저장소 → **Settings** → **Pages**
+3. Source를 **GitHub Actions** 로 선택합니다.
+4. **Actions** 탭에서 `Deploy GitHub Pages` 워크플로가 돌아가면 사이트가 열립니다.
+
+이후에는 `main`에 push하면 자동 배포됩니다. Towns 서버 / MCP / `deploy.sh`는 필요 없습니다.
 
 ## 구성
 
@@ -14,51 +23,27 @@
 | `lesson.html` | 대화 화면 |
 | `app.js` | 공통 재생/완료/데이터 로더 |
 | `data/index.json` | 대화 ID 목록 |
-| `data/lessons/*.json` | 대화 데이터 (문장·번역) |
-| `audio/` | MP3. 평소에는 gitignore. 배포 때만 GitHub에 올렸다가 서버가 받아감 |
+| `data/lessons/*.json` | 대화 데이터 |
+| `audio/` | MP3 |
 | `icons/` | PWA 아이콘 |
+| `manifest.json` | PWA 매니페스트 |
+| `sw.js` | 서비스 워커 |
 
-## 음성 배포 흐름 (GitHub → Towns)
-
-1. 새 MP3를 `audio/` 에 쿠밋하고 GitHub `main` 에 푸시한다.
-2. Towns 호스트에서 서버가 GitHub API로 받아 nginx 경로에 넣는다.
-3. 필요하면 푸시 후 `audio/*.mp3` 은 저장소에서 지운다. 라이브 사이트 파일은 그대로 남는다.
-
-```bash
-# Towns 호스트
-export GITHUB_TOKEN=...   # private repo 읽기
-./scripts/pull-audio-from-github.sh audio/b01.mp3 audio/b10.mp3
-# 또는 없는 MP3만 자동
-./scripts/pull-audio-from-github.sh
-```
-
-private repo라 `raw.githubusercontent.com` 혼자 접속은 안 되고, API + 토큰이 필요합니다.
-
-로컬에서 라이브 사이트 음성을 받으려면:
-
-```bash
-./scripts/fetch-media.sh
-```
-
-## 로컬에서 보기
+## 로컬
 
 ```bash
 git clone git@github.com:hifeel/travel-english.git
 cd travel-english
-./scripts/fetch-media.sh
 python3 -m http.server 8080
 ```
 
 http://localhost:8080
 
-## 데이터만 고치기
+## 새 대화 추가
 
-새 대화는 `data/lessons/18.json` 처럼 만들고 `data/index.json` 에 ID를 추가합니다.
+1. `data/lessons/28.json` 처럼 JSON을 만듭니다.
+2. `data/index.json`에 ID를 넣습니다.
+3. `audio/`에 mp3를 넣습니다.
+4. `main`에 push합니다.
 
-- `role`: `you` (여성 ara) / 그 외 스태프 (남성 orion)
-
-## Towns 서버 배포
-
-```bash
-./scripts/deploy.sh
-```
+- `role`: `you` → en-US-JennyNeural / 스태프 → en-US-GuyNeural
