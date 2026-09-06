@@ -2,5 +2,4 @@
 *.zip
 .idea/
 .vscode/
-icons/*.png
 data/lessons.json
