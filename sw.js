@@ -1,12 +1,12 @@
-const CACHE = 'travel-english-v20';
+const CACHE = 'travel-english-v21';
 const PRECACHE = [
   './',
   'index.html',
   'lesson.html',
   'app.js',
   'manifest.json',
-  'icons/icon-192.png',
-  'icons/icon-512.png'
+  'icons/icon-192-v2.png',
+  'icons/icon-512-v2.png'
 ];
 
 self.addEventListener('install', function(event) {

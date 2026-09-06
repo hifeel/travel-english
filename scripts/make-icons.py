@@ -20,6 +20,11 @@ TAIL = (0.455, 0.955)
 
 SS = 4  # supersampling factor
 
+# Bumped whenever the artwork changes. The filenames carry it so a CDN that
+# still holds the previous icons cannot serve them under the new manifest --
+# stale corrupt icons at the edge are exactly what broke installability once.
+V = "v2"
+
 
 def draw(size, plane_scale):
     """Render one icon. plane_scale is the plane's share of the canvas."""
@@ -45,16 +50,16 @@ def main():
     os.chdir(root)
 
     # purpose "any": the plane fills most of the tile.
-    draw(192, 0.68).save("icons/icon-192.png")
-    draw(512, 0.68).save("icons/icon-512.png")
+    draw(192, 0.68).save("icons/icon-192-%s.png" % V)
+    draw(512, 0.68).save("icons/icon-512-%s.png" % V)
     # purpose "maskable": keep the plane inside the 80% safe zone.
-    draw(512, 0.48).save("icons/icon-maskable-512.png")
+    draw(512, 0.48).save("icons/icon-maskable-512-%s.png" % V)
 
     for name in ("favicon.png", "apple-touch-icon.png"):
         draw(192, 0.68).save(name)
 
-    for p in ("icons/icon-192.png", "icons/icon-512.png",
-              "icons/icon-maskable-512.png", "favicon.png",
+    for p in ("icons/icon-192-%s.png" % V, "icons/icon-512-%s.png" % V,
+              "icons/icon-maskable-512-%s.png" % V, "favicon.png",
               "apple-touch-icon.png"):
         print("%-30s %d bytes" % (p, os.path.getsize(p)))
 
