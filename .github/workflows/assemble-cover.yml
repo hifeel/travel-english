@@ -1,0 +1,41 @@
+name: Assemble lesson 28 cover
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "images/parts/28-wifi.*"
+      - ".github/workflows/assemble-cover.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode cover JPEG
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64
+          parts = sorted(Path('images/parts').glob('28-wifi.*.txt'))
+          if not parts:
+              raise SystemExit('no parts')
+          data = ''.join(p.read_text().strip() for p in parts)
+          Path('images').mkdir(exist_ok=True)
+          Path('images/28-wifi.jpg').write_bytes(base64.b64decode(data))
+          print('wrote', Path('images/28-wifi.jpg').stat().st_size)
+          PY
+      - name: Commit JPEG cover
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add images/28-wifi.jpg
+          if git diff --staged --quiet; then
+            echo no change
+          else
+            git commit -m "Add photoreal cover for lesson 28"
+            git push
+          fi
