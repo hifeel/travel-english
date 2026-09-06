@@ -1,4 +1,4 @@
-const CACHE = 'travel-english-v11';
+const CACHE = 'travel-english-v12';
 const PRECACHE = [
   '/travel-english/',
   '/travel-english/index.html',

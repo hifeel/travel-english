@@ -6,11 +6,21 @@
   var playAllIndex = 0;
   var showEn = true;
   var showKo = true;
+  var REPEAT_KEY = 'te-repeat';
   var repeatOn = false;
+  try { repeatOn = localStorage.getItem(REPEAT_KEY) === '1'; } catch (e) {}
   var advanceTimer = null;
 
   function turns() {
-    return Array.prototype.slice.call(document.querySelectorAll('.turn'));
+    return Array.prototype.slice.call(document.querySelectorAll('.turn')).filter(function (t) {
+      var src = t.getAttribute('data-src');
+      return src && t.querySelector('.play-btn');
+    });
+  }
+  function syncPlayAllBtn() {
+    var a = playAllBtn();
+    if (!a) return;
+    a.classList.toggle('is-hidden', turns().length === 0);
   }
   function playAllBtn() {
     return document.getElementById('playAllBtn');
@@ -54,15 +64,14 @@
       btn.textContent = '\u25a0';
     }
   }
+  var playSeq = 0;
   function killAudio() {
     clearAdvanceTimer();
+    playSeq += 1;
     try { speechSynthesis.cancel(); } catch (e) {}
     if (currentAudio) {
-      currentAudio.onended = null;
-      currentAudio.onerror = null;
-      currentAudio.ontimeupdate = null;
       try { currentAudio.pause(); } catch (e) {}
-      try { currentAudio.removeAttribute('src'); currentAudio.load(); } catch (e) {}
+      try { currentAudio.currentTime = 0; } catch (e) {}
       currentAudio = null;
     }
   }
@@ -89,41 +98,36 @@
   }
   function playSrc(el, onDone) {
     var src = el.getAttribute('data-src');
+    killAudio();
+    var seq = playSeq;
     var finished = false;
+    function alive() { return seq === playSeq && currentTurn === el; }
     function done() {
-      if (finished) return;
+      if (finished || seq !== playSeq) return;
       finished = true;
       clearAdvanceTimer();
       if (onDone) onDone();
     }
-    killAudio();
     currentTurn = el;
     markPlaying(el);
     if (!src) {
-      speakFallback(el, done);
+      done();
       return;
     }
     var audio = new Audio();
     currentAudio = audio;
     audio.preload = 'auto';
-    audio.src = src + (src.indexOf('?') >= 0 ? '&' : '?') + 'v=8';
+    audio.src = src + (src.indexOf('?') >= 0 ? '&' : '?') + 'v=13';
     audio.addEventListener('ended', function () {
-      if (audio.currentTime < 0.35) return;
+      if (!alive()) return;
       done();
     });
     audio.addEventListener('error', function () {
-      speakFallback(el, done);
-    });
-    audio.addEventListener('loadedmetadata', function () {
-      var dur = audio.duration;
-      if (isFinite(dur) && dur > 0.4) {
-        advanceTimer = setTimeout(function () {
-          if (!finished && currentTurn === el && audio.ended) done();
-        }, Math.ceil(dur * 1000) + 800);
-      }
+      if (!alive()) return;
+      done();
     });
     var p = audio.play();
-    if (p && p.catch) p.catch(function () { speakFallback(el, done); });
+    if (p && p.catch) p.catch(function () { if (alive()) done(); });
   }
   function playTurn(el) {
     if (currentTurn === el && currentAudio && !currentAudio.paused && !playAllMode) {
@@ -171,7 +175,7 @@
       playAllIndex += 1;
       setTimeout(function () {
         if (playAllMode) playNextInAll();
-      }, 350);
+      }, 80);
     });
   }
   function playAll() {
@@ -179,6 +183,7 @@
       stopCurrent();
       return;
     }
+    if (!turns().length) return;
     playAllMode = true;
     playAllIndex = 0;
     var a = playAllBtn();
@@ -199,17 +204,27 @@
       document.getElementById('toggleKo').classList.toggle('off', !showKo);
     }
   }
-  function toggleRepeat() {
-    repeatOn = !repeatOn;
+  function syncRepeatBtn() {
     var btn = document.getElementById('toggleRepeat');
     if (btn) btn.classList.toggle('off', !repeatOn);
+  }
+  function toggleRepeat() {
+    repeatOn = !repeatOn;
+    try { localStorage.setItem(REPEAT_KEY, repeatOn ? '1' : '0'); } catch (e) {}
+    syncRepeatBtn();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncRepeatBtn);
+  } else {
+    setTimeout(syncRepeatBtn, 0);
   }
   global.TEPlayer = {
     playTurn: playTurn,
     playAll: playAll,
     toggleLang: toggleLang,
     toggleRepeat: toggleRepeat,
-    stopCurrent: stopCurrent
+    stopCurrent: stopCurrent,
+    syncPlayAllBtn: syncPlayAllBtn
   };
 })(window);
 (function (global) {
@@ -241,7 +256,7 @@
   global.TEDone = { isDone: isDone, setDone: setDone, toggle: toggle, load: load };
 })(window);
 (function (global) {
-  var V = '9';
+  var V = '14';
   function fetchJson(url) {
     return fetch(url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + V).then(function (r) {
       if (!r.ok) throw new Error(url);
