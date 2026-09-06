@@ -5,7 +5,10 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST=/usr/share/nginx/html/travel-english
 
 docker exec towns-web mkdir -p "$DEST/data/lessons" "$DEST/audio" "$DEST/icons"
-for f in index.html lesson.html app.js sw.js manifest.webmanifest; do
+for f in index.html lesson.html app.js sw.js manifest.webmanifest manifest.json \
+         favicon.png apple-touch-icon.png \
+         01-hotel-checkin.html 02-airport-checkin.html 03-cafe-order.html \
+         04-taking-a-taxi.html 05-late-checkout.html; do
   docker cp "$ROOT/$f" "towns-web:$DEST/$f"
 done
 

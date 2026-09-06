@@ -1,0 +1,102 @@
+{
+  "id": "27",
+  "slug": "paying-the-bill",
+  "title_en": "Paying the Bill",
+  "title_ko": "식당 계산",
+  "subtitle": "식당에서 계산하고 나누기",
+  "desc": "식사 후 계산서를 부탁하고 카드·팁을 말하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me. Could we have the check, please?",
+      "ko": "실례합니다. 계산서 주세요.",
+      "audio": "audio/pb01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "Sure. Would you like that together or split?",
+      "ko": "네. 함께 계산할까요, 나눌까요?",
+      "audio": "audio/pb02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Together, please. Can I pay by card?",
+      "ko": "함께 해 주세요. 카드로 가능한가요?",
+      "audio": "audio/pb03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "Yes. We take Visa, Mastercard, and Apple Pay.",
+      "ko": "네. 비자, 마스터카드, 애플페이 됩니다.",
+      "audio": "audio/pb04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Is service included?",
+      "ko": "서비스 요금이 포함되어 있나요?",
+      "audio": "audio/pb05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "An eighteen percent service charge is already included.",
+      "ko": "서비스 요금 18%가 이미 포함되어 있습니다.",
+      "audio": "audio/pb06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Great. Could I get a receipt?",
+      "ko": "좋습니다. 영수증도 주실 수 있나요?",
+      "audio": "audio/pb07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "Of course. Printed or emailed?",
+      "ko": "물론이죠. 인쇄로 드릴까요, 이메일로 드릴까요?",
+      "audio": "audio/pb08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Printed is fine. Thank you. The food was excellent.",
+      "ko": "인쇄로 주세요. 감사합니다. 음식이 정말 맛있었어요.",
+      "audio": "audio/pb09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "I'm glad you enjoyed it. Have a good evening.",
+      "ko": "맛있게 드셨다니 기쁘네요. 좋은 저녁 되세요.",
+      "audio": "audio/pb10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Could we have the check, please?",
+      "ko": "계산서 주세요."
+    },
+    {
+      "en": "Together or split?",
+      "ko": "함께 계산할까요, 나눌까요?"
+    },
+    {
+      "en": "Can I pay by card?",
+      "ko": "카드로 가능한가요?"
+    },
+    {
+      "en": "Is service included?",
+      "ko": "서비스 요금이 포함되어 있나요?"
+    },
+    {
+      "en": "Could I get a receipt?",
+      "ko": "영수증 주실 수 있나요?"
+    }
+  ]
+}

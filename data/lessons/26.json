@@ -1,0 +1,109 @@
+{
+  "id": "26",
+  "slug": "airport-security",
+  "title_en": "Airport Security",
+  "title_ko": "항공 보안검색",
+  "subtitle": "보안검색대에서 안내 따라하기",
+  "desc": "항공 보안검색대에서 노트북·액체·전자기기를 제출하고 통과하는 회화",
+  "turns": [
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "Please have your boarding pass and ID ready.",
+      "ko": "탑승권과 신분증을 준비해 주세요.",
+      "audio": "audio/as01.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Here they are. Do I need to take off my shoes?",
+      "ko": "여기 있습니다. 신발도 벗어야 하나요?",
+      "audio": "audio/as02.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "Yes, shoes, belt, and jacket in the bin, please.",
+      "ko": "네. 신발, 벨트, 자켓은 상자에 넣어 주세요.",
+      "audio": "audio/as03.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Should I take my laptop out of the bag?",
+      "ko": "노트북을 가방에서 꺼내야 하나요?",
+      "audio": "audio/as04.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "Yes. Laptops and liquids in a separate tray.",
+      "ko": "네. 노트북과 액체는 따로 트레이에 넣어 주세요.",
+      "audio": "audio/as05.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "This water bottle is almost empty. Is that okay?",
+      "ko": "이 물병은 거의 비어 있어요. 괜찮을까요?",
+      "audio": "audio/as06.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "Please finish it or throw it away before the scanner.",
+      "ko": "스캐너 앞에서 다 마시거나 버려 주세요.",
+      "audio": "audio/as07.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Okay. Can I keep my phone in my pocket?",
+      "ko": "알겠습니다. 핸드폰은 주머니에 그냥 두어도 될까요?",
+      "audio": "audio/as08.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "No. Put your phone and keys in the tray as well.",
+      "ko": "아니요. 핸드폰과 열쇠도 트레이에 넣어 주세요.",
+      "audio": "audio/as09.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Got it. Thank you.",
+      "ko": "알겠습니다. 감사합니다.",
+      "audio": "audio/as10.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Officer",
+      "en": "Please walk through when the light turns green.",
+      "ko": "표시등이 초록으로 바뀌면 지나가세요.",
+      "audio": "audio/as11.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Please have your boarding pass and ID ready.",
+      "ko": "탑승권과 신분증을 준비해 주세요."
+    },
+    {
+      "en": "Do I need to take off my shoes?",
+      "ko": "신발도 벗어야 하나요?"
+    },
+    {
+      "en": "Should I take my laptop out of the bag?",
+      "ko": "노트북을 가방에서 꺼내야 하나요?"
+    },
+    {
+      "en": "Laptops and liquids in a separate tray.",
+      "ko": "노트북과 액체는 따로 트레이에 넣어 주세요."
+    },
+    {
+      "en": "Walk through when the light turns green.",
+      "ko": "표시등이 초록으로 바뀌면 지나가세요."
+    }
+  ]
+}

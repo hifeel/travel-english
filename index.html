@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#2563eb">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Travel English">
-  <link rel="apple-touch-icon" href="icons/icon-192.png">
-  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js');}</script>
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
+  <script>(function(){if(!('serviceWorker' in navigator))return;window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(e){console.warn(e);});});})();</script>
 
   <title>Travel English - 여행 영어 회화</title>
   <style>
@@ -34,7 +36,7 @@
     .card.done .badge { background:#e2e8f0; color:#64748b; }
     .done-mark { margin-left:auto; font-size:11px; font-weight:600; color:#64748b; background:#e2e8f0; padding:2px 8px; border-radius:999px; flex-shrink:0; }
 
-    .install { display:none; margin:0 auto 10px; background:#2563eb; color:#fff; border:none; border-radius:10px; padding:12px 16px; font-size:15px; font-weight:700; width:100%; cursor:pointer; }
+    .install { display:block; margin:0 auto 10px; background:#2563eb; color:#fff; border:none; border-radius:10px; padding:12px 16px; font-size:15px; font-weight:700; width:100%; cursor:pointer; }
     .hint { text-align:center; color:#64748b; font-size:12px; margin-bottom:10px; }
     footer { text-align:center; margin-top:40px; color:var(--muted); font-size:13px; }
   </style>
@@ -46,9 +48,9 @@
       <p>여행에서 바로 쓰는 영어 회화</p>
     </header>
     <button class="install" id="installBtn">홈 화면에 앱 추가</button>
-    <p class="hint">안드로이드: 크롬 메뉴 → 홈 화면에 추가 / 앱 설치</p>
+    <p class="hint">삼성 인터넷: 아래 메뉴(☰) → <b>페이지 추가</b> → <b>홈 화면</b><br>크롬: 오른쪽 위 ⋮ → <b>앱 설치</b></p>
 
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=15"></script>
     <div id="list"></div>
     <footer>Powered by Grok + MCP Towns</footer>
   </div>
