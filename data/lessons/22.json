@@ -1,0 +1,27 @@
+{
+  "id": "22",
+  "slug": "renting-a-car",
+  "title_en": "Renting a Car",
+  "title_ko": "렌터카 빌리기",
+  "subtitle": "공항에서 렌터카 계약하고 보험·반납 확인하기",
+  "desc": "공항 렌터카 데스크에서 예약 확인, 보험, 주유, 반납 장소를 묻는 회화",
+  "turns": [
+    {"role": "you", "speaker": "You (Traveler)", "en": "Hi. I have a reservation under the name Park.", "ko": "안녕하세요. Park 이름으로 예약되어 있어요.", "audio": "audio/ba01.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Good afternoon. May I see your driver's license and a credit card?", "ko": "안녕하세요. 운전면허증과 신용카드 보여주시겠어요?", "audio": "audio/ba02.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Sure. Here they are. It's a compact car for three days, right?", "ko": "네, 여기요. 소형차 3일 맞죠?", "audio": "audio/ba03.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "That's right. Would you like full coverage insurance? It's twenty dollars a day.", "ko": "맞습니다. 종합보험 들까요? 하루 20달러예요.", "audio": "audio/ba04.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Yes, please. I want full coverage.", "ko": "네, 종합보험으로 부탁해요.", "audio": "audio/ba05.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Okay. Please return the car with a full tank. There's a gas station just outside the lot.", "ko": "알겠습니다. 기름을 가득 채워서 반납해 주세요. 주차장 바로 밖에 주유소가 있어요.", "audio": "audio/ba06.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Got it. Where should I return the car on Friday?", "ko": "알겠어요. 금요일에 차는 어디에 반납하면 되나요?", "audio": "audio/ba07.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Same counter. Drop-off is on the first floor of the parking garage.", "ko": "같은 카운터예요. 반납은 주차장 1층입니다.", "audio": "audio/ba08.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Is there a GPS in the car?", "ko": "차에 GPS가 있나요?", "audio": "audio/ba09.mp3"},
+    {"role": "them", "speaker": "Agent", "en": "Yes. The keys are on the counter. Have a safe drive.", "ko": "네. 열쇠는 카운터에 두었습니다. 안전 운전하세요.", "audio": "audio/ba10.mp3"}
+  ],
+  "tips": [
+    {"en": "I have a reservation under the name ~", "ko": "~ 이름으로 예약되어 있어요"},
+    {"en": "Would you like full coverage insurance?", "ko": "종합보험 들까요?"},
+    {"en": "Please return the car with a full tank.", "ko": "기름을 가득 채워서 반납해 주세요"},
+    {"en": "Where should I return the car?", "ko": "차는 어디에 반납하면 되나요?"},
+    {"en": "Is there a GPS in the car?", "ko": "차에 GPS가 있나요?"}
+  ]
+}

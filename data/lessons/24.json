@@ -1,0 +1,27 @@
+{
+  "id": "24",
+  "slug": "room-service",
+  "title_en": "Room Service",
+  "title_ko": "룸서비스",
+  "subtitle": "호텔 룸서비스로 저녁 주문하기",
+  "desc": "객실에서 룸서비스로 음식과 음료를 주문하고 도착 시간을 확인하는 회화",
+  "turns": [
+    {"role": "you", "speaker": "You (Traveler)", "en": "Hello. I'd like to order room service, please.", "ko": "안녕하세요. 룸서비스 주문하고 싶어요.", "audio": "audio/bc01.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "Of course. What's your room number?", "ko": "네. 객실 번호가 어떻게 되세요?", "audio": "audio/bc02.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Room 412. Could I get a club sandwich and a Caesar salad?", "ko": "412호요. 클럽 샌드위치랑 시저 샐러드 부탁드려요.", "audio": "audio/bc03.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "Sure. Would you like anything to drink?", "ko": "알겠습니다. 음료는 무엇을 드릴까요?", "audio": "audio/bc04.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "A bottle of still water and an orange juice, please.", "ko": "탄산 없는 생수 한 병이랑 오렌지 주스 주세요.", "audio": "audio/bc05.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "Any allergies we should know about?", "ko": "알레르기가 있으신가요?", "audio": "audio/bc06.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "No nuts, please. How long will it take?", "ko": "견과류는 빼 주세요. 얼마나 걸려요?", "audio": "audio/bc07.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "About twenty-five minutes. We'll knock and leave the tray if you prefer.", "ko": "약 25분이요. 원하시면 노크하고 트레이만 두고 갈게요.", "audio": "audio/bc08.mp3"},
+    {"role": "you", "speaker": "You (Traveler)", "en": "Please bring it in. Can I charge it to the room?", "ko": "방으로 들어와 주세요. 객실 앞으로 결제해도 될까요?", "audio": "audio/bc09.mp3"},
+    {"role": "them", "speaker": "Staff", "en": "Yes. I'll add it to your bill. See you shortly.", "ko": "네. 계산서에 넣어 드릴게요. 곧 가겠습니다.", "audio": "audio/bc10.mp3"}
+  ],
+  "tips": [
+    {"en": "I'd like to order room service.", "ko": "룸서비스 주문하고 싶어요"},
+    {"en": "What's your room number?", "ko": "객실 번호가 어떻게 되세요?"},
+    {"en": "Would you like anything to drink?", "ko": "음료는 무엇을 드릴까요?"},
+    {"en": "How long will it take?", "ko": "얼마나 걸려요?"},
+    {"en": "Can I charge it to the room?", "ko": "객실 앞으로 결제해도 될까요?"}
+  ]
+}
