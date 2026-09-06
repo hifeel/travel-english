@@ -11,7 +11,7 @@
     {"role": "you", "speaker": "You (Traveler)", "en": "Is it included in my stay?", "ko": "숙박비에 포함되어 있나요?", "audio": "audio/hb03.mp3"},
     {"role": "them", "speaker": "Receptionist", "en": "Yes, breakfast is included with your room. Just show your key card at the entrance.", "ko": "네, 조식은 객실 요금에 포함되어 있습니다. 입구에서 키카드만 보여 주세요.", "audio": "audio/hb04.mp3"},
     {"role": "you", "speaker": "You (Traveler)", "en": "Great. Do you have vegetarian options?", "ko": "좋습니다. 채식 메뉴도 있나요?", "audio": "audio/hb05.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "We do. There is an omelet station, fresh fruit, yogurt, and a vegetarian hot dish.", "ko": "있습니다. 오멐렛 스테이션, 생과일, 요거트, 채식 따뜻한 요리가 있어요.", "audio": "audio/hb06.mp3"},
+    {"role": "them", "speaker": "Receptionist", "en": "We do. There is an omelet station, fresh fruit, yogurt, and a vegetarian hot dish.", "ko": "있습니다. 오믈렛 스테이션, 생과일, 요거트, 채식 따뜻한 요리가 있어요.", "audio": "audio/hb06.mp3"},
     {"role": "you", "speaker": "You (Traveler)", "en": "Could I also get a coffee to go after I eat?", "ko": "식사 후에 커피도 포장할 수 있을까요?", "audio": "audio/hb07.mp3"},
     {"role": "them", "speaker": "Receptionist", "en": "Of course. There is a coffee machine near the exit. Cups are next to it.", "ko": "물론이죠. 출구 근처에 커피 머신이 있고, 컵은 오른쪽에 있습니다.", "audio": "audio/hb08.mp3"},
     {"role": "you", "speaker": "You (Traveler)", "en": "Perfect. Where are the elevators?", "ko": "완벽합니다. 엘리베이터는 어디에 있나요?", "audio": "audio/hb09.mp3"},
