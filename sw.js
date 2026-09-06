@@ -1,4 +1,4 @@
-const CACHE = 'travel-english-v19';
+const CACHE = 'travel-english-v20';
 const PRECACHE = [
   './',
   'index.html',
