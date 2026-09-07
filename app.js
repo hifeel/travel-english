@@ -256,6 +256,67 @@
   global.TEDone = { isDone: isDone, setDone: setDone, toggle: toggle, load: load };
 })(window);
 (function (global) {
+  var KEY = 'te-bookmarks-v1';
+  function load() {
+    try {
+      var a = JSON.parse(localStorage.getItem(KEY) || '[]');
+      return Array.isArray(a) ? a : [];
+    } catch (e) { return []; }
+  }
+  function save(a) {
+    try { localStorage.setItem(KEY, JSON.stringify(a)); } catch (e) {}
+  }
+  function makeKey(lessonId, turnIndex) {
+    return String(lessonId) + ':' + String(turnIndex);
+  }
+  function has(lessonId, turnIndex) {
+    var k = makeKey(lessonId, turnIndex);
+    return load().some(function (item) { return item.key === k; });
+  }
+  function toggle(lessonId, turnIndex, turn, lesson) {
+    var k = makeKey(lessonId, turnIndex);
+    var list = load();
+    var idx = -1;
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].key === k) {
+        idx = i;
+        break;
+      }
+    }
+    if (idx >= 0) {
+      list.splice(idx, 1);
+      save(list);
+      return false;
+    } else {
+      list.unshift({
+        key: k,
+        lessonId: String(lessonId),
+        lessonTitleEn: (lesson && lesson.title_en) || '',
+        lessonTitleKo: (lesson && lesson.title_ko) || '',
+        turnIndex: turnIndex,
+        speaker: (turn && (turn.speaker || (turn.role === 'you' ? 'You' : 'Staff'))) || '',
+        role: (turn && turn.role) || '',
+        en: (turn && turn.en) || '',
+        ko: (turn && turn.ko) || '',
+        audio: (turn && turn.audio) || '',
+        time: Date.now()
+      });
+      save(list);
+      return true;
+    }
+  }
+  function remove(key) {
+    var list = load().filter(function (item) { return item.key !== key; });
+    save(list);
+  }
+  global.TEBookmark = {
+    load: load,
+    has: has,
+    toggle: toggle,
+    remove: remove
+  };
+})(window);
+(function (global) {
   // Reuse the ?v= this file was loaded with rather than keeping a second
   // number in sync by hand. app.js?v=16 once served a body that still asked
   // for lessons.json?v=15, so a browser holding the old script kept showing
