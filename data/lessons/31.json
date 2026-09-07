@@ -1,0 +1,98 @@
+{
+  "id": "31",
+  "slug": "night-market",
+  "title_en": "At a Night Market",
+  "title_ko": "야시장에서",
+  "subtitle": "야시장에서 길거리 음식 주문하기",
+  "desc": "저녁에 야시장을 찾아 인기 메뉴를 고르고 가격과 결제 방법을 확인하는 실전 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me, is this the entrance to the night market?",
+      "ko": "실례합니다. 여기가 야시장 입구인가요?",
+      "audio": "audio/nm01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Vendor",
+      "en": "Yes, it is. Come on in. It gets busier after eight.",
+      "ko": "네, 맞아요. 들어오세요. 여덟 시 이후에는 더 붐빕니다.",
+      "audio": "audio/nm02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "What do you recommend for someone trying it for the first time?",
+      "ko": "처음 와 본 사람에게 추천할 만한 게 있을까요?",
+      "audio": "audio/nm03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Vendor",
+      "en": "The grilled squid and the mango sticky rice are really popular tonight.",
+      "ko": "오늘 밤은 구운 오징어랑 망고 찰떡이 정말 인기예요.",
+      "audio": "audio/nm04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "How much is one serving of the grilled squid?",
+      "ko": "구운 오징어 한 인분은 얼마인가요?",
+      "audio": "audio/nm05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Vendor",
+      "en": "It is eight dollars. Would you like it mild or spicy?",
+      "ko": "8달러입니다. 순한 맛으로 하실래요, 매운 맛으로 하실래요?",
+      "audio": "audio/nm06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Mild, please. And can I get a large mango sticky rice as well?",
+      "ko": "순한 맛으로 주세요. 그리고 망고 찰떡 큰 사이즈도 하나 주세요.",
+      "audio": "audio/nm07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Vendor",
+      "en": "Sure. That comes to fourteen dollars in total.",
+      "ko": "알겠습니다. 총 14달러입니다.",
+      "audio": "audio/nm08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Do you take credit cards?",
+      "ko": "신용카드 받으시나요?",
+      "audio": "audio/nm09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Vendor",
+      "en": "Cash only, sorry. There is an ATM just around the corner.",
+      "ko": "현금만 됩니다, 죄송합니다. 바로 모퉁이에 ATM이 있어요.",
+      "audio": "audio/nm10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Many night market stalls accept cash only. Carry small bills.",
+      "ko": "야시장 노점은 현금만 받는 경우가 많아요. 잔돈을 준비하세요."
+    },
+    {
+      "en": "Ask for mild or less spicy if you are not used to local heat levels.",
+      "ko": "매운맛에 익숙하지 않다면 mild나 less spicy를 요청하세요."
+    },
+    {
+      "en": "Pointing at the food and smiling works well when the vendor speaks little English.",
+      "ko": "상인이 영어를 잘 못해도 음식을 가리키며 미소 지으면 통합니다."
+    },
+    {
+      "en": "Try the popular items first. Vendors often know what sells best that night.",
+      "ko": "인기 메뉴부터 드셔 보세요. 상인들이 그날 잘 팔리는 걸 잘 압니다."
+    }
+  ]
+}
