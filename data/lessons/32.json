@@ -1,0 +1,112 @@
+{
+  "id": "32",
+  "slug": "pharmacy-cold",
+  "title_en": "At the Pharmacy",
+  "title_ko": "약국에서",
+  "subtitle": "저녁에 약국에서 감기약 사기",
+  "desc": "여행 중 목이 아파 약국을 찾아 증상, 복용법, 처방전 없이 살 수 있는 약을 확인하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me. I have a sore throat and a light fever.",
+      "ko": "실례합니다. 목이 아프고 열이 살짝 있어요.",
+      "audio": "audio/ph01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "I'm sorry to hear that. How long have you had the symptoms?",
+      "ko": "많이 힘드시겠어요. 증상이 생긴 지 얼마나 됐나요?",
+      "audio": "audio/ph02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Since this morning. Would it be possible to get something without a prescription?",
+      "ko": "오늘 아침부터요. 처방전 없이 살 수 있는 약이 있을까요?",
+      "audio": "audio/ph03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "Yes. I can give you throat lozenges and a fever reducer. Are you allergic to any medicine?",
+      "ko": "네. 목캔디랑 해열제를 드릴 수 있어요. 약 알레르기가 있으신가요?",
+      "audio": "audio/ph04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "No allergies. Can I take them with food?",
+      "ko": "알레르기는 없어요. 식사와 함께 먹어도 될까요?",
+      "audio": "audio/ph05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "Take the fever reducer after a meal. The lozenges are every two hours if you need them.",
+      "ko": "해열제는 식후에 드세요. 목캔디는 필요하면 두 시간마다 드시면 됩니다.",
+      "audio": "audio/ph06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Got it. Do I need to see a doctor if it gets worse tonight?",
+      "ko": "알겠습니다. 오늘 밤에 더 나빠지면 병원을 가야 할까요?",
+      "audio": "audio/ph07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "If the fever goes over thirty-eight point five, go to urgent care. There is a clinic two blocks down.",
+      "ko": "열이 38.5도를 넘으면 응급 진료를 받으세요. 두 블록 아래에 클리닉이 있습니다.",
+      "audio": "audio/ph08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you. How much is that altogether?",
+      "ko": "감사합니다. 모두 얼마인가요?",
+      "audio": "audio/ph09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "Sixteen dollars. Would you like a bag?",
+      "ko": "16달러입니다. 봉투 드릴까요?",
+      "audio": "audio/ph10.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Yes, please. I really appreciate it.",
+      "ko": "네, 부탁해요. 정말 감사합니다.",
+      "audio": "audio/ph11.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Pharmacist",
+      "en": "Feel better. Drink plenty of water.",
+      "ko": "빨리 나으세요. 물 많이 드세요.",
+      "audio": "audio/ph12.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Would it be possible to get something without a prescription?",
+      "ko": "처방전 없이 살 수 있는 약이 있을까요?"
+    },
+    {
+      "en": "Are you allergic to any medicine?",
+      "ko": "약 알레르기가 있으신가요?"
+    },
+    {
+      "en": "How long have you had the symptoms?",
+      "ko": "증상이 생긴 지 얼마나 됐나요?"
+    },
+    {
+      "en": "If the fever goes over 38.5, go to urgent care.",
+      "ko": "열이 38.5도를 넘으면 응급 진료를 받으세요."
+    }
+  ]
+}
