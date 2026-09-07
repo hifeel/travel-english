@@ -1,4 +1,4 @@
-const CACHE = 'travel-english-v24';
+const CACHE = 'travel-english-v25';
 const PRECACHE = [
   './',
   'index.html',
@@ -35,8 +35,11 @@ self.addEventListener('activate', function(event) {
 // so serving them from cache first meant a new lesson only showed up on the
 // second visit. Audio and icons never change under a given name, so those stay
 // cache-first and keep the app fast and usable offline.
+function isData(url) {
+  return url.pathname.indexOf('/data/') !== -1;
+}
 function isMutable(url, req) {
-  return req.mode === 'navigate' || url.pathname.indexOf('/data/') !== -1;
+  return req.mode === 'navigate' || isData(url);
 }
 
 self.addEventListener('fetch', function(event) {
@@ -52,7 +55,13 @@ self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.open(CACHE).then(function(cache) {
       return cache.match(cacheKey).then(function(hit) {
-        var fresh = fetch(req).then(function(res) {
+        // GitHub Pages sends Cache-Control: max-age=600, so going to the
+        // network still hands back a ten-minute-old lesson list unless the
+        // HTTP cache is skipped outright. Only the JSON needs this.
+        var networkReq = isData(url)
+          ? new Request(url.href, { cache: 'no-store' })
+          : req;
+        var fresh = fetch(networkReq).then(function(res) {
           if (res && res.ok && res.type === 'basic') {
             cache.put(cacheKey, res.clone());
           }

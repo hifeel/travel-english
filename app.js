@@ -271,7 +271,11 @@
     return '0';
   })();
   function fetchJson(url) {
-    return fetch(url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + V).then(function (r) {
+    // no-store as well as the version query: Pages caches JSON for ten
+    // minutes, so a freshly added lesson is otherwise invisible for that long
+    // even though the request goes out.
+    return fetch(url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + V,
+                 { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error(url);
       return r.json();
     });
