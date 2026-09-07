@@ -256,7 +256,20 @@
   global.TEDone = { isDone: isDone, setDone: setDone, toggle: toggle, load: load };
 })(window);
 (function (global) {
-  var V = '16';
+  // Reuse the ?v= this file was loaded with rather than keeping a second
+  // number in sync by hand. app.js?v=16 once served a body that still asked
+  // for lessons.json?v=15, so a browser holding the old script kept showing
+  // the old lesson list; one knob in the <script> tag cannot drift from
+  // itself.
+  var V = (function () {
+    try {
+      var s = document.currentScript ||
+              document.querySelector('script[src*="app.js"]');
+      var m = s && /[?&]v=([^&#]+)/.exec(s.src);
+      if (m) return m[1];
+    } catch (e) {}
+    return '0';
+  })();
   function fetchJson(url) {
     return fetch(url + (url.indexOf('?') >= 0 ? '&' : '?') + 'v=' + V).then(function (r) {
       if (!r.ok) throw new Error(url);
