@@ -5,7 +5,6 @@
   "title_ko": "호텔 와이파이",
   "subtitle": "호텔 로비에서 비밀번호 묻기",
   "desc": "호텔 와이파이 비밀번호를 받고 기기 연결을 확인하는 회화",
-  "image": "images/28-wifi.jpg",
   "turns": [
     {"role": "you", "speaker": "You (Traveler)", "en": "Hi. Could I get the Wi-Fi password for my room, please.", "ko": "안녕하세요. 제 방 와이파이 비밀번호 부탁드려요.", "audio": "audio/wf01.mp3"},
     {"role": "them", "speaker": "Front Desk", "en": "Of course. What is your room number?", "ko": "물론이죠. 방 번호가 어떻게 되세요?", "audio": "audio/wf02.mp3"},

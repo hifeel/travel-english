@@ -30,7 +30,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add data/index.json audio
+          git add data audio
           if git diff --staged --quiet; then
             echo "nothing to commit"
           else
