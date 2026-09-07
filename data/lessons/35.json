@@ -5,6 +5,7 @@
   "title_ko": "짐 분실",
   "subtitle": "공항에서 가방이 안 나왔을 때",
   "desc": "수하물이 나오지 않아 항공사 데스크에 신고하는 실전 회화",
+  "image": "images/lesson-35.jpg",
   "turns": [
     {
       "role": "you",
