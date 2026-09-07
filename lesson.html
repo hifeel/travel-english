@@ -104,7 +104,11 @@ function render(lesson){
   currentLessonId=lesson.id; syncDoneBtn();
   document.title='#'+lesson.id+' '+lesson.title_en+' | Travel English';
   document.getElementById('title').textContent='#'+lesson.id+' '+lesson.title_en;
-  document.getElementById('subtitle').textContent=lesson.subtitle||lesson.title_ko;
+  document.getElementById('subtitle').textContent=(lesson.category_ko?'['+lesson.category_ko+'] ':'')+(lesson.subtitle||lesson.title_ko||'');
+  var backLink=document.querySelector('.back');
+  if(backLink && lesson.category){
+    backLink.href='index.html?cat='+encodeURIComponent(lesson.category);
+  }
   var cover=document.getElementById('cover');
   if(lesson.image){
     cover.src=lesson.image;

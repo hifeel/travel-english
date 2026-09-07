@@ -112,5 +112,7 @@
       "en": "Your room is ready.",
       "ko": "방이 준비되어 있어요."
     }
-  ]
+  ],
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소"
 }

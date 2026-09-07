@@ -5,24 +5,107 @@
   "title_ko": "호텔 체크인",
   "subtitle": "호텔 체크인 · 문장별 음성 재생",
   "turns": [
-    {"role": "you", "speaker": "You (Traveler)", "en": "Hello. I have a reservation under the name Kim.", "ko": "안녕하세요. Kim 이름으로 예약되어 있습니다.", "audio": "audio/s01.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "Good evening. May I have your full name and the confirmation number, please?", "ko": "안녕하세요. 성함과 예약 확인 번호를 알려주시겠어요?", "audio": "audio/s02.mp3"},
-    {"role": "you", "speaker": "You", "en": "Yes. My name is Minsoo Kim, and the confirmation number is HT3842.", "ko": "네. 이름은 Minsoo Kim이고, 확인 번호는 HT3842입니다.", "audio": "audio/s03.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "Thank you, Mr. Kim. I found your reservation. You're staying with us for three nights, is that correct?", "ko": "감사합니다, Mr. Kim. 예약을 찾았습니다. 3박 맞으시죠?", "audio": "audio/s04.mp3"},
-    {"role": "you", "speaker": "You", "en": "Yes, that's right. Until Friday.", "ko": "네, 맞습니다. 금요일까지요.", "audio": "audio/s05.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "Perfect. Could I see your passport, please?", "ko": "좋습니다. 여권 보여주시겠어요?", "audio": "audio/s06.mp3"},
-    {"role": "you", "speaker": "You", "en": "Here you go.", "ko": "여기 있습니다.", "audio": "audio/s07.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "Thank you. Your room is on the twelfth floor, room 1205. Breakfast is included and served from 7 to 10 in the morning. Here's your key card.", "ko": "감사합니다. 객실은 12층 1205호입니다. 조식은 포함되어 있고 오전 7시부터 10시까지입니다. 키카드 여기 있습니다.", "audio": "audio/s08.mp3"},
-    {"role": "you", "speaker": "You", "en": "Great, thank you. Where can I find the elevator?", "ko": "좋습니다, 감사합니다. 엘리베이터는 어디에 있나요?", "audio": "audio/s09.mp3"},
-    {"role": "them", "speaker": "Receptionist", "en": "Just go straight and turn left. Enjoy your stay!", "ko": "직진하셔서 왼쪽으로 도세요. 좋은 시간 보내세요!", "audio": "audio/s10.mp3"},
-    {"role": "you", "speaker": "You", "en": "Thank you very much.", "ko": "정말 감사합니다.", "audio": "audio/s11.mp3"}
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hello. I have a reservation under the name Kim.",
+      "ko": "안녕하세요. Kim 이름으로 예약되어 있습니다.",
+      "audio": "audio/s01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Good evening. May I have your full name and the confirmation number, please?",
+      "ko": "안녕하세요. 성함과 예약 확인 번호를 알려주시겠어요?",
+      "audio": "audio/s02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Yes. My name is Minsoo Kim, and the confirmation number is HT3842.",
+      "ko": "네. 이름은 Minsoo Kim이고, 확인 번호는 HT3842입니다.",
+      "audio": "audio/s03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Thank you, Mr. Kim. I found your reservation. You're staying with us for three nights, is that correct?",
+      "ko": "감사합니다, Mr. Kim. 예약을 찾았습니다. 3박 맞으시죠?",
+      "audio": "audio/s04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Yes, that's right. Until Friday.",
+      "ko": "네, 맞습니다. 금요일까지요.",
+      "audio": "audio/s05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Perfect. Could I see your passport, please?",
+      "ko": "좋습니다. 여권 보여주시겠어요?",
+      "audio": "audio/s06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Here you go.",
+      "ko": "여기 있습니다.",
+      "audio": "audio/s07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Thank you. Your room is on the twelfth floor, room 1205. Breakfast is included and served from 7 to 10 in the morning. Here's your key card.",
+      "ko": "감사합니다. 객실은 12층 1205호입니다. 조식은 포함되어 있고 오전 7시부터 10시까지입니다. 키카드 여기 있습니다.",
+      "audio": "audio/s08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Great, thank you. Where can I find the elevator?",
+      "ko": "좋습니다, 감사합니다. 엘리베이터는 어디에 있나요?",
+      "audio": "audio/s09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Receptionist",
+      "en": "Just go straight and turn left. Enjoy your stay!",
+      "ko": "직진하셔서 왼쪽으로 도세요. 좋은 시간 보내세요!",
+      "audio": "audio/s10.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Thank you very much.",
+      "ko": "정말 감사합니다.",
+      "audio": "audio/s11.mp3"
+    }
   ],
   "tips": [
-    {"en": "I have a reservation under the name ~", "ko": "~ 이름으로 예약되어 있어요"},
-    {"en": "Confirmation number", "ko": "예약 확인 번호"},
-    {"en": "Could I see your passport?", "ko": "여권 보여주시겠어요?"},
-    {"en": "Key card", "ko": "키카드"},
-    {"en": "Enjoy your stay!", "ko": "좋은 시간 보내세요!"}
+    {
+      "en": "I have a reservation under the name ~",
+      "ko": "~ 이름으로 예약되어 있어요"
+    },
+    {
+      "en": "Confirmation number",
+      "ko": "예약 확인 번호"
+    },
+    {
+      "en": "Could I see your passport?",
+      "ko": "여권 보여주시겠어요?"
+    },
+    {
+      "en": "Key card",
+      "ko": "키카드"
+    },
+    {
+      "en": "Enjoy your stay!",
+      "ko": "좋은 시간 보내세요!"
+    }
   ],
-  "desc": "호텔 체크인 할 때 쓰는 기본 회화"
+  "desc": "호텔 체크인 할 때 쓰는 기본 회화",
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소"
 }

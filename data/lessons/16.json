@@ -1,21 +1,96 @@
 {
-  "id": "16", "slug": "convenience-store", "title_en": "At a Convenience Store", "title_ko": "편의점",
-  "subtitle": "편의점 · 문장별 음성 재생", "desc": "편의점에서 물 찾고 데워 달라고 할 때",
+  "id": "16",
+  "slug": "convenience-store",
+  "title_en": "At a Convenience Store",
+  "title_ko": "편의점",
+  "subtitle": "편의점 · 문장별 음성 재생",
+  "desc": "편의점에서 물 찾고 데워 달라고 할 때",
   "tips": [
-    {"en": "Where can I find bottled water?", "ko": "생수는 어디 있나요?"},
-    {"en": "Can I heat this up?", "ko": "이거 데워 주시겠어요?"},
-    {"en": "Do you take cards?", "ko": "카드 됩니다?"}
+    {
+      "en": "Where can I find bottled water?",
+      "ko": "생수는 어디 있나요?"
+    },
+    {
+      "en": "Can I heat this up?",
+      "ko": "이거 데워 주시겠어요?"
+    },
+    {
+      "en": "Do you take cards?",
+      "ko": "카드 됩니다?"
+    }
   ],
   "turns": [
-    {"role": "them", "speaker": "Clerk", "en": "Hello. Did you find everything okay?", "ko": "안녕하세요. 찾으신 거 다 찾으셨나요?", "audio": "audio/v01.mp3"},
-    {"role": "you", "speaker": "You", "en": "Yes. Where can I find bottled water?", "ko": "네. 생수는 어디 있나요?", "audio": "audio/v02.mp3"},
-    {"role": "them", "speaker": "Clerk", "en": "It's in the fridge at the back.", "ko": "뒤쪽 냉장고에 있습니다.", "audio": "audio/v03.mp3"},
-    {"role": "you", "speaker": "You", "en": "Thanks. Can I heat this up?", "ko": "감사합니다. 이거 데워 주시겠어요?", "audio": "audio/v04.mp3"},
-    {"role": "them", "speaker": "Clerk", "en": "Sure. I'll microwave it for you. Is that all?", "ko": "네. 데워 드리겠습니다. 다 되셨나요?", "audio": "audio/v05.mp3"},
-    {"role": "you", "speaker": "You", "en": "And this sandwich, please. Do you take cards?", "ko": "이 샌드위치도 주세요. 카드 됩니다?", "audio": "audio/v06.mp3"},
-    {"role": "them", "speaker": "Clerk", "en": "Yes. Please tap your card here.", "ko": "네. 여기에 카드 대 주세요.", "audio": "audio/v07.mp3"},
-    {"role": "you", "speaker": "You", "en": "Could I have a bag?", "ko": "봉지 주시겠어요?", "audio": "audio/v08.mp3"},
-    {"role": "them", "speaker": "Clerk", "en": "Of course. Have a nice day.", "ko": "당연히요. 좋은 하루 되세요.", "audio": "audio/v09.mp3"},
-    {"role": "you", "speaker": "You", "en": "Thank you. You too.", "ko": "감사합니다. 좋은 하루 되세요.", "audio": "audio/v10.mp3"}
-  ]
+    {
+      "role": "them",
+      "speaker": "Clerk",
+      "en": "Hello. Did you find everything okay?",
+      "ko": "안녕하세요. 찾으신 거 다 찾으셨나요?",
+      "audio": "audio/v01.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Yes. Where can I find bottled water?",
+      "ko": "네. 생수는 어디 있나요?",
+      "audio": "audio/v02.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Clerk",
+      "en": "It's in the fridge at the back.",
+      "ko": "뒤쪽 냉장고에 있습니다.",
+      "audio": "audio/v03.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Thanks. Can I heat this up?",
+      "ko": "감사합니다. 이거 데워 주시겠어요?",
+      "audio": "audio/v04.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Clerk",
+      "en": "Sure. I'll microwave it for you. Is that all?",
+      "ko": "네. 데워 드리겠습니다. 다 되셨나요?",
+      "audio": "audio/v05.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "And this sandwich, please. Do you take cards?",
+      "ko": "이 샌드위치도 주세요. 카드 됩니다?",
+      "audio": "audio/v06.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Clerk",
+      "en": "Yes. Please tap your card here.",
+      "ko": "네. 여기에 카드 대 주세요.",
+      "audio": "audio/v07.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Could I have a bag?",
+      "ko": "봉지 주시겠어요?",
+      "audio": "audio/v08.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Clerk",
+      "en": "Of course. Have a nice day.",
+      "ko": "당연히요. 좋은 하루 되세요.",
+      "audio": "audio/v09.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Thank you. You too.",
+      "ko": "감사합니다. 좋은 하루 되세요.",
+      "audio": "audio/v10.mp3"
+    }
+  ],
+  "category": "shopping",
+  "category_ko": "쇼핑 & 편의"
 }

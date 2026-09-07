@@ -98,5 +98,7 @@
       "en": "Could I get a receipt?",
       "ko": "영수증 주실 수 있나요?"
     }
-  ]
+  ],
+  "category": "dining",
+  "category_ko": "식당 & 카페"
 }

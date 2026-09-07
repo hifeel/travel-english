@@ -5,23 +5,100 @@
   "title_ko": "택시 타기",
   "subtitle": "택시 타기 · 문장별 음성 재생",
   "turns": [
-    {"role": "them", "speaker": "Driver", "en": "Where to?", "ko": "어디로 갈까요?", "audio": "audio/t01.mp3"},
-    {"role": "you", "speaker": "You", "en": "Could you take me to Grand Central Station, please?", "ko": "그랜드 센트럴 역까지 가 주세요.", "audio": "audio/t02.mp3"},
-    {"role": "them", "speaker": "Driver", "en": "Sure. Do you have any bags?", "ko": "네. 짐 있으신가요?", "audio": "audio/t03.mp3"},
-    {"role": "you", "speaker": "You", "en": "Yes, just this one. Could you open the trunk?", "ko": "네, 이거 하나만요. 트렁크 열어 주세요?", "audio": "audio/t04.mp3"},
-    {"role": "them", "speaker": "Driver", "en": "Of course. Hop in.", "ko": "물론이죠. 타세요.", "audio": "audio/t05.mp3"},
-    {"role": "you", "speaker": "You", "en": "How long will it take?", "ko": "얼마나 걸릴까요?", "audio": "audio/t06.mp3"},
-    {"role": "them", "speaker": "Driver", "en": "About twenty minutes, depending on traffic.", "ko": "교통에 따라 약 20분 걸립니다.", "audio": "audio/t07.mp3"},
-    {"role": "you", "speaker": "You", "en": "Okay. Could you drop me off at the main entrance?", "ko": "알겠습니다. 정문 앞에 내려주세요.", "audio": "audio/t08.mp3"},
-    {"role": "them", "speaker": "Driver", "en": "Here we are. That's eighteen dollars.", "ko": "다 왔습니다. 18달러입니다.", "audio": "audio/t09.mp3"},
-    {"role": "you", "speaker": "You", "en": "Here's twenty. Keep the change. Thank you!", "ko": "20달러입니다. 거스름은 가져 가세요. 감사합니다!", "audio": "audio/t10.mp3"}
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Where to?",
+      "ko": "어디로 갈까요?",
+      "audio": "audio/t01.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Could you take me to Grand Central Station, please?",
+      "ko": "그랜드 센트럴 역까지 가 주세요.",
+      "audio": "audio/t02.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Sure. Do you have any bags?",
+      "ko": "네. 짐 있으신가요?",
+      "audio": "audio/t03.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Yes, just this one. Could you open the trunk?",
+      "ko": "네, 이거 하나만요. 트렁크 열어 주세요?",
+      "audio": "audio/t04.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Of course. Hop in.",
+      "ko": "물론이죠. 타세요.",
+      "audio": "audio/t05.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "How long will it take?",
+      "ko": "얼마나 걸릴까요?",
+      "audio": "audio/t06.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "About twenty minutes, depending on traffic.",
+      "ko": "교통에 따라 약 20분 걸립니다.",
+      "audio": "audio/t07.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Okay. Could you drop me off at the main entrance?",
+      "ko": "알겠습니다. 정문 앞에 내려주세요.",
+      "audio": "audio/t08.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Here we are. That's eighteen dollars.",
+      "ko": "다 왔습니다. 18달러입니다.",
+      "audio": "audio/t09.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Here's twenty. Keep the change. Thank you!",
+      "ko": "20달러입니다. 거스름은 가져 가세요. 감사합니다!",
+      "audio": "audio/t10.mp3"
+    }
   ],
   "tips": [
-    {"en": "Could you take me to ~, please?", "ko": "~에 가 주세요"},
-    {"en": "Could you open the trunk?", "ko": "트렁크 열어 주세요"},
-    {"en": "How long will it take?", "ko": "얼마나 걸릴까요?"},
-    {"en": "Could you drop me off at ~?", "ko": "~에 내려주세요"},
-    {"en": "Keep the change.", "ko": "거스름은 가져 가세요"}
+    {
+      "en": "Could you take me to ~, please?",
+      "ko": "~에 가 주세요"
+    },
+    {
+      "en": "Could you open the trunk?",
+      "ko": "트렁크 열어 주세요"
+    },
+    {
+      "en": "How long will it take?",
+      "ko": "얼마나 걸릴까요?"
+    },
+    {
+      "en": "Could you drop me off at ~?",
+      "ko": "~에 내려주세요"
+    },
+    {
+      "en": "Keep the change.",
+      "ko": "거스름은 가져 가세요"
+    }
   ],
-  "desc": "택시 타고 목적지 말하고 요금 낼 때"
+  "desc": "택시 타고 목적지 말하고 요금 낼 때",
+  "category": "transport",
+  "category_ko": "교통 & 이동"
 }

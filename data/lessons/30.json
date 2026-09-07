@@ -98,5 +98,7 @@
       "en": "Can I pay when they are delivered?",
       "ko": "배달될 때 계산해도 될까요?"
     }
-  ]
+  ],
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소"
 }

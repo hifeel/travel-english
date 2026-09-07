@@ -98,5 +98,7 @@
       "en": "Please check in 20 minutes before.",
       "ko": "20분 전에 체크인해 주세요."
     }
-  ]
+  ],
+  "category": "activity",
+  "category_ko": "관광 & 레저"
 }

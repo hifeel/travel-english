@@ -94,5 +94,7 @@
       "en": "Go straight two blocks and turn left.",
       "ko": "두 블록 직진한 다음 왼쪽으로 도세요."
     }
-  ]
+  ],
+  "category": "transport",
+  "category_ko": "교통 & 이동"
 }

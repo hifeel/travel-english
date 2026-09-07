@@ -98,5 +98,7 @@
       "en": "Do you have any vegetarian options on the menu?",
       "ko": "메뉴에 채식 옵션도 있나요?"
     }
-  ]
+  ],
+  "category": "dining",
+  "category_ko": "식당 & 카페"
 }

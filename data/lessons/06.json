@@ -6,22 +6,99 @@
   "subtitle": "길 묻기 · 문장별 음성 재생",
   "desc": "길을 잃었을 때 길 묻고 거리 확인할 때",
   "tips": [
-    {"en": "Could you tell me how to get to ~?", "ko": "〜에 어떻게 가나요?"},
-    {"en": "Go straight two blocks", "ko": "두 블록 직진하세요"},
-    {"en": "turn left at the traffic light", "ko": "신호등에서 왼쪽으로 돌아요"},
-    {"en": "Is it far from here?", "ko": "여기서 먼가요?"},
-    {"en": "a five-minute walk", "ko": "걸어서 5분 정도"}
+    {
+      "en": "Could you tell me how to get to ~?",
+      "ko": "〜에 어떻게 가나요?"
+    },
+    {
+      "en": "Go straight two blocks",
+      "ko": "두 블록 직진하세요"
+    },
+    {
+      "en": "turn left at the traffic light",
+      "ko": "신호등에서 왼쪽으로 돌아요"
+    },
+    {
+      "en": "Is it far from here?",
+      "ko": "여기서 먼가요?"
+    },
+    {
+      "en": "a five-minute walk",
+      "ko": "걸어서 5분 정도"
+    }
   ],
   "turns": [
-    {"role": "you", "speaker": "You", "en": "Excuse me. Could you tell me how to get to the subway station?", "ko": "죄송합니다. 지하철역은 어떻게 가나요?", "audio": "audio/d01.mp3"},
-    {"role": "them", "speaker": "Local", "en": "Sure. Go straight two blocks and turn left at the traffic light.", "ko": "네. 두 블록 직진하시고 신호등에서 왼쪽으로 돌세요.", "audio": "audio/d02.mp3"},
-    {"role": "you", "speaker": "You", "en": "Is it far from here?", "ko": "여기서 먼가요?", "audio": "audio/d03.mp3"},
-    {"role": "them", "speaker": "Local", "en": "No, it's about a five-minute walk.", "ko": "아니요. 걸어서 5분 정도예요.", "audio": "audio/d04.mp3"},
-    {"role": "you", "speaker": "You", "en": "And is there a supermarket near the station?", "ko": "그리고 역 근처에 슈퍼마켓이 있나요?", "audio": "audio/d05.mp3"},
-    {"role": "them", "speaker": "Local", "en": "Yes. You'll see one right across from the entrance.", "ko": "네. 입구 바로 건너편에 있습니다.", "audio": "audio/d06.mp3"},
-    {"role": "you", "speaker": "You", "en": "That's perfect. Should I take the stairs or the elevator?", "ko": "완벽하네요. 계단으로 갈까요, 엘리베이터로 갈까요?", "audio": "audio/d07.mp3"},
-    {"role": "them", "speaker": "Local", "en": "There's an elevator on the right side.", "ko": "오른쪽에 엘리베이터가 있습니다.", "audio": "audio/d08.mp3"},
-    {"role": "you", "speaker": "You", "en": "Thank you so much. I really appreciate it.", "ko": "정말 감사합니다. 도와주셔서 감사합니다.", "audio": "audio/d09.mp3"},
-    {"role": "them", "speaker": "Local", "en": "You're welcome. Have a good day!", "ko": "천만에요. 좋은 하루 되세요!", "audio": "audio/d10.mp3"}
-  ]
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Excuse me. Could you tell me how to get to the subway station?",
+      "ko": "죄송합니다. 지하철역은 어떻게 가나요?",
+      "audio": "audio/d01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Local",
+      "en": "Sure. Go straight two blocks and turn left at the traffic light.",
+      "ko": "네. 두 블록 직진하시고 신호등에서 왼쪽으로 돌세요.",
+      "audio": "audio/d02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Is it far from here?",
+      "ko": "여기서 먼가요?",
+      "audio": "audio/d03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Local",
+      "en": "No, it's about a five-minute walk.",
+      "ko": "아니요. 걸어서 5분 정도예요.",
+      "audio": "audio/d04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "And is there a supermarket near the station?",
+      "ko": "그리고 역 근처에 슈퍼마켓이 있나요?",
+      "audio": "audio/d05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Local",
+      "en": "Yes. You'll see one right across from the entrance.",
+      "ko": "네. 입구 바로 건너편에 있습니다.",
+      "audio": "audio/d06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "That's perfect. Should I take the stairs or the elevator?",
+      "ko": "완벽하네요. 계단으로 갈까요, 엘리베이터로 갈까요?",
+      "audio": "audio/d07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Local",
+      "en": "There's an elevator on the right side.",
+      "ko": "오른쪽에 엘리베이터가 있습니다.",
+      "audio": "audio/d08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You",
+      "en": "Thank you so much. I really appreciate it.",
+      "ko": "정말 감사합니다. 도와주셔서 감사합니다.",
+      "audio": "audio/d09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Local",
+      "en": "You're welcome. Have a good day!",
+      "ko": "천만에요. 좋은 하루 되세요!",
+      "audio": "audio/d10.mp3"
+    }
+  ],
+  "category": "transport",
+  "category_ko": "교통 & 이동"
 }

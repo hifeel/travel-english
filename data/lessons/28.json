@@ -6,21 +6,95 @@
   "subtitle": "호텔 로비에서 비밀번호 묻기",
   "desc": "호텔 와이파이 비밀번호를 받고 기기 연결을 확인하는 회화",
   "turns": [
-    {"role": "you", "speaker": "You (Traveler)", "en": "Hi. Could I get the Wi-Fi password for my room, please.", "ko": "안녕하세요. 제 방 와이파이 비밀번호 부탁드려요.", "audio": "audio/wf01.mp3"},
-    {"role": "them", "speaker": "Front Desk", "en": "Of course. What is your room number?", "ko": "물론이죠. 방 번호가 어떻게 되세요?", "audio": "audio/wf02.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Four twelve. The name is Kim.", "ko": "412호입니다. 이름은 김입니다.", "audio": "audio/wf03.mp3"},
-    {"role": "them", "speaker": "Front Desk", "en": "Thank you. The network is Hotel Guest, and the password is welcome two zero two six.", "ko": "감사합니다. 네트워크는 Hotel Guest이고, 비밀번호는 welcome2026입니다.", "audio": "audio/wf04.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Is that all lowercase? And is there a daily data limit?", "ko": "모두 소문자인가요? 하루 데이터 제한이 있나요?", "audio": "audio/wf05.mp3"},
-    {"role": "them", "speaker": "Front Desk", "en": "The password is lowercase. There is no data limit, but video streaming may be slower in the evening.", "ko": "비밀번호는 소문자입니다. 데이터 제한은 없지만, 저녁에는 영상이 조금 느릴 수 있어요.", "audio": "audio/wf06.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Got it. Can I connect a second device as well?", "ko": "알겠습니다. 기기를 하나 더 연결해도 될까요?", "audio": "audio/wf07.mp3"},
-    {"role": "them", "speaker": "Front Desk", "en": "Yes. You can connect up to three devices with the same password.", "ko": "네. 같은 비밀번호로 기기 세 대까지 연결할 수 있습니다.", "audio": "audio/wf08.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Perfect. If it does not connect, should I come back here?", "ko": "완벽합니다. 안 되면 다시 이리로 오면 될까요?", "audio": "audio/wf09.mp3"},
-    {"role": "them", "speaker": "Front Desk", "en": "Yes. Come to the front desk and we will reset it for you. Enjoy your stay.", "ko": "네. 프런트 데스크로 오시면 다시 설정해 드리겠습니다. 편안한 숙박 되세요.", "audio": "audio/wf10.mp3"}
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hi. Could I get the Wi-Fi password for my room, please.",
+      "ko": "안녕하세요. 제 방 와이파이 비밀번호 부탁드려요.",
+      "audio": "audio/wf01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Of course. What is your room number?",
+      "ko": "물론이죠. 방 번호가 어떻게 되세요?",
+      "audio": "audio/wf02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Four twelve. The name is Kim.",
+      "ko": "412호입니다. 이름은 김입니다.",
+      "audio": "audio/wf03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Thank you. The network is Hotel Guest, and the password is welcome two zero two six.",
+      "ko": "감사합니다. 네트워크는 Hotel Guest이고, 비밀번호는 welcome2026입니다.",
+      "audio": "audio/wf04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Is that all lowercase? And is there a daily data limit?",
+      "ko": "모두 소문자인가요? 하루 데이터 제한이 있나요?",
+      "audio": "audio/wf05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "The password is lowercase. There is no data limit, but video streaming may be slower in the evening.",
+      "ko": "비밀번호는 소문자입니다. 데이터 제한은 없지만, 저녁에는 영상이 조금 느릴 수 있어요.",
+      "audio": "audio/wf06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Got it. Can I connect a second device as well?",
+      "ko": "알겠습니다. 기기를 하나 더 연결해도 될까요?",
+      "audio": "audio/wf07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Yes. You can connect up to three devices with the same password.",
+      "ko": "네. 같은 비밀번호로 기기 세 대까지 연결할 수 있습니다.",
+      "audio": "audio/wf08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. If it does not connect, should I come back here?",
+      "ko": "완벽합니다. 안 되면 다시 이리로 오면 될까요?",
+      "audio": "audio/wf09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Yes. Come to the front desk and we will reset it for you. Enjoy your stay.",
+      "ko": "네. 프런트 데스크로 오시면 다시 설정해 드리겠습니다. 편안한 숙박 되세요.",
+      "audio": "audio/wf10.mp3"
+    }
   ],
   "tips": [
-    {"en": "Could I get the Wi-Fi password, please.", "ko": "와이파이 비밀번호 부탁드려요."},
-    {"en": "Is there a daily data limit?", "ko": "하루 데이터 제한이 있나요?"},
-    {"en": "Can I connect a second device as well?", "ko": "기기를 하나 더 연결해도 될까요?"},
-    {"en": "If it does not connect, should I come back here?", "ko": "안 되면 다시 이리로 오면 될까요?"}
-  ]
+    {
+      "en": "Could I get the Wi-Fi password, please.",
+      "ko": "와이파이 비밀번호 부탁드려요."
+    },
+    {
+      "en": "Is there a daily data limit?",
+      "ko": "하루 데이터 제한이 있나요?"
+    },
+    {
+      "en": "Can I connect a second device as well?",
+      "ko": "기기를 하나 더 연결해도 될까요?"
+    },
+    {
+      "en": "If it does not connect, should I come back here?",
+      "ko": "안 되면 다시 이리로 오면 될까요?"
+    }
+  ],
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소"
 }

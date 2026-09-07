@@ -94,5 +94,7 @@
       "en": "Are photos allowed?",
       "ko": "사진 찍어도 되나요?"
     }
-  ]
+  ],
+  "category": "activity",
+  "category_ko": "관광 & 레저"
 }

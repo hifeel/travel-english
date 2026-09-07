@@ -108,5 +108,7 @@
       "en": "If the fever goes over 38.5, go to urgent care.",
       "ko": "열이 38.5도를 넘으면 응급 진료를 받으세요."
     }
-  ]
+  ],
+  "category": "emergency",
+  "category_ko": "약국 & 긴급"
 }

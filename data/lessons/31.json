@@ -94,5 +94,7 @@
       "en": "Try the popular items first. Vendors often know what sells best that night.",
       "ko": "인기 메뉴부터 드셔 보세요. 상인들이 그날 잘 팔리는 걸 잘 압니다."
     }
-  ]
+  ],
+  "category": "shopping",
+  "category_ko": "쇼핑 & 편의"
 }

@@ -105,5 +105,7 @@
       "en": "Walk through when the light turns green.",
       "ko": "표시등이 초록으로 바뀌면 지나가세요."
     }
-  ]
+  ],
+  "category": "airport",
+  "category_ko": "공항 & 비행"
 }

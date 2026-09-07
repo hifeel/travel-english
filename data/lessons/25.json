@@ -98,5 +98,7 @@
       "en": "I'll knock when I arrive.",
       "ko": "도착하면 노크할게요."
     }
-  ]
+  ],
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소"
 }

@@ -16,26 +16,59 @@
 
   <title>Travel English - 여행 영어 회화</title>
   <style>
-    :root { --primary:#2563eb; --bg:#f8fafc; --card:#fff; --text:#1e293b; --muted:#64748b; --border:#e2e8f0; }
+    :root { --primary:#2563eb; --primary-hover:#1d4ed8; --bg:#f8fafc; --card:#fff; --text:#1e293b; --muted:#64748b; --border:#e2e8f0; }
     * { box-sizing:border-box; margin:0; padding:0; }
     body { font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; background:var(--bg); color:var(--text); }
     .container { max-width:720px; margin:0 auto; padding:24px 16px 60px; }
-    header { text-align:center; margin-bottom:28px; }
-    header h1 { font-size:28px; font-weight:800; color:var(--primary); margin-bottom:8px; }
+    header { text-align:center; margin-bottom:24px; }
+    header h1 { font-size:28px; font-weight:800; color:var(--primary); margin-bottom:6px; }
     header p { color:var(--muted); font-size:15px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; margin-bottom:14px; }
+
+    /* 카테고리 선택 영역 */
+    .category-section { margin-bottom:24px; }
+    .category-title { font-size:13px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.5px; margin-bottom:10px; }
+    .category-nav { display:flex; flex-wrap:wrap; gap:8px; }
+    .cat-btn {
+      display:inline-flex; align-items:center; gap:6px;
+      background:#fff; border:1px solid var(--border); border-radius:999px;
+      padding:8px 14px; font-size:14px; font-weight:600; color:var(--text);
+      cursor:pointer; transition:all .15s ease; user-select:none;
+    }
+    .cat-btn:hover { background:#f1f5f9; border-color:#cbd5e1; }
+    .cat-btn.active {
+      background:var(--primary); color:#fff; border-color:var(--primary);
+      box-shadow:0 3px 10px rgba(37,99,235,.25);
+    }
+    .cat-icon { font-size:15px; line-height:1; }
+    .cat-count {
+      display:inline-block; font-size:11px; font-weight:700;
+      padding:2px 7px; border-radius:999px;
+      background:#f1f5f9; color:var(--muted);
+    }
+    .cat-btn.active .cat-count { background:rgba(255,255,255,.25); color:#fff; }
+
+    /* 목록 헤더 & 상태 */
+    .list-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; padding:0 2px; }
+    .list-header h2 { font-size:16px; font-weight:700; color:var(--text); }
+    .list-header span { font-size:13px; color:var(--muted); }
+
+    /* 레슨 카드 */
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:12px; transition:transform .12s ease, box-shadow .12s ease; }
     .card a { text-decoration:none; color:inherit; display:block; }
-    .card:hover { box-shadow:0 4px 12px rgba(0,0,0,.08); }
+    .card:hover { transform:translateY(-1px); box-shadow:0 4px 12px rgba(0,0,0,.06); border-color:#cbd5e1; }
     .card-cover { width:100%; height:120px; object-fit:cover; border-radius:8px; margin-bottom:12px; background:#eff6ff; display:block; }
-    .title-row { display:flex; align-items:center; gap:8px; }
-    .card h2 { font-size:18px; font-weight:700; margin:0; }
-    .card p { color:var(--muted); font-size:14px; margin-top:6px; }
-    .badge { display:inline-block; background:#dbeafe; color:var(--primary); font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px; margin-right:8px; flex-shrink:0; }
-    .card.done { background:#f8fafc; border-color:#e2e8f0; opacity:.82; }
-    .card.done h2 { color:#64748b; font-weight:600; }
+    .title-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    .card h3 { font-size:17px; font-weight:700; margin:0; }
+    .card p { color:var(--muted); font-size:14px; margin-top:6px; line-height:1.45; }
+    .badge { display:inline-block; background:#dbeafe; color:var(--primary); font-size:12px; font-weight:600; padding:2px 8px; border-radius:999px; flex-shrink:0; }
+    .cat-tag { display:inline-block; font-size:11px; font-weight:600; color:#475569; background:#f1f5f9; padding:2px 8px; border-radius:6px; flex-shrink:0; }
+    .card.done { background:#f8fafc; border-color:#e2e8f0; opacity:.85; }
+    .card.done h3 { color:#64748b; font-weight:600; }
     .card.done p { color:#94a3b8; }
     .card.done .badge { background:#e2e8f0; color:#64748b; }
-    .done-mark { margin-left:auto; font-size:11px; font-weight:600; color:#64748b; background:#e2e8f0; padding:2px 8px; border-radius:999px; flex-shrink:0; }
+    .card.done .cat-tag { background:#e2e8f0; color:#94a3b8; }
+    .done-mark { margin-left:auto; font-size:11px; font-weight:600; color:#15803d; background:#dcfce7; padding:2px 8px; border-radius:999px; flex-shrink:0; }
+    .empty-msg { text-align:center; padding:48px 16px; color:var(--muted); font-size:14px; background:#fff; border-radius:12px; border:1px dashed var(--border); }
     footer { text-align:center; margin-top:40px; color:var(--muted); font-size:13px; }
   </style>
 </head>
@@ -45,30 +78,159 @@
       <h1>✈️ Travel English</h1>
       <p>여행에서 바로 쓰는 영어 회화</p>
     </header>
-    <script src="app.js?v=17"></script>
+
+    <!-- 카테고리 선택 영역 -->
+    <section class="category-section">
+      <div class="category-title">카테고리 선택</div>
+      <div class="category-nav" id="catNav"></div>
+    </section>
+
+    <!-- 레슨 목록 영역 -->
+    <div class="list-header">
+      <h2 id="listTitle">전체 레슨</h2>
+      <span id="listCount"></span>
+    </div>
     <div id="list"></div>
+
+    <script src="app.js?v=18"></script>
     <footer>hifeel.github.io/travel-english</footer>
   </div>
 
   <script>
-    function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
-    TEData.loadLessons().then(function(data){
-      const box=document.getElementById('list');
-      const done=(window.TEDone&&TEDone.load())||[];
-      (data.lessons||[]).slice().reverse().forEach(function(l){
-        const a=document.createElement('a');
-        a.href='lesson.html?id='+encodeURIComponent(l.id);
-        const isDone=done.indexOf(String(l.id))>=0;
-        const img=l.image?'<img class="card-cover" src="'+esc(l.image)+'" alt="">':'';
-        a.innerHTML=img+'<div class="title-row"><span class="badge">#'+esc(l.id)+'</span><h2>'+esc(l.title_en)+'</h2>'+(isDone?'<span class="done-mark">완료</span>':'')+'</div><p>'+esc(l.desc||l.title_ko||'')+'</p>';
-        const card=document.createElement('div');
-        card.className='card'+(isDone?' done':'');
-        card.appendChild(a);
-        box.appendChild(card);
+    (function () {
+      function esc(s) {
+        var d = document.createElement('div');
+        d.textContent = s || '';
+        return d.innerHTML;
+      }
+
+      var CATEGORY_DEF = [
+        { id: 'all', name: '전체', icon: '🌍' },
+        { id: 'hotel', name: '호텔 & 숙소', icon: '🏨' },
+        { id: 'airport', name: '공항 & 비행', icon: '✈️' },
+        { id: 'dining', name: '식당 & 카페', icon: '🍽️' },
+        { id: 'transport', name: '교통 & 이동', icon: '🚖' },
+        { id: 'shopping', name: '쇼핑 & 편의', icon: '🛍️' },
+        { id: 'activity', name: '관광 & 레저', icon: '🎟️' },
+        { id: 'emergency', name: '약국 & 긴급', icon: '💊' }
+      ];
+
+      var currentCat = 'all';
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('cat')) currentCat = params.get('cat');
+      } catch (e) {}
+
+      var allLessons = [];
+      var doneList = [];
+
+      function renderCategories(counts) {
+        var nav = document.getElementById('catNav');
+        nav.innerHTML = '';
+        CATEGORY_DEF.forEach(function (cat) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'cat-btn' + (currentCat === cat.id ? ' active' : '');
+          var count = counts[cat.id] || 0;
+          btn.innerHTML = '<span class="cat-icon">' + cat.icon + '</span> ' +
+                          '<span class="cat-name">' + esc(cat.name) + '</span> ' +
+                          '<span class="cat-count">' + count + '</span>';
+          btn.onclick = function () {
+            if (currentCat === cat.id) return;
+            selectCategory(cat.id);
+          };
+          nav.appendChild(btn);
+        });
+      }
+
+      function selectCategory(catId) {
+        currentCat = catId;
+        try {
+          var url = new URL(window.location);
+          if (catId === 'all') {
+            url.searchParams.delete('cat');
+          } else {
+            url.searchParams.set('cat', catId);
+          }
+          window.history.replaceState({}, '', url);
+        } catch (e) {}
+
+        var buttons = document.querySelectorAll('.cat-btn');
+        CATEGORY_DEF.forEach(function (c, idx) {
+          if (buttons[idx]) {
+            buttons[idx].classList.toggle('active', c.id === currentCat);
+          }
+        });
+
+        renderLessonList();
+      }
+
+      function renderLessonList() {
+        var box = document.getElementById('list');
+        var titleEl = document.getElementById('listTitle');
+        var countEl = document.getElementById('listCount');
+        box.innerHTML = '';
+
+        var matchedCat = CATEGORY_DEF.find(function (c) { return c.id === currentCat; });
+        var catName = matchedCat ? (matchedCat.icon + ' ' + matchedCat.name) : '전체';
+
+        var filtered = allLessons.filter(function (l) {
+          if (currentCat === 'all') return true;
+          return l.category === currentCat;
+        });
+
+        titleEl.textContent = catName;
+        countEl.textContent = filtered.length + '개의 레슨';
+
+        if (filtered.length === 0) {
+          box.innerHTML = '<div class="empty-msg">해당 카테고리의 레슨이 없습니다.</div>';
+          return;
+        }
+
+        filtered.forEach(function (l) {
+          var a = document.createElement('a');
+          a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + (currentCat !== 'all' ? '&cat=' + encodeURIComponent(currentCat) : '');
+          var isDone = doneList.indexOf(String(l.id)) >= 0;
+          var img = l.image ? '<img class="card-cover" src="' + esc(l.image) + '" alt="">' : '';
+          var catLabel = l.category_ko || (CATEGORY_DEF.find(function(c){return c.id===l.category;}) || {}).name || '';
+
+          a.innerHTML = img +
+            '<div class="title-row">' +
+              '<span class="badge">#' + esc(l.id) + '</span>' +
+              '<h3>' + esc(l.title_en) + '</h3>' +
+              (catLabel ? '<span class="cat-tag">' + esc(catLabel) + '</span>' : '') +
+              (isDone ? '<span class="done-mark">✓ 완료</span>' : '') +
+            '</div>' +
+            '<p>' + esc(l.desc || l.title_ko || '') + '</p>';
+
+          var card = document.createElement('div');
+          card.className = 'card' + (isDone ? ' done' : '');
+          card.appendChild(a);
+          box.appendChild(card);
+        });
+      }
+
+      TEData.loadLessons().then(function (data) {
+        allLessons = (data.lessons || []).slice();
+        doneList = (window.TEDone && TEDone.load()) || [];
+
+        var counts = { all: allLessons.length };
+        allLessons.forEach(function (l) {
+          var c = l.category || 'other';
+          counts[c] = (counts[c] || 0) + 1;
+        });
+
+        if (currentCat !== 'all' && !CATEGORY_DEF.some(function (c) { return c.id === currentCat; })) {
+          currentCat = 'all';
+        }
+
+        renderCategories(counts);
+        renderLessonList();
+      }).catch(function (err) {
+        console.error(err);
+        document.getElementById('list').textContent = '목록을 불러오지 못했습니다.';
       });
-    }).catch(function(){
-      document.getElementById('list').textContent='목록을 불러오지 못했습니다';
-    });
+    })();
   </script>
 </body>
 </html>

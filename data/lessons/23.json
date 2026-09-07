@@ -6,22 +6,99 @@
   "subtitle": "관광안내소에서 명소와 가는 법 묻기",
   "desc": "시내 관광안내소에서 추천 코스, 지도, 버스 노선을 확인하는 회화",
   "turns": [
-    {"role": "you", "speaker": "You (Traveler)", "en": "Excuse me. Could you recommend a good place to visit this afternoon?", "ko": "실례합니다. 오늘 오후에 가볼 만한 곳 추천해 주시겠어요?", "audio": "audio/bb01.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "Of course. The old town is lovely, and the river walk is close by.", "ko": "물론이죠. 구시가지가 예쁘고, 강변 산책로도 가까워요.", "audio": "audio/bb02.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "How do I get to the old town from here?", "ko": "여기서 구시가지까지는 어떻게 가나요?", "audio": "audio/bb03.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "Take bus number 12. It stops right across the street and takes about fifteen minutes.", "ko": "12번 버스를 타세요. 길 건너편에서 타고 약 15분 걸려요.", "audio": "audio/bb04.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Do I need a ticket in advance?", "ko": "표를 미리 사야 하나요?", "audio": "audio/bb05.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "You can tap your card on the bus. A day pass is also nine dollars at this desk.", "ko": "버스에서 카드 찍으셔도 됩니다. 여기서 하루 이용권도 9달러에 살 수 있어요.", "audio": "audio/bb06.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "I'll take a day pass, please. And could I have a map?", "ko": "하루 이용권 주세요. 지도도 받을 수 있을까요?", "audio": "audio/bb07.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "Here you go. I circled the main sights and a good lunch spot.", "ko": "여기요. 주요 명소랑 점심 맛집도 동그라미 처 드렸어요.", "audio": "audio/bb08.mp3"},
-    {"role": "you", "speaker": "You (Traveler)", "en": "Thank you. What time does the last bus come back?", "ko": "감사합니다. 돌아오는 막차는 몇 시인가요?", "audio": "audio/bb09.mp3"},
-    {"role": "them", "speaker": "Staff", "en": "The last number 12 is at 10:40 p.m. Enjoy your afternoon.", "ko": "12번 막차는 밤 10시 40분입니다. 좋은 오후 보내세요.", "audio": "audio/bb10.mp3"}
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me. Could you recommend a good place to visit this afternoon?",
+      "ko": "실례합니다. 오늘 오후에 가볼 만한 곳 추천해 주시겠어요?",
+      "audio": "audio/bb01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Staff",
+      "en": "Of course. The old town is lovely, and the river walk is close by.",
+      "ko": "물론이죠. 구시가지가 예쁘고, 강변 산책로도 가까워요.",
+      "audio": "audio/bb02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "How do I get to the old town from here?",
+      "ko": "여기서 구시가지까지는 어떻게 가나요?",
+      "audio": "audio/bb03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Staff",
+      "en": "Take bus number 12. It stops right across the street and takes about fifteen minutes.",
+      "ko": "12번 버스를 타세요. 길 건너편에서 타고 약 15분 걸려요.",
+      "audio": "audio/bb04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Do I need a ticket in advance?",
+      "ko": "표를 미리 사야 하나요?",
+      "audio": "audio/bb05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Staff",
+      "en": "You can tap your card on the bus. A day pass is also nine dollars at this desk.",
+      "ko": "버스에서 카드 찍으셔도 됩니다. 여기서 하루 이용권도 9달러에 살 수 있어요.",
+      "audio": "audio/bb06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "I'll take a day pass, please. And could I have a map?",
+      "ko": "하루 이용권 주세요. 지도도 받을 수 있을까요?",
+      "audio": "audio/bb07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Staff",
+      "en": "Here you go. I circled the main sights and a good lunch spot.",
+      "ko": "여기요. 주요 명소랑 점심 맛집도 동그라미 처 드렸어요.",
+      "audio": "audio/bb08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you. What time does the last bus come back?",
+      "ko": "감사합니다. 돌아오는 막차는 몇 시인가요?",
+      "audio": "audio/bb09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Staff",
+      "en": "The last number 12 is at 10:40 p.m. Enjoy your afternoon.",
+      "ko": "12번 막차는 밤 10시 40분입니다. 좋은 오후 보내세요.",
+      "audio": "audio/bb10.mp3"
+    }
   ],
   "tips": [
-    {"en": "Could you recommend a good place to visit?", "ko": "가볼 만한 곳 추천해 주시겠어요?"},
-    {"en": "How do I get to ~ from here?", "ko": "여기서 ~까지는 어떻게 가나요?"},
-    {"en": "Do I need a ticket in advance?", "ko": "표를 미리 사야 하나요?"},
-    {"en": "Could I have a map?", "ko": "지도 받을 수 있을까요?"},
-    {"en": "What time does the last bus come back?", "ko": "돌아오는 막차는 몇 시인가요?"}
-  ]
+    {
+      "en": "Could you recommend a good place to visit?",
+      "ko": "가볼 만한 곳 추천해 주시겠어요?"
+    },
+    {
+      "en": "How do I get to ~ from here?",
+      "ko": "여기서 ~까지는 어떻게 가나요?"
+    },
+    {
+      "en": "Do I need a ticket in advance?",
+      "ko": "표를 미리 사야 하나요?"
+    },
+    {
+      "en": "Could I have a map?",
+      "ko": "지도 받을 수 있을까요?"
+    },
+    {
+      "en": "What time does the last bus come back?",
+      "ko": "돌아오는 막차는 몇 시인가요?"
+    }
+  ],
+  "category": "activity",
+  "category_ko": "관광 & 레저"
 }

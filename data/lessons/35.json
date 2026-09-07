@@ -108,5 +108,7 @@
       "en": "Keep your claim number.",
       "ko": "접수 번호를 잘 보관하세요."
     }
-  ]
+  ],
+  "category": "airport",
+  "category_ko": "공항 & 비행"
 }
