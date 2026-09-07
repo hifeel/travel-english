@@ -1,0 +1,98 @@
+{
+  "id": "37",
+  "slug": "museum-tickets",
+  "title_en": "Museum Tickets",
+  "title_ko": "박물관 입장권",
+  "subtitle": "박물관에서 표 사고 관람 시간 묻기",
+  "desc": "박물관 매표소에서 할인, 가방 보관, 마감 시간을 확인하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good morning. Two adult tickets, please. Do you have a student discount?",
+      "ko": "안녕하세요. 성인 표 두 장이요. 학생 할인 있나요?",
+      "audio": "audio/37-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Ticket Clerk",
+      "en": "Yes, with a student ID. Regular tickets are eighteen dollars. Student tickets are twelve.",
+      "ko": "네, 학생증이 있으면요. 일반은 십팔 달러, 학생은 십이 달러입니다.",
+      "audio": "audio/37-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "One regular and one student, then. Does the ticket include the special exhibit?",
+      "ko": "그럼 일반 하나, 학생 하나요. 특별전도 포함인가요?",
+      "audio": "audio/37-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Ticket Clerk",
+      "en": "The special exhibit is five dollars extra. It is on the third floor.",
+      "ko": "특별전은 오 달러가 추가됩니다. 삼 층에 있어요.",
+      "audio": "audio/37-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "We will add that. What time do you close today?",
+      "ko": "그것도 넣을게요. 오늘 몇 시에 닫나요?",
+      "audio": "audio/37-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Ticket Clerk",
+      "en": "The museum closes at six. Last entry is at five fifteen.",
+      "ko": "박물관은 여섯 시에 닫습니다. 마지막 입장은 다섯 시 십오 분입니다.",
+      "audio": "audio/37-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Can I leave this backpack at the coat check?",
+      "ko": "이 배낭은 보관소에 맡겨도 되나요?",
+      "audio": "audio/37-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Ticket Clerk",
+      "en": "Yes, free of charge. Large bags are not allowed in the galleries.",
+      "ko": "네, 무료입니다. 큰 가방은 전시실에 가져갈 수 없어요.",
+      "audio": "audio/37-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Are photos allowed?",
+      "ko": "사진 찍어도 되나요?",
+      "audio": "audio/37-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Ticket Clerk",
+      "en": "Photos without flash are fine except in the special exhibit. Enjoy your visit.",
+      "ko": "플래시 없는 사진은 됩니다. 특별전만 제외입니다. 관람 즐겁게 하세요.",
+      "audio": "audio/37-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Do you have a student discount?",
+      "ko": "학생 할인 있나요?"
+    },
+    {
+      "en": "Does the ticket include the special exhibit?",
+      "ko": "특별전도 포함인가요?"
+    },
+    {
+      "en": "What time do you close today?",
+      "ko": "오늘 몇 시에 닫나요?"
+    },
+    {
+      "en": "Are photos allowed?",
+      "ko": "사진 찍어도 되나요?"
+    }
+  ]
+}

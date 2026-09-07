@@ -1,0 +1,102 @@
+{
+  "id": "38",
+  "slug": "golf-tee-time",
+  "title_en": "Booking a Tee Time",
+  "title_ko": "골프 티타임 예약",
+  "subtitle": "골프장에서 티타임과 클럽 렌탈 문의",
+  "desc": "골프 여행 중 프로숍에서 티타임, 카트, 렌탈 클럽을 예약하는 실전 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good morning. Would it be possible to book a tee time for two players today?",
+      "ko": "안녕하세요. 오늘 두 명 티타임 예약할 수 있을까요?",
+      "audio": "audio/38-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "Let me check. We have 10:20 and 1:40. Which do you prefer?",
+      "ko": "확인해 볼게요. 10시 20분과 1시 40분이 있습니다. 어느 쪽이 좋으세요?",
+      "audio": "audio/38-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "10:20, please. How much is the green fee for visitors?",
+      "ko": "10시 20분으로 주세요. 방문객 그린피는 얼마인가요?",
+      "audio": "audio/38-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "One hundred forty dollars per person, including a shared cart.",
+      "ko": "카트 포함해서 1인당 140달러입니다.",
+      "audio": "audio/38-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "We did not bring clubs. Do you rent a set?",
+      "ko": "클럽을 안 가져왔어요. 렌탈 세트가 있나요?",
+      "audio": "audio/38-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "Yes. Right-handed sets are 55 dollars. Left-handed is 65. Shoes are 15.",
+      "ko": "네. 오른손잡이 세트는 55달러, 왼손잡이는 65달러입니다. 신발은 15달러예요.",
+      "audio": "audio/38-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Two right-handed sets and one pair of shoes in size 9, please. Is there a driving range?",
+      "ko": "오른손잡이 두 세트랑 9사이즈 신발 하나 주세요. 드라이빙 레인지가 있나요?",
+      "audio": "audio/38-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "Yes, next to the first tee. A small bucket is 8 dollars. Please check in 20 minutes before.",
+      "ko": "네, 1번 티 옆입니다. 작은 버킷이 8달러예요. 20분 전에 체크인해 주세요.",
+      "audio": "audio/38-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Can I pay by card? And what is the dress code?",
+      "ko": "카드 되나요? 그리고 복장 규정이 어떻게 되나요?",
+      "audio": "audio/38-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "Card is fine. Collared shirts and soft spikes only. Have a great round.",
+      "ko": "카드 됩니다. 카라 있는 셔츠와 소프트 스파이크만 가능합니다. 좋은 라운드 되세요.",
+      "audio": "audio/38-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Would it be possible to book a tee time for two players today?",
+      "ko": "오늘 두 명 티타임 예약할 수 있을까요?"
+    },
+    {
+      "en": "How much is the green fee for visitors?",
+      "ko": "방문객 그린피는 얼마인가요?"
+    },
+    {
+      "en": "Do you rent a set?",
+      "ko": "렌탈 세트가 있나요?"
+    },
+    {
+      "en": "What is the dress code?",
+      "ko": "복장 규정이 어떻게 되나요?"
+    },
+    {
+      "en": "Please check in 20 minutes before.",
+      "ko": "20분 전에 체크인해 주세요."
+    }
+  ]
+}

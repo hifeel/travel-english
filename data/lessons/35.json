@@ -1,0 +1,112 @@
+{
+  "id": "35",
+  "slug": "lost-luggage",
+  "title_en": "Lost Luggage",
+  "title_ko": "짐 분실",
+  "subtitle": "공항에서 가방이 안 나왔을 때",
+  "desc": "수하물이 나오지 않아 항공사 데스크에 신고하는 실전 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me. My suitcase did not come out. Would it be possible to help me?",
+      "ko": "실례합니다. 제 가방이 안 나왔어요. 도와주실 수 있을까요?",
+      "audio": "audio/35-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "I am sorry to hear that. May I see your boarding pass and baggage tag?",
+      "ko": "불편을 드려 죄송합니다. 탑승권과 수하물 태그를 보여 주시겠어요?",
+      "audio": "audio/35-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Here they are. It is a black hard case with a red ribbon.",
+      "ko": "여기 있습니다. 검은색 하드케이스에 빨간 리본이 달려 있어요.",
+      "audio": "audio/35-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "Thank you. The last flight from Seoul landed twenty minutes ago. Let me check the system.",
+      "ko": "감사합니다. 서울발 마지막 항공기가 이십 분 전에 도착했습니다. 시스템을 확인해 볼게요.",
+      "audio": "audio/35-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Is it still on the plane or did it go to another city?",
+      "ko": "아직 비행기에 있나요, 아니면 다른 도시로 갔나요?",
+      "audio": "audio/35-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "It missed the connection in Tokyo. It should arrive on the next flight tonight at nine.",
+      "ko": "도쿄에서 연결편을 놓쳤습니다. 오늘 밤 아홉 시 다음 편으로 도착할 예정입니다.",
+      "audio": "audio/35-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Can you deliver it to my hotel? I am staying at the Harbor Inn, room 412.",
+      "ko": "호텔로 배달해 주실 수 있나요? 하버 인 사백십이 호실입니다.",
+      "audio": "audio/35-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "Yes. Please fill out this form with your phone number. We will call when it is on the way.",
+      "ko": "네. 이 양식에 전화번호를 적어 주세요. 출발하면 연락드리겠습니다.",
+      "audio": "audio/35-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "What should I do for clothes tonight?",
+      "ko": "오늘 밤 옷은 어떻게 하죠?",
+      "audio": "audio/35-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "Here is a comfort kit and a voucher for basic items. Keep your claim number: A seven two nine.",
+      "ko": "편의 키트와 생필품 교환권이 있습니다. 접수 번호는 A칠이구입니다. 잘 보관하세요.",
+      "audio": "audio/35-10.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you. I will wait for your call.",
+      "ko": "감사합니다. 전화 기다릴게요.",
+      "audio": "audio/35-11.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Airline Staff",
+      "en": "We will do our best to get it to you tonight.",
+      "ko": "오늘 밤 안에 전해 드리도록 최선을 다하겠습니다.",
+      "audio": "audio/35-12.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "My suitcase did not come out.",
+      "ko": "제 가방이 안 나왔어요."
+    },
+    {
+      "en": "May I see your boarding pass and baggage tag?",
+      "ko": "탑승권과 수하물 태그를 보여 주시겠어요?"
+    },
+    {
+      "en": "Can you deliver it to my hotel?",
+      "ko": "호텔로 배달해 주실 수 있나요?"
+    },
+    {
+      "en": "Keep your claim number.",
+      "ko": "접수 번호를 잘 보관하세요."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "36",
+  "slug": "restaurant-reservation",
+  "title_en": "Restaurant Reservation",
+  "title_ko": "식당 예약",
+  "subtitle": "저녁 식당에 전화로 예약하기",
+  "desc": "인기 식당에 전화해서 인원, 시간, 알레르기를 말하고 예약하는 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hello. I would like to make a reservation for tonight, please.",
+      "ko": "안녕하세요. 오늘 저녁 예약하고 싶습니다.",
+      "audio": "audio/36-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Of course. What time and for how many people?",
+      "ko": "물론이죠. 몇 시에 몇 분이신가요?",
+      "audio": "audio/36-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Seven thirty for two people. Is a window table available?",
+      "ko": "일곱 시 반, 두 명이요. 창가 자리 가능한가요?",
+      "audio": "audio/36-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Seven thirty is quite full. I can offer seven or eight fifteen by the window.",
+      "ko": "일곱 시 반은 거의 찼어요. 창가는 일곱 시 또는 여덟 시 십오 분이 가능합니다.",
+      "audio": "audio/36-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Eight fifteen is fine. The name is Park.",
+      "ko": "여덟 시 십오 분으로 할게요. 이름은 박입니다.",
+      "audio": "audio/36-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Thank you, Mr. Park. Any food allergies I should note?",
+      "ko": "감사합니다, 박 씨. 음식 알레르기 적어 둘까요?",
+      "audio": "audio/36-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "One of us cannot eat shrimp. Everything else is fine.",
+      "ko": "한 명이 새우를 못 먹어요. 다른 건 괜찮습니다.",
+      "audio": "audio/36-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Noted. We will mark it on the order. How long will you stay?",
+      "ko": "적어 두겠습니다. 주문에도 표시할게요. 얼마나 계실 예정인가요?",
+      "audio": "audio/36-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "About ninety minutes. Do you take credit cards?",
+      "ko": "구십 분쯤요. 신용카드 받으시나요?",
+      "audio": "audio/36-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Host",
+      "en": "Yes. Please arrive five minutes early. We hold the table for fifteen minutes.",
+      "ko": "네. 오 분 정도 일찍 와 주세요. 자리는 십오 분만 남겨 둡니다.",
+      "audio": "audio/36-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "I would like to make a reservation for tonight.",
+      "ko": "오늘 저녁 예약하고 싶습니다."
+    },
+    {
+      "en": "What time and for how many people?",
+      "ko": "몇 시에 몇 분이신가요?"
+    },
+    {
+      "en": "Is a window table available?",
+      "ko": "창가 자리 가능한가요?"
+    },
+    {
+      "en": "One of us cannot eat shrimp.",
+      "ko": "한 명이 새우를 못 먹어요."
+    }
+  ]
+}
