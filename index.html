@@ -20,9 +20,33 @@
     * { box-sizing:border-box; margin:0; padding:0; }
     body { font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif; background:var(--bg); color:var(--text); }
     .container { max-width:720px; margin:0 auto; padding:24px 16px 60px; }
-    header { text-align:center; margin-bottom:24px; }
+    header { text-align:center; margin-bottom:20px; }
     header h1 { font-size:28px; font-weight:800; color:var(--primary); margin-bottom:6px; }
     header p { color:var(--muted); font-size:15px; }
+
+    /* 상단 프로그레스 & 동기부여 카드 */
+    .progress-card {
+      background:#fff; border:1px solid var(--border); border-radius:12px;
+      padding:14px 18px; margin-bottom:24px; box-shadow:0 1px 3px rgba(0,0,0,.03);
+    }
+    .progress-text-row {
+      display:flex; align-items:center; justify-content:space-between;
+      font-size:14px; font-weight:600; color:var(--text); margin-bottom:10px; flex-wrap:wrap; gap:6px;
+    }
+    .done-stat-btn {
+      background:none; border:none; padding:2px 6px; border-radius:6px;
+      color:var(--primary); font-size:14px; font-weight:700; cursor:pointer;
+      text-decoration:underline; text-underline-offset:3px; transition:all .15s ease;
+    }
+    .done-stat-btn:hover { background:#eff6ff; color:#1d4ed8; }
+    .progress-motivation { font-size:12px; font-weight:600; color:#10b981; }
+    .progress-track {
+      width:100%; height:8px; background:#e2e8f0; border-radius:999px; overflow:hidden;
+    }
+    .progress-bar-fill {
+      height:100%; background:linear-gradient(90deg, #3b82f6, #10b981);
+      border-radius:999px; transition:width .3s ease;
+    }
 
     /* 카테고리 선택 영역 */
     .category-section { margin-bottom:24px; }
@@ -130,6 +154,20 @@
       <p>여행에서 바로 쓰는 영어 회화</p>
     </header>
 
+    <!-- 상단 진척도 & 동기부여 -->
+    <div class="progress-card">
+      <div class="progress-text-row">
+        <span>
+          총 <strong id="statTotal">39</strong>개의 레슨 
+          (<button type="button" class="done-stat-btn" id="statDoneBtn" title="완료한 레슨 모아보기"><span id="statDone">0</span>개 완료</button>, <span id="statPercent">0%</span>)
+        </span>
+        <span class="progress-motivation" id="statMotivation">시작이 반이에요! 🔥</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar-fill" id="progressBar" style="width: 0%;"></div>
+      </div>
+    </div>
+
     <!-- 카테고리 선택 영역 -->
     <section class="category-section">
       <div class="category-title">카테고리 선택</div>
@@ -165,6 +203,7 @@
       var CATEGORY_DEF = [
         { id: 'all', name: '전체', icon: '🌍' },
         { id: 'bookmark', name: '북마크', icon: '⭐' },
+        { id: 'done', name: '완료됨', icon: '✅' },
         { id: 'hotel', name: '호텔 & 숙소', icon: '🏨' },
         { id: 'airport', name: '공항 & 비행', icon: '✈️' },
         { id: 'dining', name: '식당 & 카페', icon: '🍽️' },
@@ -194,7 +233,40 @@
         var btn = document.getElementById('filterDoneBtn');
         if (!btn) return;
         btn.classList.toggle('on', hideDone);
-        btn.classList.toggle('is-hidden', currentCat === 'bookmark');
+        btn.classList.toggle('is-hidden', currentCat === 'bookmark' || currentCat === 'done');
+      }
+
+      function updateProgressStats() {
+        var total = allLessons.length;
+        var done = doneList.length;
+        var pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+        var statTotal = document.getElementById('statTotal');
+        var statDone = document.getElementById('statDone');
+        var statPercent = document.getElementById('statPercent');
+        var progressBar = document.getElementById('progressBar');
+        var statMotivation = document.getElementById('statMotivation');
+
+        if (statTotal) statTotal.textContent = total;
+        if (statDone) statDone.textContent = done;
+        if (statPercent) statPercent.textContent = pct + '%';
+        if (progressBar) progressBar.style.width = pct + '%';
+
+        if (statMotivation) {
+          if (pct === 0) statMotivation.textContent = '첫 레슨을 완료해 보세요! 🚀';
+          else if (pct <= 25) statMotivation.textContent = '좋은 출발이에요! 🔥';
+          else if (pct <= 50) statMotivation.textContent = '착실하게 쌓여가고 있어요! 👍';
+          else if (pct <= 75) statMotivation.textContent = '절반을 넘었어요! 대단해요 👏';
+          else if (pct < 100) statMotivation.textContent = '완성이 코앞이에요! 🎉';
+          else statMotivation.textContent = '전체 마스터 달성! 👑';
+        }
+      }
+
+      var statDoneBtn = document.getElementById('statDoneBtn');
+      if (statDoneBtn) {
+        statDoneBtn.onclick = function () {
+          selectCategory('done');
+        };
       }
 
       var filterDoneBtn = document.getElementById('filterDoneBtn');
@@ -429,6 +501,44 @@
           return;
         }
 
+        // 완료 레슨 모아보기 뷰
+        if (currentCat === 'done') {
+          var doneLessons = allLessons.filter(function (l) {
+            return doneList.indexOf(String(l.id)) >= 0;
+          }).reverse();
+
+          titleEl.textContent = '✅ 완료한 레슨';
+          var pct = allLessons.length > 0 ? Math.round((doneLessons.length / allLessons.length) * 100) : 0;
+          countEl.textContent = doneLessons.length + '개의 레슨 (' + pct + '% 달성)';
+
+          if (doneLessons.length === 0) {
+            box.innerHTML = '<div class="empty-msg">아직 완료한 레슨이 없습니다.<br><br>각 레슨 페이지에서 <strong>[완료]</strong> 버튼을 누르면 여기에 기록되어 달성도를 확인할 수 있습니다!</div>';
+            return;
+          }
+
+          doneLessons.forEach(function (l) {
+            var a = document.createElement('a');
+            a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + '&from=done';
+            var img = l.image ? '<img class="card-cover" src="' + esc(l.image) + '" alt="">' : '';
+            var catLabel = l.category_ko || (CATEGORY_DEF.find(function(c){return c.id===l.category;}) || {}).name || '';
+
+            a.innerHTML = img +
+              '<div class="title-row">' +
+                '<span class="badge">#' + esc(l.id) + '</span>' +
+                '<h3>' + esc(l.title_en) + '</h3>' +
+                (catLabel ? '<span class="cat-tag">' + esc(catLabel) + '</span>' : '') +
+                '<span class="done-mark">✓ 완료</span>' +
+              '</div>' +
+              '<p>' + esc(l.desc || l.title_ko || '') + '</p>';
+
+            var card = document.createElement('div');
+            card.className = 'card done';
+            card.appendChild(a);
+            box.appendChild(card);
+          });
+          return;
+        }
+
         // 일반 레슨 뷰 (역순)
         var matchedCat = CATEGORY_DEF.find(function (c) { return c.id === currentCat; });
         var catName = matchedCat ? (matchedCat.icon + ' ' + matchedCat.name) : '전체';
@@ -487,11 +597,13 @@
           counts[c] = (counts[c] || 0) + 1;
         });
         counts.bookmark = (window.TEBookmark && TEBookmark.load().length) || 0;
+        counts.done = doneList.length;
 
         if (currentCat !== 'all' && !CATEGORY_DEF.some(function (c) { return c.id === currentCat; })) {
           currentCat = 'all';
         }
 
+        updateProgressStats();
         renderCategories();
         renderLessonList();
       }).catch(function (err) {
