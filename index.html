@@ -179,6 +179,10 @@
           return l.category === currentCat;
         });
 
+        if (currentCat === 'all') {
+          filtered = filtered.slice().reverse();
+        }
+
         titleEl.textContent = catName;
         countEl.textContent = filtered.length + '개의 레슨';
 
