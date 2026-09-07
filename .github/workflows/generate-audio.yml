@@ -12,6 +12,8 @@ on:
 
 permissions:
   contents: write
+  # To dispatch pages.yml below.
+  actions: write
 
 jobs:
   tts:
@@ -31,15 +33,28 @@ jobs:
       # than expecting whoever added it to also edit data/index.json.
       - run: python scripts/build-index.py
       - run: python scripts/generate-missing-audio.py
-      - name: Commit index and audio if changed
+      - id: commit
+        name: Commit index and audio if changed
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add data audio drop
           if git diff --staged --quiet; then
             echo "nothing to commit"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "File uploaded lessons, refresh index and audio"
             git pull --rebase origin main || git pull --rebase --autostash origin main
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # A push made with GITHUB_TOKEN deliberately triggers no workflows, so
+      # the commit above would never reach the site on its own -- the lesson
+      # lands in the repo and the list keeps showing the one before it. Ask
+      # for the deploy explicitly.
+      - name: Deploy the lesson we just committed
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
