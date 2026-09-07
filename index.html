@@ -71,7 +71,13 @@
     .empty-msg { text-align:center; padding:48px 16px; color:var(--muted); font-size:14px; background:#fff; border-radius:12px; border:1px dashed var(--border); line-height:1.6; }
 
     /* 북마크 전용 카드 */
-    .bm-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:16px 18px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,.03); }
+    .bm-card {
+      background:var(--card); border:1px solid var(--border); border-radius:12px;
+      padding:16px 18px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,.03);
+      cursor:pointer; transition:transform .12s ease, box-shadow .12s ease, border-color .15s ease;
+    }
+    .bm-card:hover { transform:translateY(-1px); box-shadow:0 4px 12px rgba(0,0,0,.06); border-color:#cbd5e1; }
+    .bm-card.playing { border-color:var(--primary); box-shadow:0 0 0 2px rgba(37,99,235,.15); }
     .bm-top { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px; }
     .bm-badge-group { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
     .bm-lesson-badge { text-decoration:none; color:var(--primary); font-size:12px; font-weight:700; background:#eff6ff; padding:3px 8px; border-radius:6px; transition:background .15s ease; }
@@ -157,48 +163,69 @@
       var counts = {};
 
       var currentBmAudio = null;
+      var currentBmCard = null;
       var currentBmBtn = null;
-      function playBmAudio(src, text, btn) {
+
+      function stopBmAudio() {
         if (currentBmAudio) {
           try { currentBmAudio.pause(); } catch(e) {}
           currentBmAudio = null;
         }
+        try { window.speechSynthesis.cancel(); } catch(e) {}
+        if (currentBmCard) {
+          currentBmCard.classList.remove('playing');
+          currentBmCard = null;
+        }
         if (currentBmBtn) {
           currentBmBtn.textContent = '▶';
           currentBmBtn.classList.remove('playing');
-        }
-        if (currentBmBtn === btn) {
           currentBmBtn = null;
+        }
+      }
+
+      function toggleBmAudio(src, text, btn, card) {
+        if (currentBmCard === card) {
+          stopBmAudio();
           return;
         }
-        btn.textContent = '■';
-        btn.classList.add('playing');
-        currentBmBtn = btn;
+        stopBmAudio();
 
-        var audio = new Audio(src);
-        currentBmAudio = audio;
-        audio.onended = audio.onerror = function () {
-          btn.textContent = '▶';
-          btn.classList.remove('playing');
-          if (currentBmAudio === audio) currentBmAudio = null;
-          if (currentBmBtn === btn) currentBmBtn = null;
-        };
-        audio.play().catch(function () {
-          if ('speechSynthesis' in window) {
-            var u = new SpeechSynthesisUtterance(text);
-            u.lang = 'en-US';
-            u.onend = u.onerror = function () {
-              btn.textContent = '▶';
-              btn.classList.remove('playing');
-              currentBmBtn = null;
-            };
-            speechSynthesis.speak(u);
-          } else {
-            btn.textContent = '▶';
-            btn.classList.remove('playing');
-            currentBmBtn = null;
-          }
-        });
+        if (btn) {
+          btn.textContent = '■';
+          btn.classList.add('playing');
+        }
+        if (card) {
+          card.classList.add('playing');
+        }
+        currentBmBtn = btn;
+        currentBmCard = card;
+
+        if (src) {
+          var audio = new Audio(src);
+          currentBmAudio = audio;
+          audio.onended = audio.onerror = function () {
+            stopBmAudio();
+          };
+          audio.play().catch(function () {
+            speakBmFallback(text);
+          });
+        } else {
+          speakBmFallback(text);
+        }
+      }
+
+      function speakBmFallback(text) {
+        if ('speechSynthesis' in window && text) {
+          var u = new SpeechSynthesisUtterance(text);
+          u.lang = 'en-US';
+          u.onend = u.onerror = function () {
+            stopBmAudio();
+          };
+          speechSynthesis.cancel();
+          speechSynthesis.speak(u);
+        } else {
+          stopBmAudio();
+        }
       }
 
       function renderCategories() {
@@ -248,11 +275,7 @@
         var countEl = document.getElementById('listCount');
         box.innerHTML = '';
 
-        if (currentBmAudio) {
-          try { currentBmAudio.pause(); } catch(e) {}
-          currentBmAudio = null;
-        }
-        currentBmBtn = null;
+        stopBmAudio();
 
         // 북마크 뷰
         if (currentCat === 'bookmark') {
@@ -289,8 +312,28 @@
                 '<a class="search-btn" href="https://www.google.com/search?q=' + q + '" target="_blank" rel="noopener noreferrer">' + GICON + '</a>' +
               '</div>';
 
+            var pb = card.querySelector('.bm-play-btn');
+
+            var toggleCardAudio = function () {
+              toggleBmAudio(item.audio, item.en, pb, card);
+            };
+
+            // 카드 박스 터치/클릭 시 재생 및 정지 토글
+            card.onclick = toggleCardAudio;
+
+            // 재생 버튼 클릭 시 토글 (이벤트 전파 방지)
+            if (pb) {
+              pb.onclick = function (e) {
+                e.stopPropagation();
+                toggleCardAudio();
+              };
+            }
+
+            // 북마크 해제 버튼: 독립 작동 (카드 클릭 전파 방지)
             var starBtn = card.querySelector('.bm-star-btn');
-            starBtn.onclick = function () {
+            starBtn.onclick = function (e) {
+              e.stopPropagation();
+              if (currentBmCard === card) stopBmAudio();
               if (window.TEBookmark) TEBookmark.remove(item.key);
               card.remove();
               counts.bookmark = Math.max(0, (counts.bookmark || 1) - 1);
@@ -302,10 +345,19 @@
               }
             };
 
-            var pb = card.querySelector('.bm-play-btn');
-            if (pb && item.audio) {
-              pb.onclick = function () {
-                playBmAudio(item.audio, item.en, pb);
+            // 원글 링크: 독립 작동 (상세 레슨 이동, 카드 클릭 전파 방지)
+            var lessonLink = card.querySelector('.bm-lesson-badge');
+            if (lessonLink) {
+              lessonLink.onclick = function (e) {
+                e.stopPropagation();
+              };
+            }
+
+            // 구글 번역/설명 링크: 독립 작동 (새 창 열기, 카드 클릭 전파 방지)
+            var searchBtn = card.querySelector('.search-btn');
+            if (searchBtn) {
+              searchBtn.onclick = function (e) {
+                e.stopPropagation();
               };
             }
 
