@@ -1,0 +1,104 @@
+{
+  "id": "39",
+  "slug": "golf-starter-join",
+  "title_en": "At the 1st Tee & Joining Players",
+  "title_ko": "1번 홀 스타터와 현지인 조인",
+  "subtitle": "1번 홀 티박스에서 스타터 확인과 동반자 첫인사",
+  "desc": "1번 홀에서 진행 요원에게 티타임을 확인하고 현지인 동반자와 조인하여 첫 티샷을 준비하는 실전 회화",
+  "category": "activity",
+  "category_ko": "관광 & 레저",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good morning. We have the 10:20 tee time under Kim. Here is our receipt.",
+      "ko": "안녕하세요. 10시 20분 Kim 이름으로 된 티타임입니다. 영수증 여기 있습니다.",
+      "audio": "audio/39-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "Welcome! Yes, group Kim. You will be paired up with Mike and Dave today. They are warming up right there.",
+      "ko": "환영합니다! 네, Kim 고객님 조 맞으시네요. 오늘 Mike, Dave 두 분과 조인하여 플레이하시게 됩니다. 저기서 몸 풀고 계세요.",
+      "audio": "audio/39-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Got it. By the way, are carts on path only today, or can we drive on the fairway?",
+      "ko": "알겠습니다. 그런데 오늘 카트는 도로로만 다녀야 하나요, 아니면 페어웨이에 진입할 수 있나요?",
+      "audio": "audio/39-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Starter",
+      "en": "It is the 90-degree rule today, so you can drive onto the fairway at a right angle. The first tee is all yours.",
+      "ko": "오늘은 90도 룰입니다. 직각으로 페어웨이에 들어가실 수 있어요. 이제 1번 티로 가시면 됩니다.",
+      "audio": "audio/39-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hi there! Are you Mike and Dave? I am Minsoo, and this is my friend Jun. Nice to meet you.",
+      "ko": "안녕하세요! 혹시 Mike와 Dave이신가요? 저는 민수이고, 이쪽은 제 친구 준입니다. 만나서 반가워요.",
+      "audio": "audio/39-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Nice to meet you, Minsoo! Welcome to the course. Are you guys visiting from Korea?",
+      "ko": "만나서 반가워요, 민수 씨! 코스에 오신 걸 환영합니다. 한국에서 여행 오셨나요?",
+      "audio": "audio/39-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Yes, we are on vacation. Which tees are you guys playing from today?",
+      "ko": "네, 휴가로 여행 왔어요. 오늘 어떤 티박스에서 치시나요?",
+      "audio": "audio/39-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "We usually play from the whites. Does that work for you?",
+      "ko": "저희는 보통 화이트 티에서 쳐요. 여러분도 괜찮으신가요?",
+      "audio": "audio/39-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "The whites sound great to us. Who has honors? Would you like to tee off first?",
+      "ko": "화이트 티 좋습니다. 순서가 어떻게 되죠? 먼저 티샷하시겠어요?",
+      "audio": "audio/39-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Thanks! I will hit first. Let us have a fun round today!",
+      "ko": "고마워요! 제가 먼저 칠게요. 오늘 재미있게 쳐봅시다!",
+      "audio": "audio/39-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Are carts on path only today?",
+      "ko": "오늘 카트는 도로로만 다녀야 하나요?"
+    },
+    {
+      "en": "90-degree rule",
+      "ko": "90도 룰 (카트 도로로 가다가 공 위치에서 직각으로 페어웨이 진입)"
+    },
+    {
+      "en": "Which tees are you playing from today?",
+      "ko": "오늘 어떤 티박스에서 치시나요?"
+    },
+    {
+      "en": "Who has honors? / Would you like to tee off first?",
+      "ko": "누가 먼저 치나요? / 먼저 티샷하시겠어요?"
+    },
+    {
+      "en": "Let us have a fun round today!",
+      "ko": "오늘 즐거운 라운드 해봐요!"
+    }
+  ]
+}
