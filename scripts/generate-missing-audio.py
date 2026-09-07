@@ -33,8 +33,12 @@ def main():
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             voice = voice_for(t.get("role") or "")
             print("TTS", voice, rel)
+            # python -m rather than the edge-tts console script: pip puts that
+            # script somewhere that is on PATH in CI but usually is not locally,
+            # and this way the same command works in both places.
             subprocess.check_call(
-                ["edge-tts", "--voice", voice, "--text", text, "--write-media", dest]
+                [sys.executable, "-m", "edge_tts",
+                 "--voice", voice, "--text", text, "--write-media", dest]
             )
             made += 1
     print("generated", made)
