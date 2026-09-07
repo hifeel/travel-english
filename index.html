@@ -177,11 +177,7 @@
         var filtered = allLessons.filter(function (l) {
           if (currentCat === 'all') return true;
           return l.category === currentCat;
-        });
-
-        if (currentCat === 'all') {
-          filtered = filtered.slice().reverse();
-        }
+        }).reverse();
 
         titleEl.textContent = catName;
         countEl.textContent = filtered.length + '개의 레슨';
