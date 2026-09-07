@@ -1,4 +1,4 @@
-const CACHE = 'travel-english-v22';
+const CACHE = 'travel-english-v23';
 const PRECACHE = [
   './',
   'index.html',
@@ -31,6 +31,14 @@ self.addEventListener('activate', function(event) {
   );
 });
 
+// Lesson data and the pages that frame it change whenever a lesson is added,
+// so serving them from cache first meant a new lesson only showed up on the
+// second visit. Audio and icons never change under a given name, so those stay
+// cache-first and keep the app fast and usable offline.
+function isMutable(url, req) {
+  return req.mode === 'navigate' || url.pathname.indexOf('/data/') !== -1;
+}
+
 self.addEventListener('fetch', function(event) {
   var req = event.request;
   if (req.method !== 'GET') return;
@@ -50,9 +58,11 @@ self.addEventListener('fetch', function(event) {
           }
           return res;
         }).catch(function() {
+          // Offline: the cached copy is better than nothing, and a navigation
+          // with nothing cached still gets the shell.
           return hit || cache.match('index.html');
         });
-        return hit || fresh;
+        return isMutable(url, req) ? fresh : (hit || fresh);
       });
     })
   );
