@@ -1,0 +1,102 @@
+{
+  "id": "30",
+  "slug": "hotel-laundry",
+  "title_en": "Hotel Laundry",
+  "title_ko": "호텔 세탁 서비스",
+  "subtitle": "호텔에서 세탁 맡기기",
+  "desc": "호텔 프런트에 옷을 맡기고 세탁 시간과 가격을 확인하는 오후·저녁 회화",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good afternoon. Do you have a laundry service?",
+      "ko": "안녕하세요. 세탁 서비스가 있나요?",
+      "audio": "audio/yz01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Yes, we do. Same-day or next-day service?",
+      "ko": "네, 있습니다. 당일 서비스인가요, 다음날인가요?",
+      "audio": "audio/yz02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Same-day if possible. I need these shirts for tomorrow.",
+      "ko": "가능하면 당일로 부탁해요. 내일 입을 셔츠들이에요.",
+      "audio": "audio/yz03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Same-day is available until four p.m. After that it is next-day.",
+      "ko": "당일 서비스는 오후 4시까지 가능합니다. 그 이후는 다음날이에요.",
+      "audio": "audio/yz04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "It is three now, so same-day is fine. How much does it cost?",
+      "ko": "지금 3시니까 당일로 할게요. 비용은 얼마인가요?",
+      "audio": "audio/yz05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Shirts are eight dollars each. Pants are twelve. We also do dry cleaning.",
+      "ko": "셔츠는 장당 8달러, 바지는 12달러입니다. 드라이클리닝도 가능해요.",
+      "audio": "audio/yz06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Three shirts and one pair of pants, please. When will they be ready?",
+      "ko": "셔츠 세 장과 바지 한 벌 부탁합니다. 언제 받을 수 있나요?",
+      "audio": "audio/yz07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "They will be ready by eight this evening. We can deliver them to your room.",
+      "ko": "오늘 저녁 8시까지 준비됩니다. 객실로 배달해 드릴 수 있어요.",
+      "audio": "audio/yz08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect. Room 815. Can I pay when they are delivered?",
+      "ko": "완벽합니다. 815호요. 배달될 때 계산해도 될까요?",
+      "audio": "audio/yz09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk",
+      "en": "Yes. Just sign the form and leave the bag at the desk. Have a nice afternoon.",
+      "ko": "네. 양식에 서명하시고 가방을 데스크에 두시면 됩니다. 좋은 오후 되세요.",
+      "audio": "audio/yz10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Do you have a laundry service?",
+      "ko": "세탁 서비스가 있나요?"
+    },
+    {
+      "en": "Same-day or next-day service?",
+      "ko": "당일 서비스인가요, 다음날인가요?"
+    },
+    {
+      "en": "How much does it cost?",
+      "ko": "비용은 얼마인가요?"
+    },
+    {
+      "en": "When will they be ready?",
+      "ko": "언제 받을 수 있나요?"
+    },
+    {
+      "en": "Can I pay when they are delivered?",
+      "ko": "배달될 때 계산해도 될까요?"
+    }
+  ]
+}
