@@ -112,8 +112,14 @@ function render(lesson){
   document.getElementById('title').textContent='#'+lesson.id+' '+lesson.title_en;
   document.getElementById('subtitle').textContent=(lesson.category_ko?'['+lesson.category_ko+'] ':'')+(lesson.subtitle||lesson.title_ko||'');
   var backLink=document.querySelector('.back');
-  if(backLink && lesson.category){
-    backLink.href='index.html?cat='+encodeURIComponent(lesson.category);
+  if(backLink){
+    var params=new URLSearchParams(window.location.search);
+    var from=params.get('from')||params.get('cat')||lesson.category;
+    if(from && from!=='all'){
+      backLink.href='index.html?cat='+encodeURIComponent(from);
+    }else{
+      backLink.href='index.html';
+    }
   }
   var cover=document.getElementById('cover');
   if(lesson.image){
