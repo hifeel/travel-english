@@ -23,6 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # data/lessons.json is gitignored: data/lessons/*.json is the source of
+      # truth and a committed bundle would only drift from it. Build it here so
+      # the list page costs one request instead of one per lesson.
+      - name: Build lessons bundle
+        run: python3 scripts/build-lessons-json.py . data/lessons.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
