@@ -22,16 +22,19 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install edge-tts
+      # Adding a lesson should mean adding one file; derive the id list rather
+      # than expecting whoever added it to also edit data/index.json.
+      - run: python scripts/build-index.py
       - run: python scripts/generate-missing-audio.py
-      - name: Commit audio if any
+      - name: Commit index and audio if changed
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add audio
+          git add data/index.json audio
           if git diff --staged --quiet; then
-            echo "no new audio"
+            echo "nothing to commit"
           else
-            git commit -m "Add generated lesson audio"
+            git commit -m "Update lesson index and generated audio"
             git pull --rebase origin main || git pull --rebase --autostash origin main
             git push
           fi
