@@ -1,0 +1,104 @@
+{
+  "id": "40",
+  "slug": "on-the-golf-course",
+  "title_en": "On the Golf Course",
+  "title_ko": "골프 코스 실전 회화",
+  "subtitle": "라운드 중 거리 확인과 동반자 매너 대화",
+  "desc": "페어웨이와 그린에서 남은 거리를 묻고, 샷을 칭찬하며, 컨시드를 주고받는 실전 골프 회화",
+  "category": "activity",
+  "category_ko": "관광 & 레저",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Nice shot, Dave! Right down the middle. What yardage do you have to the pin?",
+      "ko": "나이스 샷, Dave! 페어웨이 한가운데로 갔네요. 핀까지 몇 야드 남았어요?",
+      "audio": "audio/40-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Thanks! My rangefinder says 145 yards to a back pin. The wind is slightly helping.",
+      "ko": "고마워요! 거리측정기로 백핀까지 145야드 나오네요. 바람이 약간 뒤에서 불어주고 있어요.",
+      "audio": "audio/40-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thanks. I think I will hit an 8-iron. Is there water behind the green?",
+      "ko": "고맙습니다. 8번 아이언으로 쳐야겠네요. 그린 뒤쪽에 해저드가 있나요?",
+      "audio": "audio/40-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "No water, but there is a steep bunker on the left. Better to miss it to the right.",
+      "ko": "물은 없지만 왼쪽에 턱이 높은 벙커가 있어요. 오른쪽으로 미스하는 게 낫습니다.",
+      "audio": "audio/40-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Good to know. Oh no, my ball hooked into the trees! Did you see where it went?",
+      "ko": "좋은 정보 감사해요. 아 이런, 공이 왼쪽 나무 쪽으로 감겼네요! 어디로 갔는지 보셨나요?",
+      "audio": "audio/40-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "I saw it bounce near the cart path. We have three minutes to search, let us go check together.",
+      "ko": "카트 도로 근처에서 튀는 걸 봤어요. 찾는 데 3분 주어지니 같이 가서 찾아봅시다.",
+      "audio": "audio/40-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Found it! It is playable. Now onto the green... Dave, that putt looks like it has a slight break to the left.",
+      "ko": "찾았어요! 칠 수 있는 위치네요. 이제 그린으로... Dave, 그 퍼트는 왼쪽으로 약간 휠 것 같은데요.",
+      "audio": "audio/40-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Good eye! Ah, just missed the cup. It stopped two feet away.",
+      "ko": "눈썰미 좋으시네요! 아, 홀컵을 살짝 빗나갔네. 2피트(약 60cm) 거리에 멈췄군요.",
+      "audio": "audio/40-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That is inside the leather. That is a gimme! Pick it up, great par.",
+      "ko": "그립 가죽 길이 안쪽이네요. 컨시드예요! 공 집으세요, 나이스 파입니다.",
+      "audio": "audio/40-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Thank you! Let us mark our balls and move on to hole number two.",
+      "ko": "고마워요! 공 마크하고 2번 홀로 넘어갑시다.",
+      "audio": "audio/40-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Right down the middle.",
+      "ko": "페어웨이 한가운데로 똑바로 갔어요."
+    },
+    {
+      "en": "What yardage do you have to the pin?",
+      "ko": "핀까지 몇 야드 남았나요?"
+    },
+    {
+      "en": "Better to miss it to the right.",
+      "ko": "오른쪽으로 미스하는 것이 안전합니다."
+    },
+    {
+      "en": "That is a gimme! / Pick it up.",
+      "ko": "컨시드예요! / 공 집으세요."
+    },
+    {
+      "en": "Inside the leather",
+      "ko": "퍼터 헤드부터 그립 끝까지의 짧은 거리 (컨시드 판정 기준)"
+    }
+  ]
+}

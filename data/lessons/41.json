@@ -1,0 +1,104 @@
+{
+  "id": "41",
+  "slug": "clubhouse-19th-hole",
+  "title_en": "Clubhouse & the 19th Hole",
+  "title_ko": "클럽하우스와 19번 홀",
+  "subtitle": "라운드 후 식사와 음료 즐기기",
+  "desc": "골프 라운드를 마치고 클럽하우스 그릴에서 동반자들과 시원한 음료와 식사를 주문하고 정산하는 실전 회화",
+  "category": "dining",
+  "category_ko": "식당 & 카페",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "What a great round! Thanks for the wonderful game, Mike and Dave.",
+      "ko": "정말 즐거운 라운드였어요! 멋진 게임 함께해 주셔서 감사해요, Mike, Dave.",
+      "audio": "audio/41-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "We had a blast playing with you guys. Let us grab a drink and some food at the grill. The 19th hole is on us!",
+      "ko": "저희도 여러분과 함께 쳐서 정말 즐거웠습니다. 그릴에서 시원한 음료와 음식 좀 먹죠. 19번 홀(뒤풀이)은 저희가 낼게요!",
+      "audio": "audio/41-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That is very kind, but drinks are on us today! What local beers do you have on tap?",
+      "ko": "정말 감사하지만, 오늘은 음료는 저희가 살게요! 여기 생맥주로 어떤 로컬 맥주가 있나요?",
+      "audio": "audio/41-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "We have a local IPA from Coastal Brewing and a crisp blonde ale. Would you like a pint or a pitcher?",
+      "ko": "Coastal 양조장의 로컬 IPA와 깔끔한 블론드 에일이 있습니다. 파인트로 드릴까요, 피처로 드릴까요?",
+      "audio": "audio/41-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "We will take a pitcher of the blonde ale, please. And what do you recommend for appetizers?",
+      "ko": "블론드 에일 피처 하나 부탁드립니다. 그리고 애피타이저로는 무엇을 추천하시나요?",
+      "audio": "audio/41-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "The club burger and our loaded nachos are the house favorites after a round.",
+      "ko": "라운드 후에는 클럽 버거와 치즈를 듬뿍 올린 나초가 저희 시그니처 메뉴로 인기 있습니다.",
+      "audio": "audio/41-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Let us get the nachos to share, and two club burgers with fries, please.",
+      "ko": "다 같이 나눠 먹게 나초 하나랑, 감자튀김 곁들인 클럽 버거 두 개 주세요.",
+      "audio": "audio/41-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Fellow Golfer",
+      "en": "Sounds delicious. Here is the scorecard from today. You had some fantastic bunker saves!",
+      "ko": "좋네요. 여기 오늘 스코어카드예요. 오늘 멋진 벙커 세이브가 정말 인상적이었어요!",
+      "audio": "audio/41-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thanks to your course tips! Could we also get the bill whenever you are ready?",
+      "ko": "코스 팁을 잘 알려주신 덕분이에요! 사장님, 준비되시면 계산서도 부탁드립니다.",
+      "audio": "audio/41-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Server",
+      "en": "Certainly. Here is the check. Take your time, and hope you visit our course again soon!",
+      "ko": "네, 여기 계산서 있습니다. 천천히 드시고, 조만간 저희 코스에 또 방문해 주세요!",
+      "audio": "audio/41-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "The 19th hole",
+      "ko": "19번 홀 (18홀 라운드 후 클럽하우스에서 갖는 뒤풀이 식사 및 음료)"
+    },
+    {
+      "en": "Drinks are on us today!",
+      "ko": "오늘 음료는 저희가 살게요!"
+    },
+    {
+      "en": "What do you have on tap?",
+      "ko": "어떤 생맥주가 있나요?"
+    },
+    {
+      "en": "Would you like a pint or a pitcher?",
+      "ko": "잔으로 드릴까요, 피처(대용량 주전자)로 드릴까요?"
+    },
+    {
+      "en": "Bunker save",
+      "ko": "벙커 세이브 (벙커 탈출 후 파 세이브 성공)"
+    }
+  ]
+}
