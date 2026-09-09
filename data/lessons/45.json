@@ -1,0 +1,105 @@
+{
+  "id": "45",
+  "slug": "hotel-luggage-storage",
+  "title_en": "Luggage Storage After Check-out",
+  "title_ko": "체크아웃 후 짐 보관",
+  "subtitle": "호텔 프런트에 짐을 맡기고 보관증 받기",
+  "desc": "체크아웃 후 늦은 비행기 시간 전까지 호텔 벨데스크에 캐리어를 안전하게 보관하고 번호표를 받는 실전 회화",
+  "category": "hotel",
+  "category_ko": "호텔 & 숙소",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hello, we just checked out of room 705. Could you store our luggage until this evening?",
+      "ko": "안녕하세요, 705호 체크아웃했는데요. 오늘 저녁까지 짐을 좀 보관해 주실 수 있나요?",
+      "audio": "audio/45-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk Staff",
+      "en": "Of course! We would be happy to hold them for you. How many pieces do you have?",
+      "ko": "물론이죠! 기꺼이 보관해 드리겠습니다. 짐이 총 몇 개이신가요?",
+      "audio": "audio/45-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "We have two suitcases and one backpack. Is there any extra fee for storage?",
+      "ko": "캐리어 두 개와 배낭 하나입니다. 짐 보관에 추가 요금이 있나요?",
+      "audio": "audio/45-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk Staff",
+      "en": "It is completely complimentary for our guests. Are there any fragile items or laptops inside?",
+      "ko": "투숙객분들께는 전액 무료입니다. 안에 깨지기 쉬운 물건이나 노트북이 들어있나요?",
+      "audio": "audio/45-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "No valuables, just clothes and travel souvenirs. What time does the bell desk close?",
+      "ko": "귀중품은 없고 옷과 여행 기념품뿐입니다. 벨데스크는 몇 시에 마감하나요?",
+      "audio": "audio/45-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk Staff",
+      "en": "Our front desk and bell service operate 24 hours. You can pick them up anytime today.",
+      "ko": "저희 프런트와 벨 서비스는 24시간 운영됩니다. 오늘 언제든 편하신 시간에 찾으시면 됩니다.",
+      "audio": "audio/45-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "That is wonderful. Our flight is at 9 PM, so we will probably return around 6 PM.",
+      "ko": "다행이네요. 비행기가 밤 9시라 오후 6시쯤 다시 돌아올 예정입니다.",
+      "audio": "audio/45-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk Staff",
+      "en": "Sounds good. Here is your claim tag numbered B-34. Please present this ticket when you return.",
+      "ko": "좋습니다. 여기 번호 B-34가 적힌 수하물 보관증입니다. 짐을 찾으러 오실 때 이 티켓을 보여주세요.",
+      "audio": "audio/45-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you. Could you also help us call a taxi to the airport when we pick up our bags?",
+      "ko": "감사합니다. 나중에 짐 찾을 때 공항 가는 택시 호출도 도와주실 수 있나요?",
+      "audio": "audio/45-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Front Desk Staff",
+      "en": "Certainly. Just let us know five minutes in advance and we will arrange a cab right away.",
+      "ko": "물론입니다. 찾으시기 5분 전에 말씀해 주시면 바로 택시를 준비해 드리겠습니다.",
+      "audio": "audio/45-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Could you store our luggage until this evening?",
+      "ko": "오늘 저녁까지 짐을 보관해 주실 수 있나요?"
+    },
+    {
+      "en": "It is completely complimentary.",
+      "ko": "완전 무료입니다."
+    },
+    {
+      "en": "Fragile items / valuables",
+      "ko": "깨지기 쉬운 물품 / 귀중품"
+    },
+    {
+      "en": "Here is your claim tag.",
+      "ko": "여기 수하물 보관증/번호표입니다."
+    },
+    {
+      "en": "Please present this ticket when you return.",
+      "ko": "짐 찾으러 오실 때 이 티켓을 제시해 주세요."
+    }
+  ],
+  "image": "images/lesson-45.jpg"
+}

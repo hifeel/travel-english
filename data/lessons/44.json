@@ -1,0 +1,105 @@
+{
+  "id": "44",
+  "slug": "rideshare-uber-lyft",
+  "title_en": "Taking a Rideshare (Uber / Lyft)",
+  "title_ko": "우버·리프트 탑승하기",
+  "subtitle": "차량 호출 후 픽업 구역에서 기사와 확인",
+  "desc": "지정된 라이드셰어 픽업 구역에서 호출 차량을 찾고, 트렁크 짐 싣기와 목적지 확인을 원활하게 진행하는 실전 회화",
+  "category": "transport",
+  "category_ko": "교통 & 길찾기",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Hi, are you John driving for Uber? I am Minsoo.",
+      "ko": "안녕하세요, 우버 기사 John 님이신가요? 저는 민수입니다.",
+      "audio": "audio/44-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Yes, that is me! Welcome, Minsoo. Heading to the Grand Hyatt Downtown, right?",
+      "ko": "네, 맞습니다! 환영해요, 민수 씨. 다운타운 그랜드 하얏트 호텔로 가시는 것 맞죠?",
+      "audio": "audio/44-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Yes, that is correct. Would you mind popping the trunk? We have two large suitcases.",
+      "ko": "네, 맞습니다. 트렁크 좀 열어주실 수 있나요? 큰 캐리어가 두 개 있어서요.",
+      "audio": "audio/44-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "Sure thing! Let me hop out and give you a hand with those bags.",
+      "ko": "물론이죠! 제가 내려서 짐 싣는 걸 도와드릴게요.",
+      "audio": "audio/44-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you so much, I appreciate the help. Is the traffic heavy at this hour?",
+      "ko": "정말 감사합니다, 도와주셔서 감사해요. 이 시간대에 교통이 많이 막히나요?",
+      "audio": "audio/44-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "There is a bit of rush hour slowdown on the highway, but it should take about twenty-five minutes.",
+      "ko": "고속도로에 퇴근 시간 정체가 조금 있지만, 약 25분 정도 걸릴 겁니다.",
+      "audio": "audio/44-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Sounds good. Is it alright if I charge my phone during the ride?",
+      "ko": "좋네요. 가는 동안 핸드폰 충전을 좀 해도 괜찮을까요?",
+      "audio": "audio/44-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "No problem at all! There is a charging cable plugged in right behind the center console.",
+      "ko": "얼마든지요! 콘솔 바로 뒤편에 충전 케이블이 꽂혀 있습니다.",
+      "audio": "audio/44-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Perfect, thank you. Could you drop us off right in front of the hotel main lobby?",
+      "ko": "완벽하네요, 감사합니다. 호텔 메인 로비 바로 앞에서 내려주실 수 있나요?",
+      "audio": "audio/44-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Driver",
+      "en": "You got it. We are pulling up to the entrance now. Watch your step, and have a great stay!",
+      "ko": "네, 알겠습니다. 이제 입구 앞에 도착했습니다. 발밑 조심하시고, 즐거운 여행 되세요!",
+      "audio": "audio/44-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Are you driving for Uber? / I am Minsoo.",
+      "ko": "우버 기사님이신가요? / 저는 민수입니다."
+    },
+    {
+      "en": "Would you mind popping the trunk?",
+      "ko": "트렁크를 열어주실 수 있나요?"
+    },
+    {
+      "en": "Give you a hand with the bags",
+      "ko": "가방 싣는 것을 거들어주다"
+    },
+    {
+      "en": "Could you drop us off in front of the lobby?",
+      "ko": "로비 앞에서 내려주실 수 있나요?"
+    },
+    {
+      "en": "Watch your step",
+      "ko": "발밑 조심하세요"
+    }
+  ],
+  "image": "images/lesson-44.jpg"
+}

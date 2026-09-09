@@ -1,0 +1,105 @@
+{
+  "id": "43",
+  "slug": "in-flight-service",
+  "title_en": "In-Flight Service & Requests",
+  "title_ko": "기내 서비스와 승무원 요청",
+  "subtitle": "비행기 안에서 음료, 식사 및 편의 물품 요청",
+  "desc": "기내에서 식사와 음료를 선택하고, 담요와 입국신고서 등 필요한 물품을 승무원에게 정중히 요청하는 실전 회화",
+  "category": "airport",
+  "category_ko": "공항 & 비행",
+  "turns": [
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Excuse me. Could I get an extra blanket and a pair of headphones?",
+      "ko": "실례합니다. 담요 하나 더랑 헤드폰 좀 받을 수 있을까요?",
+      "audio": "audio/43-01.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Flight Attendant",
+      "en": "Certainly! Here is a fresh blanket and headphones. We will also be serving dinner shortly.",
+      "ko": "물론이죠! 여기 새 담요와 헤드폰입니다. 잠시 후 저녁 식사도 서비스해 드릴 예정입니다.",
+      "audio": "audio/43-02.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Great, thank you. What are the meal choices today?",
+      "ko": "감사합니다. 오늘 기내식 메뉴는 무엇이 있나요?",
+      "audio": "audio/43-03.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Flight Attendant",
+      "en": "We have beef with mashed potatoes or grilled chicken with rice.",
+      "ko": "으깬 감자를 곁들인 소고기와 밥을 곁들인 구운 치킨이 있습니다.",
+      "audio": "audio/43-04.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "I will have the chicken, please. And could I have a cup of warm water without ice?",
+      "ko": "치킨으로 주세요. 그리고 얼음 뺀 따뜻한 물 한 잔도 부탁드릴게요.",
+      "audio": "audio/43-05.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Flight Attendant",
+      "en": "Here you go. Enjoy your meal! Please let us know if you need anything else.",
+      "ko": "여기 있습니다. 맛있게 드세요! 다른 필요한 것이 있으시면 말씀해 주세요.",
+      "audio": "audio/43-06.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "Thank you. By the way, could you also give me a customs declaration form?",
+      "ko": "감사합니다. 그런데 세관신고서 양식도 한 장 주실 수 있나요?",
+      "audio": "audio/43-07.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Flight Attendant",
+      "en": "Of course, here is the English form. Do you have a pen to fill it out?",
+      "ko": "물론입니다, 여기 영문 양식입니다. 작성하실 펜은 있으신가요?",
+      "audio": "audio/43-08.mp3"
+    },
+    {
+      "role": "you",
+      "speaker": "You (Traveler)",
+      "en": "I have one in my bag. And would it be okay if I recline my seat slightly after eating?",
+      "ko": "가방에 하나 있습니다. 그리고 식사 후에 등받이를 살짝 뒤로 젖혀도 괜찮을까요?",
+      "audio": "audio/43-09.mp3"
+    },
+    {
+      "role": "them",
+      "speaker": "Flight Attendant",
+      "en": "Yes, just make sure the passenger behind you has finished their meal first.",
+      "ko": "네, 뒷자리 승객분이 식사를 다 마치셨는지 먼저 확인해 주시면 됩니다.",
+      "audio": "audio/43-10.mp3"
+    }
+  ],
+  "tips": [
+    {
+      "en": "Could I get an extra blanket?",
+      "ko": "담요를 하나 더 받을 수 있을까요?"
+    },
+    {
+      "en": "What are the meal choices?",
+      "ko": "기내식 메뉴 선택지가 무엇인가요?"
+    },
+    {
+      "en": "Customs declaration form",
+      "ko": "세관신고서 양식"
+    },
+    {
+      "en": "Warm water without ice",
+      "ko": "얼음 없는 따뜻한 물"
+    },
+    {
+      "en": "Recline the seat",
+      "ko": "좌석 등받이를 뒤로 젖히다"
+    }
+  ],
+  "image": "images/lesson-43.jpg"
+}
