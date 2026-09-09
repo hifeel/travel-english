@@ -454,7 +454,7 @@
 
           doneLessons.forEach(function (l) {
             var a = document.createElement('a');
-            a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + '&from=done';
+            a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + '&cat=done';
             var img = l.image ? '<img class="card-cover" src="' + esc(l.image) + '" alt="">' : '';
             var catLabel = l.category_ko || (CATEGORY_DEF.find(function(c){return c.id===l.category;}) || {}).name || '';
 
@@ -521,7 +521,7 @@
 
         filtered.forEach(function (l) {
           var a = document.createElement('a');
-          a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + (currentCat !== 'all' ? '&cat=' + encodeURIComponent(currentCat) : '');
+          a.href = 'lesson.html?id=' + encodeURIComponent(l.id) + '&cat=' + encodeURIComponent(currentCat);
           var isDone = doneList.indexOf(String(l.id)) >= 0;
           var img = l.image ? '<img class="card-cover" src="' + esc(l.image) + '" alt="">' : '';
           var catLabel = l.category_ko || (CATEGORY_DEF.find(function(c){return c.id===l.category;}) || {}).name || '';

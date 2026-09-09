@@ -114,7 +114,10 @@ function render(lesson){
   var backLink=document.querySelector('.back');
   if(backLink){
     var params=new URLSearchParams(window.location.search);
-    var from=params.get('from')||params.get('cat')||lesson.category;
+    // 목록에서 넘어올 때 보고 있던 카테고리를 그대로 들고 온다. 파라미터가
+    // 없으면(직접 링크로 들어온 경우) 전체로 보낸다 — 예전에는 lesson.category
+    // 로 떨어져서, 전체에서 눌러도 그 레슨의 카테고리로 튀었다.
+    var from=params.get('from')||params.get('cat')||'all';
     if(from && from!=='all'){
       backLink.href='index.html?cat='+encodeURIComponent(from);
     }else{
