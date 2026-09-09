@@ -75,6 +75,46 @@
       currentAudio = null;
     }
   }
+  function isPlaying() {
+    return !!(currentAudio && !currentAudio.paused && !currentAudio.ended);
+  }
+  function isPaused() {
+    return !!(currentAudio && currentAudio.paused && !currentAudio.ended);
+  }
+  function markPaused() {
+    // Hold everything -- currentAudio, currentTurn, playAllMode -- and only
+    // put the buttons back to a play glyph, so it reads as held rather than
+    // finished. killAudio() must not run here: it bumps playSeq, which would
+    // orphan the callback that advances 전체 재생.
+    if (currentTurn) {
+      var b = currentTurn.querySelector('.play-btn');
+      if (b) {
+        b.classList.remove('playing');
+        b.textContent = '\u25b6';
+      }
+    }
+    var a = playAllBtn();
+    if (playAllMode && a) {
+      a.classList.remove('playing');
+      a.textContent = '\u25b6 \uc774\uc5b4\uc11c \uc7ac\uc0dd';
+    }
+  }
+  // Returns false when there is nothing to toggle, so a key handler can leave
+  // the keypress alone rather than swallowing it.
+  function togglePause() {
+    if (isPlaying()) {
+      try { currentAudio.pause(); } catch (e) {}
+      markPaused();
+      return true;
+    }
+    if (isPaused()) {
+      var p = currentAudio.play();
+      if (p && p.catch) p.catch(function () {});
+      markPlaying(currentTurn);
+      return true;
+    }
+    return false;
+  }
   function stopCurrent() {
     killAudio();
     resetAllButtons();
@@ -224,7 +264,9 @@
     toggleLang: toggleLang,
     toggleRepeat: toggleRepeat,
     stopCurrent: stopCurrent,
-    syncPlayAllBtn: syncPlayAllBtn
+    syncPlayAllBtn: syncPlayAllBtn,
+    togglePause: togglePause,
+    isPlaying: isPlaying
   };
 })(window);
 (function (global) {
